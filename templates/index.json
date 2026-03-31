@@ -1247,6 +1247,71 @@
         "padding_top": 30,
         "padding_bottom": 30
       }
+    },
+    "shopable_videos_PKFARg": {
+      "type": "shopable-videos",
+      "blocks": {
+        "video_8KDJ6a": {
+          "type": "video",
+          "settings": {
+            "file_video_url": "shopify://metaobjects/saree_style/banarasi",
+            "video_url": "",
+            "shorts_url": "",
+            "shop_product": "exclusive-soft-pure-cotton-saree-al205180"
+          }
+        },
+        "video_RUxL4d": {
+          "type": "video",
+          "settings": {
+            "file_video_url": "",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "shorts_url": "",
+            "shop_product": ""
+          }
+        },
+        "video_YjKfA6": {
+          "type": "video",
+          "settings": {
+            "file_video_url": "",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "shorts_url": "",
+            "shop_product": ""
+          }
+        },
+        "video_LbmDqJ": {
+          "type": "video",
+          "settings": {
+            "file_video_url": "",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "shorts_url": "",
+            "shop_product": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_8KDJ6a",
+        "video_RUxL4d",
+        "video_YjKfA6",
+        "video_LbmDqJ"
+      ],
+      "name": "t:sections.shopable-videos.name",
+      "settings": {
+        "heading": "Cutomer Reviews",
+        "sub_title": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "image_ratio": "square",
+        "full_width": false,
+        "gap_items": false,
+        "color_scheme": "",
+        "columns_desktop": 7,
+        "enable_story_style": false,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "enable_desktop_slider": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
@@ -1267,6 +1332,7 @@
     "custom_instagram_9k4UFy",
     "1774015581dd99870d",
     "sub_banner_YBDbjN",
-    "service_icon_pHgMfL"
+    "service_icon_pHgMfL",
+    "shopable_videos_PKFARg"
   ]
 }
