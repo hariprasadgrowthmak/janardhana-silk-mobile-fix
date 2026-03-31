@@ -759,7 +759,7 @@
         "image_YGxLMW"
       ],
       "settings": {
-        "layout": "full_bleed",
+        "layout": "grid",
         "heading": "",
         "heading_size": "h2",
         "heading_alignment": "center",
