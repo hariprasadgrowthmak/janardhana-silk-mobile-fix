@@ -5050,3 +5050,9 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
   padding-left: 60px !important;
   padding-right: 60px !important;
 }
+
+.page-width.scroll-trigger.animate--slide-in {
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
