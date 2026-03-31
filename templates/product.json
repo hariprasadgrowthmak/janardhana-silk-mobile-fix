@@ -24,17 +24,6 @@
           "type": "title",
           "settings": {}
         },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "984a1a06-3307-4e71-98cf-bb630178c506": {
-          "type": "viewer_count",
-          "settings": {
-            "viewer": true,
-            "viewer_text": "People are viewing this right now"
-          }
-        },
         "d2b31d7d-ceba-4f79-bfb0-5d8858a6cbe1": {
           "type": "inventory",
           "settings": {
@@ -45,22 +34,16 @@
             "delivery_days": "10"
           }
         },
-        "f1d7e9a6-b6c1-48c1-ab28-eabef196c446": {
-          "type": "timer",
+        "984a1a06-3307-4e71-98cf-bb630178c506": {
+          "type": "viewer_count",
           "settings": {
-            "timer_box": false,
-            "time": "29 December 2027 9:56:00",
-            "timer_bg_color_top": "#f2c94c",
-            "timer_text_color_top": "#ffffff",
-            "timer_bg_color_bottom": "#f9f9f9",
-            "timer_text_color_bottom": "#101010",
-            "timer_border_color_bottom": "#dddddd",
-            "hurry_up_text": "Hurry up! Sales End In",
-            "days": "Days",
-            "hours": "Hours",
-            "minutes": "Min",
-            "seconds": "Sec"
+            "viewer": true,
+            "viewer_text": "People are viewing this right now"
           }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -73,6 +56,12 @@
           "type": "shopify://apps/globo-product-options/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
           "disabled": true,
           "settings": {}
+        },
+        "custom_liquid_9XWEEV": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.handle == 'pure-handloom-kanjeevaram-silk-saree-al212151' %}\n\n{% assign blouse_product = all_products['blouse-add-on'] %}\n\n{% if blouse_product != blank and blouse_product.variants.size > 0 %}\n\n<div class=\"addon-card\" id=\"addon-blouse-card\" style=\"border:1px solid #eee;padding:12px;border-radius:10px;margin-top:10px;\">\n  \n  <label style=\"display:flex;align-items:center;gap:12px;cursor:pointer;\">\n    \n    <input type=\"checkbox\" id=\"add-blouse-checkbox\" style=\"transform:scale(1.2);cursor:pointer;\">\n\n    {% if blouse_product.featured_image %}\n      <img \n        src=\"{{ blouse_product.featured_image | image_url: width: 120 }}\" \n        width=\"60\" \n        height=\"60\"\n        style=\"border-radius:8px;object-fit:cover;\"\n      >\n    {% endif %}\n\n    <div style=\"flex:1;\">\n      <div style=\"font-weight:600;\">{{ blouse_product.title }}</div>\n      <div id=\"blouse-price\" style=\"color:#666;font-size:14px;\">\n        ₹{{ blouse_product.variants.first.price | divided_by: 100 }}\n      </div>\n    </div>\n\n  </label>\n\n</div>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function () {\n\n  const form = document.querySelector('form[action*=\"/cart/add\"]');\n  if (!form) return;\n\n  const checkbox = document.getElementById('add-blouse-checkbox');\n\n  const blouseVariant = {{ blouse_product.variants.first | json }};\n\n  form.addEventListener('submit', function(e){\n\n    if (!checkbox.checked) return;\n\n    e.preventDefault();\n\n    const formData = new FormData(form);\n\n    // Add main product\n    fetch('/cart/add.js', {\n      method: 'POST',\n      body: formData\n    })\n    .then(() => {\n      // Add blouse add-on (SKU BAO assumed)\n      return fetch('/cart/add.js', {\n        method: 'POST',\n        headers: { 'Content-Type': 'application/json' },\n        body: JSON.stringify({\n          id: blouseVariant.id,\n          quantity: 1\n        })\n      });\n    })\n    .then(() => {\n      window.location.href = '/cart';\n    })\n    .catch(err => {\n      console.error('Addon error:', err);\n      form.submit();\n    });\n\n  });\n\n});\n</script>\n\n{% endif %}\n{% endif %}"
+          }
         },
         "quantity_selector": {
           "type": "quantity_selector",
@@ -120,6 +109,23 @@
             "heading_4": "QUICK & EASY RETURNS"
           }
         },
+        "f1d7e9a6-b6c1-48c1-ab28-eabef196c446": {
+          "type": "timer",
+          "settings": {
+            "timer_box": false,
+            "time": "29 December 2027 9:56:00",
+            "timer_bg_color_top": "#f2c94c",
+            "timer_text_color_top": "#ffffff",
+            "timer_bg_color_bottom": "#f9f9f9",
+            "timer_text_color_bottom": "#101010",
+            "timer_border_color_bottom": "#dddddd",
+            "hurry_up_text": "Hurry up! Sales End In",
+            "days": "Days",
+            "hours": "Hours",
+            "minutes": "Min",
+            "seconds": "Sec"
+          }
+        },
         "description": {
           "type": "description",
           "disabled": true,
@@ -134,6 +140,7 @@
         "price",
         "variant_picker",
         "globo_product_options_app_block_UjeEYL",
+        "custom_liquid_9XWEEV",
         "quantity_selector",
         "buy_buttons",
         "payment_icon_4cUFU4",
@@ -180,18 +187,6 @@
             "page": ""
           }
         },
-        "e976ee83-b842-472e-9af8-76220b5e4b2b": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Silk Mark",
-            "heading_liquid": "",
-            "icon": "none",
-            "content": "<p>Maecenas sed enim ut sem viverra aliquet eget sit. Curabitur gravida arcu ac tortor. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Gravida neque convallis a cras. Adipiscing elit duis tristique sollicitudin nibh sit. Justo laoreet sit amet cursus sit amet. Neque vitae tempus quam pellentesque nec nam aliquam.</p><ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li>Nullam porttitor lorem ac purus semper, vitae finibus tellus vehicula.</li><li>Nam faucibus velit et libero auctor, at molestie metus pellentesque.</li></ul>",
-            "liquid_content": "",
-            "page": ""
-          }
-        },
         "313a2685-db5d-4b49-81ab-55517588ec25": {
           "type": "collapsible_tab",
           "settings": {
@@ -210,6 +205,18 @@
             "heading_liquid": "",
             "icon": "none",
             "content": "<ul><li>Dry clean only recommended for silk sarees.</li><li>Store in a cool, dry place away from direct sunlight.</li><li>Wrap in a muslin cloth to preserve the zari work.</li><li>Do not wring or twist the fabric.</li><li>Iron on low heat with a cloth in between.</li></ul>",
+            "liquid_content": "",
+            "page": ""
+          }
+        },
+        "e976ee83-b842-472e-9af8-76220b5e4b2b": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Silk Mark",
+            "heading_liquid": "",
+            "icon": "none",
+            "content": "<p>Maecenas sed enim ut sem viverra aliquet eget sit. Curabitur gravida arcu ac tortor. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Gravida neque convallis a cras. Adipiscing elit duis tristique sollicitudin nibh sit. Justo laoreet sit amet cursus sit amet. Neque vitae tempus quam pellentesque nec nam aliquam.</p><ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li>Nullam porttitor lorem ac purus semper, vitae finibus tellus vehicula.</li><li>Nam faucibus velit et libero auctor, at molestie metus pellentesque.</li></ul>",
             "liquid_content": "",
             "page": ""
           }
@@ -256,47 +263,69 @@
         "include_margins": true
       }
     },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "SIMILAR PRODUCTS",
+        "heading_size": "h2",
+        "description": "",
+        "heading_alignment": "center",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "service_icon_yLrPgn": {
       "type": "service-icon",
       "blocks": {
         "column_itzgNa": {
           "type": "column",
           "settings": {
+            "icon_type": "truck",
             "title": "Free Shipping",
             "text": "<p>Free shipping on all India orders and express international delivery.</p>",
             "link_label": "",
-            "link": "",
-            "icon_type": "truck"
+            "link": ""
           }
         },
         "column_ac7Twk": {
           "type": "column",
           "settings": {
+            "icon_type": "shield",
             "title": "Assured Quality",
             "text": "<p>Every product is quality checked before it reaches you.</p>",
             "link_label": "",
-            "link": "",
-            "icon_type": "shield"
+            "link": ""
           }
         },
         "column_tt4dq7": {
           "type": "column",
           "settings": {
+            "icon_type": "globe",
             "title": "Worldwide Shipping",
             "text": "<p>We ship to 100+ countries. Delivered in 5-7 business days.</p>",
             "link_label": "",
-            "link": "",
-            "icon_type": "globe"
+            "link": ""
           }
         },
         "column_94WmzX": {
           "type": "column",
           "settings": {
+            "icon_type": "card",
             "title": "100% Secure Payment",
             "text": "<p>Safe & encrypted checkout with all major payment methods.</p>",
             "link_label": "",
-            "link": "",
-            "icon_type": "card"
+            "link": ""
           }
         }
       },
@@ -411,28 +440,6 @@
         "mobile_content_alignment": "center-top",
         "stack_images_on_mobile": true,
         "show_text_below": false
-      }
-    },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "heading": "SIMILAR PRODUCTS",
-        "heading_size": "h2",
-        "description": "",
-        "heading_alignment": "center",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "enable_desktop_slider": true,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     }
   },
