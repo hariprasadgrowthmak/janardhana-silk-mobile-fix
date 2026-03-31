@@ -1,0 +1,176 @@
+{% doc %}
+  @prompt
+    google maps
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-google-maps-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .ai-google-maps-container-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: {{ block.settings.map_height }}px;
+    border-radius: {{ block.settings.border_radius }}px;
+    overflow: hidden;
+    background-color: #f4f4f4;
+  }
+
+  .ai-google-maps-iframe-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+
+  .ai-google-maps-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    color: #666;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .ai-google-maps-placeholder-icon-{{ ai_gen_id }} {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 16px;
+    opacity: 0.3;
+  }
+
+  .ai-google-maps-placeholder-text-{{ ai_gen_id }} {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-google-maps-container-{{ ai_gen_id }} {
+      height: {{ block.settings.mobile_map_height }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-google-maps-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-google-maps-container-{{ ai_gen_id }}">
+    {% if block.settings.map_address != blank %}
+      <iframe
+        class="ai-google-maps-iframe-{{ ai_gen_id }}"
+        src="https://maps.google.com/maps?q={{ block.settings.map_address | url_encode }}&t=m&z={{ block.settings.zoom_level }}&output=embed&iwloc=near"
+        title="{{ block.settings.map_title }}"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    {% else %}
+      <div class="ai-google-maps-placeholder-{{ ai_gen_id }}">
+        <svg
+          class="ai-google-maps-placeholder-icon-{{ ai_gen_id }}"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <div class="ai-google-maps-placeholder-text-{{ ai_gen_id }}">
+          Next, add your location address to display the map
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Google Maps",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Map settings"
+    },
+    {
+      "type": "text",
+      "id": "map_address",
+      "label": "Location address",
+      "info": "Enter your business address or location"
+    },
+    {
+      "type": "text",
+      "id": "map_title",
+      "label": "Map title",
+      "default": "Our location"
+    },
+    {
+      "type": "range",
+      "id": "zoom_level",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "label": "Zoom level",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "map_height",
+      "min": 200,
+      "max": 800,
+      "step": 50,
+      "unit": "px",
+      "label": "Desktop height",
+      "default": 450
+    },
+    {
+      "type": "range",
+      "id": "mobile_map_height",
+      "min": 200,
+      "max": 600,
+      "step": 50,
+      "unit": "px",
+      "label": "Mobile height",
+      "default": 300
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Google Maps"
+    }
+  ]
+}
+{% endschema %}

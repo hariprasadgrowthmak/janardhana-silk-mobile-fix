@@ -1,0 +1,448 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "984a1a06-3307-4e71-98cf-bb630178c506": {
+          "type": "viewer_count",
+          "settings": {
+            "viewer": true,
+            "viewer_text": "People are viewing this right now"
+          }
+        },
+        "d2b31d7d-ceba-4f79-bfb0-5d8858a6cbe1": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true,
+            "delivery_title": ", Delivery by",
+            "delivery_days": "10"
+          }
+        },
+        "f1d7e9a6-b6c1-48c1-ab28-eabef196c446": {
+          "type": "timer",
+          "settings": {
+            "timer_box": false,
+            "time": "29 December 2027 9:56:00",
+            "timer_bg_color_top": "#f2c94c",
+            "timer_text_color_top": "#ffffff",
+            "timer_bg_color_bottom": "#f9f9f9",
+            "timer_text_color_bottom": "#101010",
+            "timer_border_color_bottom": "#dddddd",
+            "hurry_up_text": "Hurry up! Sales End In",
+            "days": "Days",
+            "hours": "Hours",
+            "minutes": "Min",
+            "seconds": "Sec"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "globo_product_options_app_block_UjeEYL": {
+          "type": "shopify://apps/globo-product-options/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
+          "disabled": true,
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "payment_icon_4cUFU4": {
+          "type": "payment-icon",
+          "settings": {
+            "image_1": "shopify://shop_images/maestro_color_card.svg",
+            "image_2": "shopify://shop_images/visa_1_color_card.svg",
+            "image_3": "shopify://shop_images/mastercard_color_card.svg",
+            "image_4": "shopify://shop_images/paypal_2_color_card.svg",
+            "image_5": "shopify://shop_images/sofort_2_color_card.svg",
+            "image_6": "shopify://shop_images/klarna_color_card.svg"
+          }
+        },
+        "custom_liquid_Ea9rLc": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div id=\"addon-services\" style=\"margin:20px 0;padding:20px;border:2px solid #8B0000;border-radius:10px;background:#FFF8F0;\">\n<h3 style=\"color:#8B0000;margin:0 0 15px;font-size:18px;\">Add Finishing Services</h3>\n\n<div style=\"margin-bottom:12px;\">\n<label style=\"font-weight:bold;display:block;margin-bottom:5px;\">Blouse Stitching</label>\n<select id=\"addon-blouse\" style=\"width:100%;padding:8px;border:1px solid #ccc;border-radius:5px;\">\n<option value=\"\">-- Select --</option>\n<option value=\"45634872606918\">Designer Blouse Stitching (₹1,500)</option>\n<option value=\"45634872639686\">Luxury Blouse Stitching (₹1,000)</option>\n<option value=\"45634872672454\">Premium Blouse Stitching (₹750)</option>\n<option value=\"0\">None of the above</option>\n</select>\n</div>\n\n<div style=\"margin-bottom:12px;\">\n<label style=\"font-weight:bold;display:block;margin-bottom:5px;\">Petticoat Stitching</label>\n<select id=\"addon-petticoat\" style=\"width:100%;padding:8px;border:1px solid #ccc;border-radius:5px;\">\n<option value=\"\">-- Select --</option>\n<option value=\"45634872737990\">Premium Tissue/Satin Petticoat (₹750)</option>\n<option value=\"45634872770758\">Standard Cotton Petticoat (₹500)</option>\n<option value=\"0\">None of the above</option>\n</select>\n</div>\n\n<div style=\"margin-bottom:12px;\">\n<label style=\"font-weight:bold;display:block;margin-bottom:5px;\">Fall & Edge Finish</label>\n<select id=\"addon-fall\" style=\"width:100%;padding:8px;border:1px solid #ccc;border-radius:5px;\">\n<option value=\"\">-- Select --</option>\n<option value=\"45634872836294\">Fall and Edge Finishing (₹200)</option>\n<option value=\"0\">None of the above</option>\n</select>\n</div>\n\n<div style=\"margin-bottom:12px;\">\n<label style=\"font-weight:bold;display:block;margin-bottom:5px;\">Embroidery/Embellish</label>\n<select id=\"addon-embroidery\" style=\"width:100%;padding:8px;border:1px solid #ccc;border-radius:5px;\">\n<option value=\"\">-- Select --</option>\n<option value=\"45634872901830\">Additional Tassels/Knots (₹750)</option>\n<option value=\"0\">None of the above</option>\n</select>\n</div>\n\n<button id=\"addon-add-btn\" onclick=\"addAddonsToCart()\" style=\"width:100%;padding:12px;background:#8B0000;color:white;border:none;border-radius:5px;font-size:16px;font-weight:bold;cursor:pointer;margin-top:10px;\">Add Selected Services to Cart</button>\n<p id=\"addon-msg\" style=\"text-align:center;margin-top:8px;color:green;display:none;font-weight:bold;\">✅ Services added to cart!</p>\n</div>\n\n<script>\nfunction addAddonsToCart(){\n  var ids=['addon-blouse','addon-petticoat','addon-fall','addon-embroidery'];\n  var items=[];\n  ids.forEach(function(id){\n    var v=document.getElementById(id).value;\n    if(v && v!=='' && v!=='0') items.push({id:parseInt(v),quantity:1});\n  });\n  if(items.length===0){\n    document.getElementById('addon-msg').style.display='block';\n    document.getElementById('addon-msg').style.color='#666';\n    document.getElementById('addon-msg').textContent='No services selected.';\n    setTimeout(function(){document.getElementById('addon-msg').style.display='none'},3000);\n    return;\n  }\n  var btn=document.getElementById('addon-add-btn');\n  btn.textContent='Adding...';btn.disabled=true;\n  fetch('/cart/add.js',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({items:items})})\n  .then(function(r){return r.json()})\n  .then(function(){\n    btn.textContent='Add Selected Services to Cart';btn.disabled=false;\n    document.getElementById('addon-msg').style.color='green';\n    document.getElementById('addon-msg').textContent='✅ Services added to cart!';\n    document.getElementById('addon-msg').style.display='block';\n    setTimeout(function(){document.getElementById('addon-msg').style.display='none'},3000);\n  })\n  .catch(function(){btn.textContent='Add Selected Services to Cart';btn.disabled=false;alert('Error adding to cart');});\n}\n</script>"
+          }
+        },
+        "icon_with_text_HkN6Ka": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "dryer",
+            "image_1": "shopify://shop_images/image_1.png",
+            "heading_1": "100% SAFE & SECURE CHECKOUT",
+            "icon_2": "return",
+            "image_2": "shopify://shop_images/image_2.png",
+            "heading_2": "FAST WORLDWIDE SHIPPING",
+            "icon_3": "truck",
+            "image_3": "shopify://shop_images/image_3.png",
+            "heading_3": "CLEAN MATERIALS",
+            "icon_4": "truck",
+            "image_4": "shopify://shop_images/image_4.png",
+            "heading_4": "QUICK & EASY RETURNS"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "d2b31d7d-ceba-4f79-bfb0-5d8858a6cbe1",
+        "984a1a06-3307-4e71-98cf-bb630178c506",
+        "price",
+        "variant_picker",
+        "globo_product_options_app_block_UjeEYL",
+        "quantity_selector",
+        "buy_buttons",
+        "payment_icon_4cUFU4",
+        "custom_liquid_Ea9rLc",
+        "icon_with_text_HkN6Ka",
+        "f1d7e9a6-b6c1-48c1-ab28-eabef196c446",
+        "description"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-6b186333-7935-4d3d-8f66-687905efef2a",
+        "enable_section_bkg_color": true,
+        "left_bkg_color": "#fffdfa",
+        "right_bkg_color": "#fffdfa",
+        "media_size": "large",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "thumbnail_postion": "bottom",
+        "thumbnail_image_radius": 0,
+        "verticle_position": "left",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "color_swatch_option": "color_option",
+        "swatch_image_radius": 50,
+        "padding_top": 32,
+        "padding_bottom": 0
+      }
+    },
+    "79582f51-5736-4bff-b870-bba69393ad36": {
+      "type": "product-tab",
+      "blocks": {
+        "a0d527c7-90dd-49d4-b1ea-1404edf48fb6": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "More About The Product",
+            "heading_liquid": "",
+            "icon": "none",
+            "content": "",
+            "liquid_content": "{{ product.description }}",
+            "page": ""
+          }
+        },
+        "e976ee83-b842-472e-9af8-76220b5e4b2b": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Silk Mark",
+            "heading_liquid": "",
+            "icon": "none",
+            "content": "<p>Maecenas sed enim ut sem viverra aliquet eget sit. Curabitur gravida arcu ac tortor. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Gravida neque convallis a cras. Adipiscing elit duis tristique sollicitudin nibh sit. Justo laoreet sit amet cursus sit amet. Neque vitae tempus quam pellentesque nec nam aliquam.</p><ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li>Nullam porttitor lorem ac purus semper, vitae finibus tellus vehicula.</li><li>Nam faucibus velit et libero auctor, at molestie metus pellentesque.</li></ul>",
+            "liquid_content": "",
+            "page": ""
+          }
+        },
+        "313a2685-db5d-4b49-81ab-55517588ec25": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping And Returns",
+            "heading_liquid": "",
+            "icon": "none",
+            "content": "<ul><li><strong>Shipping:</strong><br/>⦁ Processing time usually takes 1 -2 business days.<br/>⦁ Delivery times may vary depending on the shipping distance.<br/><strong>Returns:</strong><br/>⦁ All products purchased online through store can be exchanged within 10 days with below mention conditions</li></ul>",
+            "liquid_content": "",
+            "page": ""
+          }
+        },
+        "silks_care_tab": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Silks Care",
+            "heading_liquid": "",
+            "icon": "none",
+            "content": "<ul><li>Dry clean only recommended for silk sarees.</li><li>Store in a cool, dry place away from direct sunlight.</li><li>Wrap in a muslin cloth to preserve the zari work.</li><li>Do not wring or twist the fabric.</li><li>Iron on low heat with a cloth in between.</li></ul>",
+            "liquid_content": "",
+            "page": ""
+          }
+        },
+        "customer_care_tab": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Customer Care",
+            "heading_liquid": "",
+            "icon": "none",
+            "content": "<p><strong>Mon–Sat:</strong> 9:00 AM – 12:00 AM<br><strong>Phone:</strong> +91 97220 90217 / +91 97221 80217<br><strong>WhatsApp:</strong> +91 95358 14717<br><strong>Email:</strong> customercare@mysoresareeudyog.com</p>",
+            "liquid_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "a0d527c7-90dd-49d4-b1ea-1404edf48fb6",
+        "313a2685-db5d-4b49-81ab-55517588ec25",
+        "silks_care_tab",
+        "e976ee83-b842-472e-9af8-76220b5e4b2b",
+        "customer_care_tab"
+      ],
+      "settings": {
+        "class": "",
+        "custom_page_width": "1500",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "172137309121bf68f7": {
+      "type": "apps",
+      "blocks": {
+        "globo_product_options_app_block_Hh8pb3": {
+          "type": "shopify://apps/globo-product-options/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "globo_product_options_app_block_Hh8pb3"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "service_icon_yLrPgn": {
+      "type": "service-icon",
+      "blocks": {
+        "column_itzgNa": {
+          "type": "column",
+          "settings": {
+            "title": "Free Shipping",
+            "text": "<p>Free shipping on all India orders and express international delivery.</p>",
+            "link_label": "",
+            "link": "",
+            "icon_type": "truck"
+          }
+        },
+        "column_ac7Twk": {
+          "type": "column",
+          "settings": {
+            "title": "Assured Quality",
+            "text": "<p>Every product is quality checked before it reaches you.</p>",
+            "link_label": "",
+            "link": "",
+            "icon_type": "shield"
+          }
+        },
+        "column_tt4dq7": {
+          "type": "column",
+          "settings": {
+            "title": "Worldwide Shipping",
+            "text": "<p>We ship to 100+ countries. Delivered in 5-7 business days.</p>",
+            "link_label": "",
+            "link": "",
+            "icon_type": "globe"
+          }
+        },
+        "column_94WmzX": {
+          "type": "column",
+          "settings": {
+            "title": "100% Secure Payment",
+            "text": "<p>Safe & encrypted checkout with all major payment methods.</p>",
+            "link_label": "",
+            "link": "",
+            "icon_type": "card"
+          }
+        }
+      },
+      "block_order": [
+        "column_itzgNa",
+        "column_ac7Twk",
+        "column_tt4dq7",
+        "column_94WmzX"
+      ],
+      "settings": {
+        "layout": "grid",
+        "addclass": "",
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 30,
+        "padding_bottom": 30
+      }
+    },
+    "d362ffb7-87b2-4f33-9e31-9a3ab6c75890": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20518683541810__d362ffb7-87b2-4f33-9e31-9a3ab6c75890-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Latest Fashion Style",
+            "heading_size": "h2"
+          }
+        },
+        "template--20518683541810__d362ffb7-87b2-4f33-9e31-9a3ab6c75890-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mattis enim ut tellus elementum sagittis vitae et leo duis. Pharetra convallis posuere morbi leo urna molestie at. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--20518683541810__d362ffb7-87b2-4f33-9e31-9a3ab6c75890-heading-1",
+        "template--20518683541810__d362ffb7-87b2-4f33-9e31-9a3ab6c75890-text-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "class_name": "box-shadow",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 40,
+        "padding_bottom": 100
+      }
+    },
+    "9b8a63c6-2ca2-4a21-84e3-e499e13d2740": {
+      "type": "image-banner",
+      "blocks": {
+        "template--20518683541810__9b8a63c6-2ca2-4a21-84e3-e499e13d2740-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Discover Sweats",
+            "heading_size": "h2"
+          }
+        },
+        "template--20518683541810__9b8a63c6-2ca2-4a21-84e3-e499e13d2740-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus venenatis diam id porta.",
+            "text_style": "body"
+          }
+        },
+        "template--20518683541810__9b8a63c6-2ca2-4a21-84e3-e499e13d2740-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "#",
+            "button_style_1": "solid",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_2": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "template--20518683541810__9b8a63c6-2ca2-4a21-84e3-e499e13d2740-heading-1",
+        "template--20518683541810__9b8a63c6-2ca2-4a21-84e3-e499e13d2740-text-1",
+        "template--20518683541810__9b8a63c6-2ca2-4a21-84e3-e499e13d2740-buttons-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "grid",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-6b186333-7935-4d3d-8f66-687905efef2a",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center-top",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "SIMILAR PRODUCTS",
+        "heading_size": "h2",
+        "description": "",
+        "heading_alignment": "center",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "79582f51-5736-4bff-b870-bba69393ad36",
+    "172137309121bf68f7",
+    "related-products",
+    "service_icon_yLrPgn",
+    "d362ffb7-87b2-4f33-9e31-9a3ab6c75890",
+    "9b8a63c6-2ca2-4a21-84e3-e499e13d2740"
+  ]
+}

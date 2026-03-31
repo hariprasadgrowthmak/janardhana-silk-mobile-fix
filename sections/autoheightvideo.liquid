@@ -1,0 +1,160 @@
+{% schema %}
+{
+  "name": "Auto Height Desmob Video",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Desktop Video"
+    },
+    {
+      "type": "url",
+      "id": "desktop_video",
+      "label": "Desktop Video (MP4 URL)",
+      "info": "Upload your .mp4 video to Settings > Files and select it here."
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_poster",
+      "label": "Desktop Poster Image (Recommended)",
+      "info": "Image shown before the video loads."
+    },
+    {
+      "type": "header",
+      "content": "Mobile Video"
+    },
+    {
+      "type": "url",
+      "id": "mobile_video",
+      "label": "Mobile Video (MP4 URL)",
+      "info": "Upload your .mp4 video to Settings > Files and select it here."
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_poster",
+      "label": "Mobile Poster Image (Recommended)",
+      "info": "Image shown before the video loads."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Auto Height Desktop + Mobile Video"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="auto-video-banner">
+  <!-- Desktop Video -->
+  {% if section.settings.desktop_video %}
+    <div class="video-container video-desktop">
+      <video
+        class="banner-video"
+        autoplay
+        loop
+        muted
+        playsinline
+        {% if section.settings.desktop_poster %}
+          poster="{{ section.settings.desktop_poster | image_url: width: 2000 }}"
+        {% endif %}
+      >
+        <source src="{{ section.settings.desktop_video }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  {% endif %}
+
+  <!-- Mobile Video -->
+  {% if section.settings.mobile_video %}
+    <div class="video-container video-mobile">
+      <video
+        class="banner-video"
+        autoplay
+        loop
+        muted
+        playsinline
+        {% if section.settings.mobile_poster %}
+          poster="{{ section.settings.mobile_poster | image_url: width: 1000 }}"
+        {% endif %}
+      >
+        <source src="{{ section.settings.mobile_video }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  {% endif %}
+
+  <!-- Fallback: If only one video is uploaded, use it for both -->
+  {% if section.settings.desktop_video and section.settings.mobile_video == blank %}
+    <div class="video-container video-mobile">
+      <video
+        class="banner-video"
+        autoplay
+        loop
+        muted
+        playsinline
+        {% if section.settings.desktop_poster %}
+          poster="{{ section.settings.desktop_poster | image_url: width: 1000 }}"
+        {% endif %}
+      >
+        <source src="{{ section.settings.desktop_video }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  {% endif %}
+   {% if section.settings.mobile_video and section.settings.desktop_video == blank %}
+    <div class="video-container video-desktop">
+      <video
+        class="banner-video"
+        autoplay
+        loop
+        muted
+        playsinline
+        {% if section.settings.mobile_poster %}
+          poster="{{ section.settings.mobile_poster | image_url: width: 2000 }}"
+        {% endif %}
+      >
+        <source src="{{ section.settings.mobile_video }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  {% endif %}
+
+</section>
+
+<style>
+  .auto-video-banner {
+    width: 100%;
+    position: relative;
+  }
+
+  .video-container {
+    width: 100%;
+  }
+
+  .banner-video {
+    width: 100%;
+    height: auto; /* AUTO HEIGHT */
+    display: block;
+    object-fit: cover; /* Ensures video covers the area without distortion */
+  }
+
+  /* --- Responsive Video Logic --- */
+  /* On screens 768px and wider (Desktop), show the desktop video */
+  @media (min-width: 769px) {
+    .auto-video-banner .video-desktop {
+      display: block;
+    }
+    .auto-video-banner .video-mobile {
+      display: none;
+    }
+  }
+
+  /* On screens smaller than 768px (Mobile), show the mobile video */
+  @media (max-width: 768px) {
+    .auto-video-banner .video-desktop {
+      display: none;
+    }
+    .auto-video-banner .video-mobile {
+      display: block;
+    }
+  }
+</style>

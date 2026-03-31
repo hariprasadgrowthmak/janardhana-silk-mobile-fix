@@ -1,0 +1,92 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "image_8BUAbi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo-v-removebg-preview.png",
+            "image_width": 170,
+            "alignment": "center"
+          }
+        },
+        "bc57a59c-2edb-4c96-b087-ecba4f2df5b7": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Customer Service",
+            "menu": "information",
+            "alignment": ""
+          }
+        },
+        "146700e5-8ed4-4684-a284-5392955c7f29": {
+          "type": "link_list",
+          "settings": {
+            "heading": "My Acount",
+            "menu": "my-account",
+            "alignment": ""
+          }
+        },
+        "f33514c5-8b09-4623-b51b-76a7350042ec": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Information",
+            "menu": "footer",
+            "alignment": ""
+          }
+        },
+        "00b72254-9101-45a7-80cc-201741f19437": {
+          "type": "newsletter_logo_image",
+          "settings": {
+            "newsletter_logo_title": "Stay Connect",
+            "contact_info": "<p>Email:<br/><a href=\"mailto:info@janardhanasilk.com\"> info@janardhanasilk.com</a></p><p>Customer Care Number:<br/>+91 9845-767-575</p>",
+            "show_social": true,
+            "newsletter_enable": true,
+            "newsletter_heading": "Join with List",
+            "alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "image_8BUAbi",
+        "bc57a59c-2edb-4c96-b087-ecba4f2df5b7",
+        "146700e5-8ed4-4684-a284-5392955c7f29",
+        "f33514c5-8b09-4623-b51b-76a7350042ec",
+        "00b72254-9101-45a7-80cc-201741f19437"
+      ],
+      "settings": {
+        "color_scheme": "scheme-da81cc7b-a8e5-4cbd-9d89-2957a6650b54",
+        "enable_follow_on_shop": true,
+        "social_icon_bg_color": "#000000",
+        "social_icon_color": "#ffffff",
+        "social_icon_hover_bg_color": "#dddddd",
+        "social_icon_hover_color": "#000000",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "copyright_text": "<p>©2026 janardhana silk house. All Rights Reserved</p>",
+        "show_policy": false,
+        "margin_top": 44,
+        "padding_top": 100,
+        "padding_bottom": 0,
+        "footer_bg_image": "shopify://shop_images/ChatGPT_Image_Feb_27_2026_03_34_31_AM.png",
+        "footer_bg_overlay_enable": false,
+        "footer_overlay_opacity": 10
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

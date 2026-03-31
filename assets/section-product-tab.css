@@ -1,0 +1,114 @@
+/********* product tab *******/
+
+.custom_product__tab {
+  position: relative;
+  display: block; 
+  clear: both;
+}
+.product_tab_three {
+  margin: 0;
+  width: 100%;
+}
+.product_tab_three .product_tab_container {
+  padding: 15px 0;
+}
+.product_tab_three .product_tab_wrapper {
+  padding: 0;
+}
+.product_tab_three .product_tab_wrapper .tabs {
+  padding: 0;
+  text-align: center;
+  margin-bottom: -1px;
+  display: flex;
+  justify-content: center;
+  column-gap: 2px;
+  margin: 0;
+  background: #f5f5f5;
+}
+.product_tab_three .product_tab_wrapper .tabs li {
+  display: flex;
+  padding: 0;
+  box-sizing: border-box; 
+}
+.product_tab_three .product_tab_wrapper .tabs li a {
+  position: relative;
+  padding: 14px 15px;
+  font-size: 13px;
+  line-height: 1;
+  background: none;
+  list-style: none;
+  text-decoration: none;
+  width: 100%;
+  background: #f5f5f5;
+  color: rgba(var(--color-foreground));
+  margin-top: 10px;
+  font-weight: 500;
+}
+.product_tab_three .product_tab_wrapper .tabs li a svg {
+  fill: rgba(var(--color-foreground));
+  width: 18px; 
+  height: 18px;
+  vertical-align: bottom;
+}
+
+.product_tab_three .product_tab_wrapper .tabs li a.active{
+  /* background-color: rgba(var(--color-button));
+  color: rgb(var(--color-button-text));  */
+  background: #fff;
+}
+.product_tab_three .product_tab_wrapper .tabs-content {
+  list-style: none;
+  padding: 25px 30px 30px;
+  margin: 0;
+  border: 1px solid #ebebeb;
+  border-top: 0;
+}
+
+.product_tab_three .product_tab_wrapper .tabs-content .product__description {
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.product_tab_three .product_tab_wrapper .tabs-content p:last-child {
+    margin: 0;
+}
+
+
+@media screen and (max-width: 989px) {
+  .product_tab_three .product_tab_wrapper .tabs {
+    column-gap: 20px;
+    overflow: auto hidden;
+  }
+}
+
+
+@media screen and (max-width: 749px) {
+  .product_tab_three .product_tab_container {
+    padding: 0;
+  }
+  .product_tab_three .product_tab_wrapper .tabs-content {
+    margin: 0;
+    padding: 15px;
+  }
+  .product_tab_three .product_tab_wrapper .tabs {
+    column-gap: 15px;
+  }
+  .product_tab_three .product_tab_wrapper .tabs li a {
+    padding: 12px;
+    border: 0;
+    margin: 5px;
+  }
+  .product_tab_three .product_tab_wrapper .tabs li a svg {
+    width: 14px;
+    height: 14px;
+  }
+  .product_tab_three .product_tab_wrapper .tabs-content .product__description {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .product_tab_three .product_tab_wrapper .tabs {
+    flex-direction: column;
+    row-gap: 3px;
+  }
+}

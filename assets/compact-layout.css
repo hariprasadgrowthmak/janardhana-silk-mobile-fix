@@ -1,0 +1,512 @@
+/* ============================================================
+   COMPACT LAYOUT OVERRIDES
+   Matches MSU (mysoresareeudyog.com) proportions:
+   - Hero: max 600px tall
+   - Section headings: 20-24px
+   - Grid gaps: 12-16px
+   - Section padding: tight but breathable
+   ============================================================ */
+
+/* ---- CSS Variable overrides ---- */
+:root {
+  --grid-desktop-vertical-spacing: 12px;
+  --grid-desktop-horizontal-spacing: 12px;
+  --grid-mobile-vertical-spacing: 8px;
+  --grid-mobile-horizontal-spacing: 8px;
+  --spacing-sections-desktop: 0px;
+  --spacing-sections-mobile: 0px;
+}
+
+/* ============================================================
+   1. HERO / SLIDESHOW — Cap height to ~580px like MSU
+   ============================================================ */
+
+/* When slide_height = adapt_image, the slideshow grows with the image.
+   We cap it via overflow + max-height to match MSU's hero (~580px). */
+.slideshow.banner {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 750px) {
+  .slideshow.banner {
+    max-height: 580px;
+  }
+  .slideshow.banner .banner__media,
+  .slideshow.banner .media {
+    max-height: 580px;
+  }
+  .slideshow.banner .banner__media img,
+  .slideshow.banner .media img {
+    max-height: 580px;
+    object-fit: cover;
+    object-position: center top;
+    width: 100%;
+  }
+  /* The adapt_image mode uses ::before with padding-bottom to set height.
+     Limit it so the hero can't exceed 580px. */
+  .slideshow.banner::before {
+    max-height: 580px;
+  }
+  /* Also cap the slider-mobile-gutter which wraps the slideshow */
+  slideshow-component.slider-mobile-gutter {
+    display: block;
+    max-height: 580px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .slideshow.banner {
+    max-height: 280px;
+  }
+  .slideshow.banner .banner__media,
+  .slideshow.banner .media,
+  .slideshow.banner .banner__media img,
+  .slideshow.banner .media img {
+    max-height: 280px;
+    object-fit: cover;
+    object-position: center top;
+  }
+  slideshow-component.slider-mobile-gutter {
+    display: block;
+    max-height: 280px;
+    overflow: hidden;
+  }
+}
+
+/* Prevent the adapt_image ::before pseudo-element from making it too tall */
+@media screen and (min-width: 750px) {
+  .slideshow.banner--adapt_image::before {
+    max-height: 580px !important;
+  }
+}
+
+
+/* ============================================================
+   2. SECTION HEADINGS — Reduce to MSU's 20-24px range
+   ============================================================ */
+
+/* Main section title wrappers */
+.title-wrapper h2.title,
+.collection-list-wrapper h2.title,
+.collection__title h2.title,
+.title-wrapper--no-top-margin h2 {
+  font-size: 2rem !important;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.08em;
+}
+
+/* Heading size classes — override theme's large defaults */
+h2.h0 { font-size: 2.4rem !important; }
+h2.h1 { font-size: 2rem !important; }
+h2.h2 { font-size: 1.8rem !important; }
+
+/* Title wrapper top margin reduction */
+.title-wrapper-with-link,
+.title-wrapper--no-top-margin {
+  margin-bottom: 1.5rem !important;
+  padding-bottom: 0 !important;
+}
+
+/* Section description / subtitle text */
+.collection__description,
+.collection-list-wrapper .collection__description {
+  font-size: 1.3rem !important;
+  margin-top: 0.3rem !important;
+  opacity: 0.75;
+}
+
+/* ============================================================
+   3. PRODUCT GRID — Tighter gaps and smaller cards
+   ============================================================ */
+
+/* Product grid gap */
+.product-grid.grid {
+  row-gap: 2rem !important;
+  column-gap: 1.2rem !important;
+}
+
+/* Collection image grid */
+.collection-list.grid {
+  row-gap: 1.2rem !important;
+  column-gap: 1.2rem !important;
+}
+
+/* Product card info block — reduce excess padding */
+.card__information {
+  padding: 0.8rem 0.4rem 0.4rem !important;
+}
+
+.card__heading {
+  font-size: 1.3rem !important;
+  margin-bottom: 0.2rem;
+}
+
+.card__information .price {
+  font-size: 1.25rem !important;
+}
+
+/* Media / image inside product card */
+.card .media,
+.card__media .media {
+  border-radius: 2px;
+}
+
+/* ============================================================
+   4. COLLECTION CARD (collection-list sections)
+   ============================================================ */
+
+.collection-list-item .card .card__inner {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* ============================================================
+   5. BANNER / IMAGE-BANNER — medium/large heights reduced
+   ============================================================ */
+
+@media screen and (min-width: 750px) {
+  /* Shopify defaults: small=42rem, medium=56rem, large=72rem
+     Bring these down to MSU proportions */
+  .banner--small:not(.banner--adapt) {
+    min-height: 32rem !important;
+  }
+  .banner--medium:not(.banner--adapt) {
+    min-height: 44rem !important;
+  }
+  .banner--large:not(.banner--adapt) {
+    min-height: 56rem !important;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .banner--small.banner--mobile-bottom:not(.banner--adapt) .banner__media,
+  .banner--small.banner--stacked:not(.banner--mobile-bottom):not(.banner--adapt) > .banner__media {
+    height: 22rem !important;
+  }
+  .banner--medium.banner--mobile-bottom:not(.banner--adapt) .banner__media,
+  .banner--medium.banner--stacked:not(.banner--mobile-bottom):not(.banner--adapt) > .banner__media {
+    height: 26rem !important;
+  }
+  .banner--large.banner--mobile-bottom:not(.banner--adapt) .banner__media,
+  .banner--large.banner--stacked:not(.banner--mobile-bottom):not(.banner--adapt) > .banner__media {
+    height: 30rem !important;
+  }
+}
+
+/* ============================================================
+   6. GLOBAL SECTION SPACING — Remove theme's section-gap
+   ============================================================ */
+
+/* The theme adds spacing between sections via spacing_sections setting.
+   We override to zero and let each section control its own padding. */
+.shopify-section + .shopify-section {
+  margin-top: 0 !important;
+}
+
+/* ============================================================
+   7. VIEW ALL / CTA BUTTONS in sections — tighter styling
+   ============================================================ */
+
+.center.collection__view-all {
+  margin-top: 1.5rem !important;
+}
+
+/* ============================================================
+   8. HOMEPAGE-SPECIFIC OVERRIDES (template-index)
+   ============================================================ */
+
+@media screen and (min-width: 750px) {
+  /* Limit how tall the hero can be on homepage */
+  body.template-index .slideshow.banner,
+  body.template-index .slideshow.banner--adapt_image {
+    max-height: 580px !important;
+  }
+
+  body.template-index .slideshow .banner__media,
+  body.template-index .slideshow .banner__media img {
+    max-height: 580px !important;
+    object-fit: cover;
+    object-position: top center;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  body.template-index .slideshow.banner,
+  body.template-index .slideshow.banner--adapt_image {
+    max-height: 320px !important;
+    overflow: hidden;
+  }
+  body.template-index .slideshow .banner__media,
+  body.template-index .slideshow .banner__media img {
+    max-height: 320px !important;
+    object-fit: cover;
+  }
+}
+
+/* ============================================================
+   9. TITLE WRAPPER — remove excessive top margin
+   ============================================================ */
+
+.title-wrapper--no-top-margin {
+  margin-top: 0 !important;
+}
+
+.title-wrapper-with-link {
+  margin-top: 0 !important;
+}
+
+/* ============================================================
+   10. "VIEW ALL" LINK / Button in collection sections
+   ============================================================ */
+.title-wrapper-with-link .link-underline,
+.collection__title .link.underlined-link {
+  font-size: 1.2rem !important;
+}
+
+
+/* ============================================================
+   11. MOBILE / TABLET RESPONSIVE FIXES
+   ============================================================ */
+
+/* ── About Page: hero height on mobile ── */
+@media screen and (max-width: 749px) {
+  .msu-about-hero { height: 200px; }
+  .msu-about-hero__placeholder { font-size: 1.1rem; }
+
+  .msu-about-story-img__placeholder { height: 120px; font-size: 1.1rem; }
+
+  /* Stats: 1 column on mobile */
+  .msu-about-stats { grid-template-columns: 1fr; }
+  .msu-about-stat  { height: 130px; }
+
+  /* Heritage title smaller */
+  .msu-about-heritage__title { font-size: 2rem; }
+
+  /* Values 2-col → 1-col on small mobile */
+  .msu-about-values__grid { grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+
+  /* FAQ */
+  .msu-about-faq__btn { font-size: 1.3rem; }
+
+  /* Service strip wrap */
+  .msu-about-services__inner { gap: 14px; padding: 20px 16px; }
+  .msu-about-service { min-width: 80px; }
+  .msu-about-service svg { width: 28px; height: 28px; }
+  .msu-about-service__label { font-size: 0.95rem; }
+}
+
+@media screen and (max-width: 390px) {
+  .msu-about-values__grid { grid-template-columns: 1fr; }
+}
+
+/* ── Blog grid: padding on mobile ── */
+@media screen and (max-width: 749px) {
+  .main-blog { padding: 0 12px; }
+  .blog-page-header { margin-bottom: 1.4rem; }
+}
+
+/* ── Service icon section (product page): stack on mobile ── */
+@media screen and (max-width: 749px) {
+  .service-icon-list.grid--4-col-desktop { grid-template-columns: 1fr 1fr !important; gap: 1.2rem !important; }
+  .service-icon-card { flex-direction: column; align-items: center; text-align: center; }
+  .service-icon-card .service-icon-card__image-wrapper { display: flex; justify-content: center; }
+}
+
+/* ── Product tabs: scrollable on mobile ── */
+@media screen and (max-width: 749px) {
+  .product-tab-wrapper,
+  .product--information .tab-content-wrapper { overflow-x: auto; }
+}
+
+/* ── Mega menu: ensure hidden on mobile ── */
+@media screen and (max-width: 989px) {
+  .msu-mega-menu,
+  .mega-menu { display: none !important; }
+}
+
+/* ── Global: prevent horizontal overflow  ── */
+body, .shopify-section { max-width: 100vw; }
+/* ── Collection grid: 2-col on tablet, 1-col on mobile ── */
+@media screen and (max-width: 989px) and (min-width: 750px) {
+  .product-grid.grid--4-col-desktop { --grid-desktop-columns: 3 !important; }
+}
+@media screen and (max-width: 749px) {
+  .card__heading { font-size: 1.2rem !important; }
+}
+
+/* ── Hero text on mobile ── */
+@media screen and (max-width: 749px) {
+  .banner__heading { font-size: 2.4rem !important; }
+  .banner__heading + .banner__text,
+  .banner .button { font-size: 1.45rem; }
+}
+
+/* ── About page stat strip: show 3-col on tablet ── */
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .msu-about-stats { grid-template-columns: repeat(3, 1fr); }
+  .msu-about-stat  { height: 150px; }
+  .msu-about-heritage { padding: 24px 20px; gap: 28px; }
+  .msu-about-values { padding: 24px 20px; }
+  .msu-about-faq { padding: 0 20px 24px; }
+}
+
+/* ── Footer: responsive link wrapping ── */
+@media screen and (max-width: 749px) {
+  .footer-block__details-content .list-menu { flex-wrap: wrap; }
+}
+
+/* ============================================================
+   12. PRODUCT CARD — HOVER ACTION BAR (Premium Design)
+   ============================================================ */
+
+.card-wrapper { position: relative; }
+.card__inner  { position: relative; overflow: hidden; }
+
+/* ── Dark gradient overlay fades in on hover ── */
+.card__inner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 40%,
+    rgba(20, 10, 5, 0.55) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.card-wrapper:hover .card__inner::after {
+  opacity: 1;
+}
+
+/* ── Action bar: sits above the gradient ── */
+.card-hover-actions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 0.28s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.28s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  pointer-events: none;
+  will-change: opacity, transform;
+}
+
+.card-wrapper:hover .card-hover-actions,
+.card-wrapper:focus-within .card-hover-actions {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ── Ensure wrappers (product-form, form, modal-opener, a) fill column ── */
+.card-hover-actions product-form,
+.card-hover-actions modal-opener,
+.card-hover-actions .form {
+  display: contents; /* collapse wrapper so button fills the grid cell */
+}
+
+/* ── Shared button base ── */
+.card-hover-actions__atc,
+.card-hover-actions__quick-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 15px 8px;
+  font-size: 1.45rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: var(--font-body-family, inherit);
+  line-height: 1;
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  transition: background 0.18s ease, color 0.18s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card-hover-actions__atc svg,
+.card-hover-actions__quick-view svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  stroke-width: 1.8;
+}
+
+/* ── Add to Cart: warm dark with gold hint ── */
+.card-hover-actions__atc {
+  background: rgba(30, 15, 5, 0.88);
+  color: #e8d5b0;
+  border-right: 1px solid rgba(232, 213, 176, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.card-hover-actions__atc:hover {
+  background: rgba(30, 15, 5, 0.98);
+  color: #f5e6c8;
+}
+
+.card-hover-actions__atc:disabled {
+  background: rgba(50, 50, 50, 0.75);
+  color: rgba(255,255,255,0.45);
+  cursor: not-allowed;
+}
+
+/* ── Quick View: frosted white ── */
+.card-hover-actions__quick-view {
+  background: rgba(255, 255, 255, 0.88);
+  color: #2c1a0e;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.card-hover-actions__quick-view:hover {
+  background: rgba(255, 255, 255, 0.98);
+  color: #7c5c3e;
+}
+
+/* ── Loading spinner inside ATC ── */
+.card-hover-actions__atc .loading__spinner { display: none; }
+
+/* ── Touch devices: always visible ── */
+@media (hover: none) and (pointer: coarse) {
+  .card-hover-actions {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
+
+
+
+/* ── Hide original theme quick-add trigger buttons (replaced by card-hover-actions) ── */
+/* Only hide the visible trigger—keep the container & modal accessible in the DOM */
+.card__inner .quick-add.media-add-to-cart {
+  position: absolute !important;
+  height: 0 !important;
+  overflow: visible !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+/* But allow the quick-add-modal to still appear when programmatically triggered */
+.card__inner .quick-add.media-add-to-cart quick-add-modal {
+  visibility: visible !important;
+  height: auto !important;
+  pointer-events: auto !important;
+}

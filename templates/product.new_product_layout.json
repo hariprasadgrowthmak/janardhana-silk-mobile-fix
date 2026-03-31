@@ -1,0 +1,509 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "new-main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "984a1a06-3307-4e71-98cf-bb630178c506": {
+          "type": "viewer_count",
+          "settings": {
+            "viewer": true,
+            "viewer_text": ""
+          }
+        },
+        "d2b31d7d-ceba-4f79-bfb0-5d8858a6cbe1": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true,
+            "delivery_title": ", Delivery by",
+            "delivery_days": "10"
+          }
+        },
+        "f1d7e9a6-b6c1-48c1-ab28-eabef196c446": {
+          "type": "timer",
+          "settings": {
+            "timer_box": true,
+            "time": "29 December 2027 9:56:00",
+            "timer_bg_color_top": "#ffffff",
+            "timer_text_color_top": "#101010",
+            "timer_bg_color_bottom": "#ffffff",
+            "timer_text_color_bottom": "#101010",
+            "timer_border_color_bottom": "rgba(0,0,0,0)",
+            "hurry_up_text": "Hurry up! Sales End In",
+            "days": "Days",
+            "hours": "Hours",
+            "minutes": "Min",
+            "seconds": "Sec"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "d5e5e5b5-1d6d-4345-ac2a-b8cb118997cd": {
+          "type": "popup",
+          "settings": {
+            "text": "Size Guide",
+            "page": "size-guide"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "payment_icon_4cUFU4": {
+          "type": "payment-icon",
+          "settings": {
+            "image_1": "shopify://shop_images/mastercard_color_card.svg",
+            "image_2": "shopify://shop_images/visa_1_color_card.svg",
+            "image_3": "shopify://shop_images/maestro_color_card.svg",
+            "image_4": "shopify://shop_images/paypal_2_color_card.svg",
+            "image_5": "shopify://shop_images/klarna_color_card.svg",
+            "image_6": "shopify://shop_images/sofort_2_color_card.svg"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "992f0c28-4d1b-4348-9246-954ce15819db": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "apple",
+            "image_1": "shopify://shop_images/service-icon-1.png",
+            "heading_1": "Free Shipping",
+            "icon_2": "none",
+            "image_2": "shopify://shop_images/service-icon-3.png",
+            "heading_2": "Free Returns",
+            "icon_3": "none",
+            "image_3": "shopify://shop_images/service-icon-2.png",
+            "heading_3": "Support 24/7"
+          }
+        },
+        "complementary_JUpL7X": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 6,
+            "products_per_page": 3,
+            "pagination_style": "dots",
+            "image_ratio": "square",
+            "enable_quick_add": false
+          }
+        },
+        "offer_image_tbM3tb": {
+          "type": "offer-image",
+          "settings": {
+            "image_url": "shopify://collections/all"
+          }
+        },
+        "09b4814e-0ad0-4d7a-bbc6-1b274bad4d17": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "EXTRA INFORMATION",
+            "icon": "question_mark",
+            "content": "<p>These tabs can be customized to contain any information you need - no app needed.</p>",
+            "page": ""
+          }
+        },
+        "df09ab3c-2ed7-4eec-8843-0d71c6262fc3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "SHIPPING & RETURNS",
+            "icon": "truck",
+            "content": "<p>Free shipping and returns available on all orders! We ship all US domestic orders within <strong>5-10 business days!</strong></p>",
+            "page": ""
+          }
+        },
+        "e4393b7c-9476-49a9-bceb-a295d0bf7486": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "MATERIALS",
+            "icon": "leather",
+            "content": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "discount_coupon_HraYd3": {
+          "type": "discount_coupon",
+          "settings": {
+            "offer_title": "Get 15% Off",
+            "popup_title": "Discount details",
+            "popup_text_deatil": "<p>Don't forget to use the coupon code to get a free product with your first order!</p>",
+            "copy_text": "Copy Code",
+            "coupon_code": "FLAT15",
+            "popup_text": "<p>Copy the coupon code to receive a 15% discount.</p>"
+          }
+        },
+        "discount_coupon_jkCDBj": {
+          "type": "discount_coupon",
+          "settings": {
+            "offer_title": "Get 30% Off",
+            "popup_title": "Discount details",
+            "popup_text_deatil": "<p>Don't forget to use the coupon code to get a free product with your first order!</p>",
+            "copy_text": "Copy Code",
+            "coupon_code": "FLAT30",
+            "popup_text": "<p>Copy the coupon code to receive a 30% discount.</p>"
+          }
+        },
+        "discount_coupon_zAHgce": {
+          "type": "discount_coupon",
+          "settings": {
+            "offer_title": "Buy 2 Get 1",
+            "popup_title": "Discount details",
+            "popup_text_deatil": "<p>Don't forget to use the coupon code to get a free product with your first order!</p>",
+            "copy_text": "Copy Code",
+            "coupon_code": "FLAT300",
+            "popup_text": "<p>Copy the coupon code to receive a buy 2 and get 1 free product.</p>"
+          }
+        },
+        "discount_coupon_TCx3qb": {
+          "type": "discount_coupon",
+          "disabled": true,
+          "settings": {
+            "offer_title": "Get ₹500 OFF",
+            "popup_title": "Discount details",
+            "popup_text_deatil": "<p>Don't forget to use the coupon code to get a free product with your first order!</p>",
+            "copy_text": "Copy Code",
+            "coupon_code": "FLAT500",
+            "popup_text": "<p>Copy the coupon code to receive a 500 rupees discount.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "984a1a06-3307-4e71-98cf-bb630178c506",
+        "d2b31d7d-ceba-4f79-bfb0-5d8858a6cbe1",
+        "f1d7e9a6-b6c1-48c1-ab28-eabef196c446",
+        "variant_picker",
+        "d5e5e5b5-1d6d-4345-ac2a-b8cb118997cd",
+        "quantity_selector",
+        "buy_buttons",
+        "payment_icon_4cUFU4",
+        "description",
+        "992f0c28-4d1b-4348-9246-954ce15819db",
+        "complementary_JUpL7X",
+        "offer_image_tbM3tb",
+        "09b4814e-0ad0-4d7a-bbc6-1b274bad4d17",
+        "df09ab3c-2ed7-4eec-8843-0d71c6262fc3",
+        "e4393b7c-9476-49a9-bceb-a295d0bf7486",
+        "share",
+        "discount_coupon_HraYd3",
+        "discount_coupon_jkCDBj",
+        "discount_coupon_zAHgce",
+        "discount_coupon_TCx3qb"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "background-1",
+        "enable_section_bkg_color": false,
+        "left_bkg_color": "#f9f9f9",
+        "right_bkg_color": "#ffffff",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "thumbnail_postion": "horizontal",
+        "thumbnail_image_radius": 0,
+        "verticle_position": "left",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "color_swatch_option": "image_option",
+        "swatch_image_radius": 10,
+        "padding_top": 32,
+        "padding_bottom": 0
+      }
+    },
+    "79582f51-5736-4bff-b870-bba69393ad36": {
+      "type": "product-tab",
+      "blocks": {
+        "a0d527c7-90dd-49d4-b1ea-1404edf48fb6": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "DESCRIPTION",
+            "heading_liquid": "",
+            "icon": "none",
+            "content": "",
+            "liquid_content": "{{ product.description }}",
+            "page": ""
+          }
+        },
+        "e976ee83-b842-472e-9af8-76220b5e4b2b": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "ADDITIONAL INFORMATION",
+            "heading_liquid": "",
+            "icon": "none",
+            "content": "<p>Maecenas sed enim ut sem viverra aliquet eget sit. Curabitur gravida arcu ac tortor. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Gravida neque convallis a cras. Adipiscing elit duis tristique sollicitudin nibh sit. Justo laoreet sit amet cursus sit amet. Neque vitae tempus quam pellentesque nec nam aliquam.</p><ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li>Nullam porttitor lorem ac purus semper, vitae finibus tellus vehicula.</li><li>Nam faucibus velit et libero auctor, at molestie metus pellentesque.</li></ul>",
+            "liquid_content": "",
+            "page": ""
+          }
+        },
+        "313a2685-db5d-4b49-81ab-55517588ec25": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "SHIPPING AND DELIVERY",
+            "heading_liquid": "",
+            "icon": "none",
+            "content": "<ul><li><strong>Shipping:</strong><br/>⦁ Processing time usually takes 1 -2 business days.<br/>⦁ Delivery times may vary depending on the shipping distance.<br/><strong>Returns:</strong><br/>⦁ All products purchased online through store can be exchanged within 10 days with below mention conditions</li></ul>",
+            "liquid_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "a0d527c7-90dd-49d4-b1ea-1404edf48fb6",
+        "e976ee83-b842-472e-9af8-76220b5e4b2b",
+        "313a2685-db5d-4b49-81ab-55517588ec25"
+      ],
+      "settings": {
+        "class": "",
+        "custom_page_width": "1500",
+        "padding_top": 80,
+        "padding_bottom": 24
+      }
+    },
+    "172137309121bf68f7": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "service_icon_yLrPgn": {
+      "type": "service-icon",
+      "blocks": {
+        "column_itzgNa": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/service-icon-1.png",
+            "title": "FREE SHIPPING",
+            "text": "<p>Free shipping on all US order or order above $99.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ac7Twk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/service-icon-2.png",
+            "title": "SUPPORT 24/7",
+            "text": "<p>Contact us 24 hours a day, 7 days a week.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_tt4dq7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/service-icon-3.png",
+            "title": "100% MONEY BACK",
+            "text": "<p>All products come with a money back guarantee.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_94WmzX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/service-icon-4.png",
+            "title": "SECURE PAYMENTS",
+            "text": "<p>Secure your transactions with our payment system. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_itzgNa",
+        "column_ac7Twk",
+        "column_tt4dq7",
+        "column_94WmzX"
+      ],
+      "settings": {
+        "layout": "grid",
+        "addclass": "",
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "image-left-content-left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 25,
+        "padding_bottom": 25
+      }
+    },
+    "d362ffb7-87b2-4f33-9e31-9a3ab6c75890": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20518683541810__d362ffb7-87b2-4f33-9e31-9a3ab6c75890-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Latest Fashion Style",
+            "heading_size": "h2"
+          }
+        },
+        "template--20518683541810__d362ffb7-87b2-4f33-9e31-9a3ab6c75890-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mattis enim ut tellus elementum sagittis vitae et leo duis. Pharetra convallis posuere morbi leo urna molestie at. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--20518683541810__d362ffb7-87b2-4f33-9e31-9a3ab6c75890-heading-1",
+        "template--20518683541810__d362ffb7-87b2-4f33-9e31-9a3ab6c75890-text-1"
+      ],
+      "settings": {
+        "class_name": "box-shadow",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 40,
+        "padding_bottom": 100
+      }
+    },
+    "9b8a63c6-2ca2-4a21-84e3-e499e13d2740": {
+      "type": "image-banner",
+      "blocks": {
+        "template--20518683541810__9b8a63c6-2ca2-4a21-84e3-e499e13d2740-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Discover Sweats",
+            "heading_size": "h2"
+          }
+        },
+        "template--20518683541810__9b8a63c6-2ca2-4a21-84e3-e499e13d2740-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus venenatis diam id porta.",
+            "text_style": "body"
+          }
+        },
+        "template--20518683541810__9b8a63c6-2ca2-4a21-84e3-e499e13d2740-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "#",
+            "button_style_1": "solid",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_2": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "template--20518683541810__9b8a63c6-2ca2-4a21-84e3-e499e13d2740-heading-1",
+        "template--20518683541810__9b8a63c6-2ca2-4a21-84e3-e499e13d2740-text-1",
+        "template--20518683541810__9b8a63c6-2ca2-4a21-84e3-e499e13d2740-buttons-1"
+      ],
+      "settings": {
+        "layout": "grid",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-6b186333-7935-4d3d-8f66-687905efef2a",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center-top",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur donec sodales sed nibh id vehicula.</p>",
+        "heading_alignment": "left",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 100,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "79582f51-5736-4bff-b870-bba69393ad36",
+    "172137309121bf68f7",
+    "service_icon_yLrPgn",
+    "d362ffb7-87b2-4f33-9e31-9a3ab6c75890",
+    "9b8a63c6-2ca2-4a21-84e3-e499e13d2740",
+    "related-products"
+  ]
+}

@@ -1,0 +1,1270 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_bGnUgg": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_cgFHmt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/3_a1b69ca2-a971-4b4f-8205-ea551494c063.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_label_2": "",
+            "link_2": "",
+            "button_style": "solid",
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "second_btn_bkg_color": "#ffffff",
+            "second_btn_text_color": "#000000",
+            "second_btn_bkg_color_hover": "#000000",
+            "second_btn_text_color_hover": "#ffffff",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_eKtC7z": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/4_975910eb-1a0b-4541-acc5-e4a5094799c5.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_label_2": "",
+            "link_2": "",
+            "button_style": "solid",
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "second_btn_bkg_color": "#ffffff",
+            "second_btn_text_color": "#000000",
+            "second_btn_bkg_color_hover": "#000000",
+            "second_btn_text_color_hover": "#ffffff",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_NQBRg8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/5_9a86bcff-a576-40b6-b14e-12f2a631d128.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_label_2": "",
+            "link_2": "",
+            "button_style": "solid",
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "second_btn_bkg_color": "#ffffff",
+            "second_btn_text_color": "#000000",
+            "second_btn_bkg_color_hover": "#000000",
+            "second_btn_text_color_hover": "#ffffff",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_cgFHmt",
+        "slide_eKtC7z",
+        "slide_NQBRg8"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "pagination": true,
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "announcementbar_nLp8Nf": {
+      "type": "announcementbar",
+      "blocks": {
+        "message_4CRt3L": {
+          "type": "message",
+          "settings": {
+            "text": "✨ Free Shipping on Orders Above ₹999"
+          }
+        },
+        "message_EezKmx": {
+          "type": "message",
+          "settings": {
+            "text": "🌿 100% Cotton Comfort"
+          }
+        },
+        "message_yxRjxH": {
+          "type": "message",
+          "settings": {
+            "text": "❤️ Easy 7-Day Returns"
+          }
+        },
+        "message_r4LUqn": {
+          "type": "message",
+          "settings": {
+            "text": "🧸 Made with Love & Comfort"
+          }
+        },
+        "message_LccT6Y": {
+          "type": "message",
+          "settings": {
+            "text": "🌸 New Arrivals Every Week"
+          }
+        }
+      },
+      "block_order": [
+        "message_4CRt3L",
+        "message_EezKmx",
+        "message_yxRjxH",
+        "message_r4LUqn",
+        "message_LccT6Y"
+      ],
+      "name": "Koozy Announcement Bar",
+      "settings": {
+        "bg_color": "#891403",
+        "text_color": "#ffffff",
+        "font_family": "'DM Sans', sans-serif",
+        "font_size": 14,
+        "letter_spacing": 0.1,
+        "padding_y": 10,
+        "padding_x": 16,
+        "gap": 32,
+        "speed": 20,
+        "separator": "•",
+        "separator_opacity": 0.5,
+        "pause_hover": true
+      }
+    },
+    "service_icon_pHgMfL": {
+      "type": "service-icon",
+      "blocks": {
+        "column_pH9XTG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/service-icon-1.png",
+            "icon_type": "check",
+            "title": "FREE SHIPPING",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HKgmgj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/service-icon-2.png",
+            "icon_type": "check",
+            "title": "SUPPORT 24/7",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_pVMWjg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/service-icon-3.png",
+            "icon_type": "check",
+            "title": "100% MONEY BACK",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iVqM8B": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/service-icon-4.png",
+            "icon_type": "check",
+            "title": "SECURE PAYMENTS",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_pH9XTG",
+        "column_HKgmgj",
+        "column_pVMWjg",
+        "column_iVqM8B"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.service-icon-card .service-icon-card__image-wrapper {display: block; }}"
+      ],
+      "settings": {
+        "layout": "grid",
+        "addclass": "",
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "shopify://collections/all",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 30,
+        "padding_bottom": 30
+      }
+    },
+    "1774015581dd99870d": {
+      "type": "apps",
+      "blocks": {
+        "vizup_videos_videos_block_tCj7ip": {
+          "type": "shopify://apps/vizup-videos/blocks/videos-block/eaecaa7b-ab6b-40ae-8ddf-50daa867f3eb",
+          "settings": {
+            "videoc_widget_id": "Silk House",
+            "custom_css": ""
+          }
+        }
+      },
+      "block_order": [
+        "vizup_videos_videos_block_tCj7ip"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "msu_top_categories_MSU01": {
+      "type": "msu-top-categories",
+      "blocks": {
+        "cat_kanjivaram": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/kanjivuram.png",
+            "title": "Kanjivaram",
+            "link": "shopify://collections/kanjivaram"
+          }
+        },
+        "cat_silk_fabrics": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/silk_saree.png",
+            "title": "Silk Fabrics",
+            "link": "shopify://collections/fabrics"
+          }
+        },
+        "cat_south_silk": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/south_silk.png",
+            "title": "South Silk",
+            "link": "shopify://collections/south-silk"
+          }
+        },
+        "cat_cotton": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/cotton_saree.png",
+            "title": "Cotton",
+            "link": "shopify://collections/cotton"
+          }
+        },
+        "cat_banarasi": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/banarasi.png",
+            "title": "Banarasi",
+            "link": "shopify://collections/banarasi"
+          }
+        },
+        "cat_crepe": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Crepe.png",
+            "title": "Crepe",
+            "link": "shopify://collections/mysore-crepe-silk"
+          }
+        },
+        "cat_gadwal": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot2026-02-16at4.21.16PM.png",
+            "title": "Gadwal",
+            "link": "shopify://collections/gadwal-sarees"
+          }
+        },
+        "cat_patola": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot2026-02-16at4.16.28PM.png",
+            "title": "Ikat Patola",
+            "link": "shopify://collections/patola-pochampally-saree"
+          }
+        }
+      },
+      "block_order": [
+        "cat_kanjivaram",
+        "cat_silk_fabrics",
+        "cat_south_silk",
+        "cat_cotton",
+        "cat_banarasi",
+        "cat_crepe",
+        "cat_gadwal",
+        "cat_patola"
+      ],
+      "settings": {
+        "title": "TOP CATEGORIES",
+        "subtitle": "",
+        "heading_size": "h1",
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "show_view_more": true,
+        "view_more_text": "View More Categories",
+        "view_more_link": "shopify://collections",
+        "padding_top": 28,
+        "padding_bottom": 24
+      }
+    },
+    "collection_list_a3CxBG": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_YYM63n": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/1_737cd392-cb17-4c97-9b4b-bea3fe18a5e3.png",
+            "collection": "accessories",
+            "collection_title": "",
+            "button_title": "",
+            "button_link": "shopify://collections/bridal-sarees"
+          }
+        },
+        "featured_collection_9kzhhP": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/4_d4ac99c4-12fb-4f23-8ad4-e7a6d1097f56.png",
+            "collection": "accessories",
+            "collection_title": "",
+            "button_title": "",
+            "button_link": "shopify://collections/kanjivaram"
+          }
+        },
+        "featured_collection_A94KaD": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/2_0ef7fcb9-7c12-4939-a084-a9487d5ff36f.png",
+            "collection": "suit-sets",
+            "collection_title": "",
+            "button_title": "",
+            "button_link": "shopify://collections/banarasi"
+          }
+        },
+        "featured_collection_ejhhYw": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/3_a4e7983a-ae34-435a-8416-ad3df351c5c9.png",
+            "collection": "suit-sets",
+            "collection_title": "",
+            "button_title": "",
+            "button_link": "shopify://collections/cotton"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_YYM63n",
+        "featured_collection_9kzhhP",
+        "featured_collection_A94KaD",
+        "featured_collection_ejhhYw"
+      ],
+      "settings": {
+        "title": "Wedding Collections",
+        "heading_size": "h2",
+        "description": "<p><em>Stunning Drapes for Your Most Special Occasions</em></p>",
+        "heading_alignment": "center",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "title_position": "above_image",
+        "button_alignment": "center",
+        "title_bg_color": "#fff",
+        "title_text_color": "#000000",
+        "title_bg_hover_color": "#EF6C5A",
+        "title_text_hover_color": "#ffffff",
+        "title_text_border_color": "#ffffff",
+        "title_text_border_hover_color": "#ffffff",
+        "collection_title_text_color": "#ffffff",
+        "button_style": "solid",
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "button_alignment_mobile": "center",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "0617c2f2-69ec-4df8-a506-b2616d4e1db4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Trending Collections",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "description": "<p>Freshly Launched Styles – Be the First to Drape the Trend</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "best-seller",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "bottom_bkg_color": "#ffffff",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "msu_occasions_MSU02": {
+      "type": "msu-occasions",
+      "blocks": {
+        "occasion_bridal": {
+          "type": "occasion",
+          "settings": {
+            "image": "shopify://shop_images/closeup_angle_d809f983-4960-46e6-bb7f-1dac6010a5f4.jpg",
+            "title": "— Bridal —",
+            "link": "shopify://collections/bridal-sarees"
+          }
+        },
+        "occasion_party": {
+          "type": "occasion",
+          "settings": {
+            "image": "shopify://shop_images/closeup_angle_a987e720-94e9-4bed-8b06-b1f536246575.jpg",
+            "title": "— Party Wear —",
+            "link": "shopify://collections/all"
+          }
+        },
+        "occasion_festive": {
+          "type": "occasion",
+          "settings": {
+            "image": "shopify://shop_images/closeup_angle_ece426b0-12b3-4595-8286-fde5b88dd28d.jpg",
+            "title": "— Festive —",
+            "link": "shopify://collections/all"
+          }
+        },
+        "occasion_casual": {
+          "type": "occasion",
+          "settings": {
+            "image": "shopify://shop_images/closeup_angle_f16974c5-8190-431b-84bb-c925cc0ccb97.jpg",
+            "title": "— Daily Wear —",
+            "link": "shopify://collections/cotton"
+          }
+        }
+      },
+      "block_order": [
+        "occasion_bridal",
+        "occasion_party",
+        "occasion_festive",
+        "occasion_casual"
+      ],
+      "settings": {
+        "title": "SHOP BY OCCASIONS",
+        "subtitle": "Find the Perfect Look for Every Celebration",
+        "heading_size": "h1",
+        "columns_desktop": 4,
+        "bg_color": "#f9f5ee",
+        "color_scheme": "background-1",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "categories_slider_UtmejN": {
+      "type": "categories-slider",
+      "blocks": {
+        "column_9nVebb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/kanjivuram.png",
+            "title": "",
+            "text": "<h6>Kanjivaram</h6>",
+            "link_label": "",
+            "link": "shopify://collections/kanjivaram"
+          }
+        },
+        "column_dVbhDq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/silk_saree.png",
+            "title": "",
+            "text": "<h6>Silk Fabrics</h6>",
+            "link_label": "",
+            "link": "shopify://collections/fabrics"
+          }
+        },
+        "column_fEfc7T": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/south_silk.png",
+            "title": "",
+            "text": "<h6>South Silk</h6>",
+            "link_label": "",
+            "link": "shopify://collections/south-silk"
+          }
+        },
+        "column_GBrL9T": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/cotton_saree.png",
+            "title": "",
+            "text": "<h6>Cotton</h6>",
+            "link_label": "",
+            "link": "shopify://collections/cotton"
+          }
+        },
+        "column_VrEF9t": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/banarasi.png",
+            "title": "",
+            "text": "<h6>Banarasi</h6>",
+            "link_label": "",
+            "link": "shopify://collections/banarasi"
+          }
+        },
+        "column_C8EqdN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Crepe.png",
+            "title": "",
+            "text": "<h6>Crepe</h6>",
+            "link_label": "",
+            "link": "shopify://collections/mysore-crepe-silk"
+          }
+        },
+        "column_ghPbQJ": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/3_b5a48288-0ad4-4ca0-99ea-99bfb8cba7a8.png",
+            "title": "",
+            "text": "<h6>Woollen Shawls</h6>",
+            "link_label": "",
+            "link": "shopify://collections/woollen-shawls"
+          }
+        },
+        "column_Vg8dpi": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/4_47e20739-b0be-475d-a977-926682210eb9.png",
+            "title": "",
+            "text": "<h6>Scarves and Stoles</h6>",
+            "link_label": "",
+            "link": "shopify://collections/scarves-and-stoles"
+          }
+        },
+        "column_FJ9WDy": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/beautiful-girl-with-saree.jpg",
+            "title": "",
+            "text": "<h6>Men's Ties</h6>",
+            "link_label": "",
+            "link": "shopify://collections/mens-ties"
+          }
+        },
+        "column_QFVDcc": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_31.png",
+            "title": "",
+            "text": "<h6>Cotton Suit Set</h6>",
+            "link_label": "",
+            "link": "shopify://collections/cotton-suit-set"
+          }
+        },
+        "column_dhYwtN": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_32.png",
+            "title": "",
+            "text": "<h6>Silk Suit Set</h6>",
+            "link_label": "",
+            "link": "shopify://collections/silk-suit-set"
+          }
+        },
+        "column_X7QHLU": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_33.png",
+            "title": "",
+            "text": "<h6>Plain and Dyed</h6>",
+            "link_label": "",
+            "link": "shopify://collections/dyed-sarees"
+          }
+        },
+        "column_764TTk": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/third-category-3.png",
+            "title": "",
+            "text": "<h6>Printed</h6>",
+            "link_label": "",
+            "link": "shopify://collections/printed"
+          }
+        },
+        "column_X9nUKM": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Screenshot2026-02-16at4.21.16PM.png",
+            "title": "",
+            "text": "<h6><strong>Gadwal</strong></h6>",
+            "link_label": "",
+            "link": "shopify://collections/gadwal-sarees"
+          }
+        },
+        "column_F6PpG4": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Screenshot2026-02-16at4.16.28PM.png",
+            "title": "",
+            "text": "<h6>Ikat Patola</h6>",
+            "link_label": "",
+            "link": "shopify://collections/patola-pochampally-saree"
+          }
+        }
+      },
+      "block_order": [
+        "column_9nVebb",
+        "column_dVbhDq",
+        "column_fEfc7T",
+        "column_GBrL9T",
+        "column_VrEF9t",
+        "column_C8EqdN",
+        "column_ghPbQJ",
+        "column_Vg8dpi",
+        "column_FJ9WDy",
+        "column_QFVDcc",
+        "column_dhYwtN",
+        "column_X7QHLU",
+        "column_764TTk",
+        "column_X9nUKM",
+        "column_F6PpG4"
+      ],
+      "custom_css": [
+        ".rte h6 {font-size: 12px;}",
+        "@media (max-width: 768px) {.rte h6 {font-size: 10px; }}"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "section_view": "desktop_mobile",
+        "class": "",
+        "title": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "image_width": "full",
+        "custom_width": 110,
+        "image_ratio": "circle",
+        "columns_desktop": 10,
+        "enable_slider": true,
+        "enable_autoplay": true,
+        "column_alignment": "center",
+        "background_style": "none",
+        "column_bkg_color": "#f9f9f9",
+        "color_scheme": "",
+        "image_bkg_color": "#f9f9f9",
+        "image_border_color": "#891403",
+        "image_border_radius": 100,
+        "columns_mobile": "3",
+        "padding_top": 22,
+        "padding_bottom": 22
+      }
+    },
+    "collection_list_jhEcVh": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_HyjbhJ": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/closeup_angle_f16974c5-8190-431b-84bb-c925cc0ccb97.jpg",
+            "collection": "kanjivaram",
+            "collection_title": "Kanchipuram",
+            "button_title": "Shop Now",
+            "button_link": "shopify://collections/kanjivaram"
+          }
+        },
+        "featured_collection_9PcNPH": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/closeup_angle_013f0698-931e-41a9-9009-1da6f6090c7f.jpg",
+            "collection": "banarasi",
+            "collection_title": "Banarasi",
+            "button_title": "Shop Now",
+            "button_link": "shopify://collections/banarasi"
+          }
+        },
+        "featured_collection_KD7DGC": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/closeup_angle_ecb9efd9-cb20-4c87-8274-3832c1b53b97.jpg",
+            "collection": "regional-handloom-sarees",
+            "collection_title": "Regional Handlooms",
+            "button_title": "Shop Now",
+            "button_link": "shopify://collections/regional-handloom-sarees"
+          }
+        },
+        "featured_collection_zYaBbM": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/closeup_angle_97a737f2-5d37-40a6-8c0e-29cb4bfa8c6c.jpg",
+            "collection": "printed-crepe-sarees",
+            "collection_title": "Printed & Crepe",
+            "button_title": "Shop Now",
+            "button_link": "shopify://collections/printed-crepe-sarees"
+          }
+        },
+        "featured_collection_Gk6yKH": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/closeup_angle_a987e720-94e9-4bed-8b06-b1f536246575.jpg",
+            "collection": "dyed-sarees",
+            "collection_title": "Plain & Dyed",
+            "button_title": "Shop Now",
+            "button_link": "shopify://collections/dyed-sarees"
+          }
+        },
+        "featured_collection_bj7WxL": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/closeup_angle_d809f983-4960-46e6-bb7f-1dac6010a5f4.jpg",
+            "collection": "cotton-blended-sarees",
+            "collection_title": "Cotton & Blends",
+            "button_title": "Shop Now",
+            "button_link": "shopify://collections/cotton-blended-sarees"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_HyjbhJ",
+        "featured_collection_9PcNPH",
+        "featured_collection_KD7DGC",
+        "featured_collection_zYaBbM",
+        "featured_collection_Gk6yKH",
+        "featured_collection_bj7WxL"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".card__inner {border: 2px solid #380713;}",
+        ".button {border-radius: 20px; background: #380713; color: white;}"
+      ],
+      "settings": {
+        "title": "Popular Sarees Collections",
+        "heading_size": "h2",
+        "description": "<p>Explore Timeless Weaves & Contemporary Elegance in Every Drape</p>",
+        "heading_alignment": "center",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "title_position": "above_image",
+        "button_alignment": "center",
+        "title_bg_color": "#fff",
+        "title_text_color": "#101010",
+        "title_bg_hover_color": "#EF6C5A",
+        "title_text_hover_color": "#ffffff",
+        "title_text_border_color": "#ffffff",
+        "title_text_border_hover_color": "#ffffff",
+        "collection_title_text_color": "#ffffff",
+        "button_style": "solid",
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "button_alignment_mobile": "left",
+        "padding_top": 16,
+        "padding_bottom": 24
+      }
+    },
+    "sub_banner_gjGJUR": {
+      "type": "sub-banner",
+      "blocks": {
+        "image_b63eim": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/7_349b7d95-2ce7-4d72-9fe9-25de989649d5.png",
+            "title": "",
+            "sub_title": "",
+            "button_label": "",
+            "button_url": "shopify://collections/all",
+            "text_color": "#ffffff"
+          }
+        },
+        "image_YGxLMW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/6_cd04d678-1704-4ee0-9b06-c66b8de1e17f.png",
+            "title": "",
+            "sub_title": "",
+            "button_label": "",
+            "button_url": "shopify://collections/silk-suit-set",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image_b63eim",
+        "image_YGxLMW"
+      ],
+      "settings": {
+        "layout": "grid",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "sub_heading": "",
+        "select_box": "two_column",
+        "desktop_content_position": "top-center",
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-687f857b-776d-4b53-b387-92146376e3d6",
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 25
+      }
+    },
+    "featured_collection_MhCKmi": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Pure Silk Saree",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "description": "<p>Experience the Luxury of Authentic Silk in Every Thread</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "suit-sets",
+        "products_to_show": 25,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "bottom_bkg_color": "#ffffff",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "07468762-302d-4441-92a3-3b98a30b4cbe": {
+      "type": "collection-list",
+      "blocks": {
+        "template--20518683476274__07468762-302d-4441-92a3-3b98a30b4cbe-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/third-category-2.png",
+            "collection": "woven-silk-fabrics",
+            "collection_title": "Woven",
+            "button_title": "Shop Now",
+            "button_link": "shopify://collections/woven-silk-fabrics"
+          }
+        },
+        "featured_collection_kLmMQU": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/third-category-4.png",
+            "collection": "printed-silk-fabrics",
+            "collection_title": "Printed",
+            "button_title": "Shop Now",
+            "button_link": "shopify://collections/printed-silk-fabrics"
+          }
+        },
+        "template--20518683476274__07468762-302d-4441-92a3-3b98a30b4cbe-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/third-category-1.png",
+            "collection": "dyed-silk-fabrics",
+            "collection_title": "Gowns",
+            "button_title": "Shop Now",
+            "button_link": "shopify://collections/dyed-silk-fabrics"
+          }
+        }
+      },
+      "block_order": [
+        "template--20518683476274__07468762-302d-4441-92a3-3b98a30b4cbe-featured_collection-2",
+        "featured_collection_kLmMQU",
+        "template--20518683476274__07468762-302d-4441-92a3-3b98a30b4cbe-featured_collection-1"
+      ],
+      "custom_css": [
+        ".card__inner {border: 2px solid #380713;}",
+        ".button {border-radius: 20px; background: #380713; color: white;}"
+      ],
+      "settings": {
+        "title": "Shop By Fabrics",
+        "heading_size": "h2",
+        "description": "<p>Find Your Perfect Drape – Cotton, Silk, Georgette & More</p>",
+        "heading_alignment": "center",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "title_position": "above_image",
+        "button_alignment": "center",
+        "title_bg_color": "#fff",
+        "title_text_color": "#000000",
+        "title_bg_hover_color": "#EF6C5A",
+        "title_text_hover_color": "#ffffff",
+        "title_text_border_color": "#ffffff",
+        "title_text_border_hover_color": "#ffffff",
+        "collection_title_text_color": "#ffffff",
+        "button_style": "solid",
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "button_alignment_mobile": "left",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "8b5479f1-e257-4e76-8418-dfef5ea6084b": {
+      "type": "image-banner",
+      "settings": {
+        "layout": "full_bleed",
+        "image": "shopify://shop_images/8_7deaa503-9570-4ea1-ba86-14639451ca66.png",
+        "mobile_image_2": "shopify://shop_images/8_7deaa503-9570-4ea1-ba86-14639451ca66.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-b8c7d96c-861b-4d26-aed4-d7dc5a77a8bc",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "collection_list_jUe3mw": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_kg9qqp": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/6722947_DRP_ZOM_1.webp",
+            "collection": "dhoti",
+            "collection_title": "Dhoti",
+            "button_title": "Shop Now",
+            "button_link": "shopify://collections/dhoti"
+          }
+        },
+        "featured_collection_7jdYAM": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/6174620_DRP_ZOM_1.webp",
+            "collection": "men-accessories",
+            "collection_title": "Men Accessories",
+            "button_title": "Shop Now",
+            "button_link": "shopify://collections/men-accessories"
+          }
+        },
+        "featured_collection_VxX6AN": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/6777622_DRP_ZOM_1.webp",
+            "collection": "dupattas",
+            "collection_title": "Dupattas",
+            "button_title": "Shop Now",
+            "button_link": "shopify://collections/dupattas"
+          }
+        },
+        "featured_collection_PhA4AB": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/6145796_DRP_ZOM_1.webp",
+            "collection": "designer-blouses",
+            "collection_title": "Designer Blouses",
+            "button_title": "Shop Now",
+            "button_link": "shopify://collections/designer-blouses"
+          }
+        },
+        "featured_collection_RcHAxH": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/5268437_DRP_ZOM_jpg.webp",
+            "collection": "shawls",
+            "collection_title": "Shawls",
+            "button_title": "Shop Now",
+            "button_link": "shopify://collections/shawls"
+          }
+        },
+        "featured_collection_btdgJR": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/smooth-textured-handkerchief-hanging_23-2149091388.jpg",
+            "collection": "silk-scarves",
+            "collection_title": "Silk Scarves",
+            "button_title": "Shop Now",
+            "button_link": "shopify://collections/silk-scarves"
+          }
+        },
+        "featured_collection_AXD3mP": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/6736817_DRP_ZOM_1.webp",
+            "collection": "silk-stoles",
+            "collection_title": "Silk Stoles",
+            "button_title": "Shop Now",
+            "button_link": "shopify://collections/silk-stoles"
+          }
+        },
+        "featured_collection_pfrPUd": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/6347599_DRP_ZOM_1.webp",
+            "collection": "ties",
+            "collection_title": "Ties",
+            "button_title": "Shop Now",
+            "button_link": "shopify://collections/ties"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_kg9qqp",
+        "featured_collection_7jdYAM",
+        "featured_collection_VxX6AN",
+        "featured_collection_PhA4AB",
+        "featured_collection_RcHAxH",
+        "featured_collection_btdgJR",
+        "featured_collection_AXD3mP",
+        "featured_collection_pfrPUd"
+      ],
+      "settings": {
+        "title": "Accessories",
+        "heading_size": "h1",
+        "description": "<p>Complete Your Look with Elegant Add-Ons & Finishing Touches</p>",
+        "heading_alignment": "center",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "title_position": "above_image",
+        "button_alignment": "center",
+        "title_bg_color": "#fff",
+        "title_text_color": "#000000",
+        "title_bg_hover_color": "#EF6C5A",
+        "title_text_hover_color": "#ffffff",
+        "title_text_border_color": "#ffffff",
+        "title_text_border_hover_color": "#ffffff",
+        "collection_title_text_color": "#ffffff",
+        "button_style": "solid",
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "button_alignment_mobile": "center",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "msu_legacy_banner_MSU03": {
+      "type": "msu-legacy-banner",
+      "settings": {
+        "image": "shopify://shop_images/weaving_banner.png",
+        "bg_color": "#42120f",
+        "section_height": 500,
+        "legacy_label": "Heritage & Legacy",
+        "heading": "Weaving Traditions of Elegance",
+        "heading_size": "h0",
+        "text": "<p>A legacy of exquisite craftsmanship and heritage weaving that has defined elegance for generations. Every thread tells a story of tradition, quality, and timeless beauty.</p>",
+        "content_position": "left",
+        "show_review_widget": true,
+        "star_rating": "4.6",
+        "review_count": "5000+",
+        "review_button_label": "See All Reviews",
+        "review_button_link": "",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "custom_instagram_9k4UFy": {
+      "type": "custom-instagram",
+      "blocks": {
+        "image_jFwJFN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Every_saree_is_a_timeless_whisper_of_elegance_Unity_Buildings_J.C._Road_Bangalore-560_0.webp",
+            "link": "#"
+          }
+        },
+        "image_tBHtyH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Where_heritage_meets_the_hemline_-_celebrating_the_soul_of_India_Unity_Buildings_J.C._Road.jpg",
+            "link": "#"
+          }
+        },
+        "image_BbRbKA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Every_Saree_has_a_story_to_tell_Unity_Buildings_J.C._Road_Bangalore-560_002_Ph-_080-2222_1.webp",
+            "link": "#"
+          }
+        },
+        "image_TjnLdn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/A_story_on_every_pleat_Unity_Buildings_J.C._Road_Bangalore-560_002_Ph-_080-22223969_-_0.webp",
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "image_jFwJFN",
+        "image_tBHtyH",
+        "image_BbRbKA",
+        "image_TjnLdn"
+      ],
+      "settings": {
+        "heading": "Trending On Our Social Wall",
+        "sub_title": "Follow to Know More",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "image_ratio": "portrait",
+        "full_width": true,
+        "gap_items": true,
+        "color_scheme": "",
+        "columns_desktop": 4,
+        "padding_top": 48,
+        "padding_bottom": 28,
+        "enable_desktop_slider": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false
+      }
+    },
+    "sub_banner_YBDbjN": {
+      "type": "sub-banner",
+      "blocks": {
+        "image_D3k4qC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/unnamed_1.webp",
+            "title": "",
+            "sub_title": "",
+            "button_label": "",
+            "button_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "image_NigmYh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Feb_23_2026_02_19_49_AM.png",
+            "title": "",
+            "sub_title": "",
+            "button_label": "",
+            "button_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "image_QQkAkn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/unnamed.webp",
+            "title": "",
+            "sub_title": "",
+            "button_label": "",
+            "button_url": "",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "image_D3k4qC",
+        "image_NigmYh",
+        "image_QQkAkn"
+      ],
+      "custom_css": [
+        ".sub-title {text-align: center; margin-bottom: 2.5rem;}",
+        "img {aspect-ratio: 4/3;}"
+      ],
+      "settings": {
+        "layout": "grid",
+        "heading": "Visit Stores",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "sub_heading": "Step Into Our World of Tradition & Trend – See You In-Store",
+        "select_box": "two_column",
+        "desktop_content_position": "middle-right",
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-687f857b-776d-4b53-b387-92146376e3d6",
+        "mobile_content_alignment": "center",
+        "padding_top": 30,
+        "padding_bottom": 25
+      }
+    }
+  },
+  "order": [
+    "slideshow_bGnUgg",
+    "announcementbar_nLp8Nf",
+    "service_icon_pHgMfL",
+    "1774015581dd99870d",
+    "msu_top_categories_MSU01",
+    "collection_list_a3CxBG",
+    "0617c2f2-69ec-4df8-a506-b2616d4e1db4",
+    "msu_occasions_MSU02",
+    "categories_slider_UtmejN",
+    "collection_list_jhEcVh",
+    "sub_banner_gjGJUR",
+    "featured_collection_MhCKmi",
+    "07468762-302d-4441-92a3-3b98a30b4cbe",
+    "8b5479f1-e257-4e76-8418-dfef5ea6084b",
+    "collection_list_jUe3mw",
+    "msu_legacy_banner_MSU03",
+    "custom_instagram_9k4UFy",
+    "sub_banner_YBDbjN"
+  ]
+}

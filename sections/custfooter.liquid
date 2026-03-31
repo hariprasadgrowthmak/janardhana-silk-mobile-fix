@@ -1,0 +1,252 @@
+<footer 
+  class="kz-footer"
+  style="
+    --kz-bg: {{ section.settings.bg_color }};
+    --kz-text: {{ section.settings.text_color }};
+    --kz-muted: {{ section.settings.muted_color }};
+    --kz-accent: {{ section.settings.accent_color }};
+    --kz-bar1: {{ section.settings.bar_color_1 }};
+    --kz-bar2: {{ section.settings.bar_color_2 }};
+    --kz-bar3: {{ section.settings.bar_color_3 }};
+    --kz-bar4: {{ section.settings.bar_color_4 }};
+    --kz-bar5: {{ section.settings.bar_color_5 }};
+  "
+>
+
+  <!-- Decorative Top Bar -->
+  {% if section.settings.show_color_bar %}
+  <div class="kz-footer-bar">
+    <div style="background:var(--kz-bar1)"></div>
+    <div style="background:var(--kz-bar2)"></div>
+    <div style="background:var(--kz-bar3)"></div>
+    <div style="background:var(--kz-bar4)"></div>
+    <div style="background:var(--kz-bar5)"></div>
+  </div>
+  {% endif %}
+
+  <div class="kz-footer-container">
+
+    <div class="kz-footer-grid">
+
+      <!-- Brand -->
+      <div class="kz-footer-brand">
+        {% if section.settings.logo != blank %}
+          <img 
+            src="{{ section.settings.logo | image_url: width: 200 }}" 
+            alt="Logo" 
+            class="kz-footer-logo"
+          >
+        {% endif %}
+        <p class="kz-footer-brand-text">
+          {{ section.settings.brand_text }}
+        </p>
+      </div>
+
+      <!-- Link Columns -->
+      {% for block in section.blocks %}
+        <div class="kz-footer-column" {{ block.shopify_attributes }}>
+          <h4 class="kz-footer-heading">
+            {{ block.settings.heading }}
+          </h4>
+
+          <ul>
+            {% for link in block.settings.menu.links %}
+              <li>
+                <a href="{{ link.url }}">
+                  {{ link.title }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="kz-footer-bottom">
+
+      <p>
+        {{ section.settings.copyright_text }}
+      </p>
+
+      <div class="kz-footer-legal">
+        {% if section.settings.privacy_link != blank %}
+          <a href="{{ section.settings.privacy_link }}">Privacy Policy</a>
+        {% endif %}
+        {% if section.settings.terms_link != blank %}
+          <a href="{{ section.settings.terms_link }}">Terms of Service</a>
+        {% endif %}
+        {% if section.settings.shipping_link != blank %}
+          <a href="{{ section.settings.shipping_link }}">Shipping Policy</a>
+        {% endif %}
+      </div>
+
+    </div>
+
+  </div>
+
+  {% if section.settings.show_back_to_top %}
+  <button onclick="window.scrollTo({top:0,behavior:'smooth'})" class="kz-back-top">
+    ↑
+  </button>
+  {% endif %}
+
+</footer>
+
+
+<style>
+.kz-footer {
+  background: var(--kz-bg);
+  color: var(--kz-text);
+  position: relative;
+}
+
+.kz-footer-bar {
+  height: 4px;
+  display: flex;
+}
+
+.kz-footer-bar div {
+  flex: 1;
+}
+
+.kz-footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 20px 40px;
+}
+
+.kz-footer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+
+.kz-footer-brand img {
+  max-height: 40px;
+  margin-bottom: 15px;
+}
+
+.kz-footer-brand-text {
+  font-size: 14px;
+  color: var(--kz-muted);
+}
+
+.kz-footer-heading {
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.kz-footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.kz-footer-column li {
+  margin-bottom: 8px;
+}
+
+.kz-footer-column a {
+  color: var(--kz-muted);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.kz-footer-column a:hover {
+  color: var(--kz-accent);
+}
+
+.kz-footer-bottom {
+  border-top: 1px solid #222;
+  margin-top: 50px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 12px;
+  color: var(--kz-muted);
+}
+
+.kz-footer-legal a {
+  margin-left: 20px;
+  color: var(--kz-muted);
+  text-decoration: none;
+}
+
+.kz-footer-legal a:hover {
+  color: var(--kz-accent);
+}
+
+.kz-back-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--kz-accent);
+  color: #fff;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@media (max-width: 992px) {
+  .kz-footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
+
+
+{% schema %}
+{
+  "name": "KZ Footer",
+  "settings": [
+    { "type": "image_picker", "id": "logo", "label": "Logo" },
+    { "type": "textarea", "id": "brand_text", "label": "Brand Text", "default": "Comfort, Cozy & Cute. Made for real life moments." },
+
+    { "type": "color", "id": "bg_color", "label": "Background Color", "default": "#111111" },
+    { "type": "color", "id": "text_color", "label": "Text Color", "default": "#ffffff" },
+    { "type": "color", "id": "muted_color", "label": "Muted Text Color", "default": "#aaaaaa" },
+    { "type": "color", "id": "accent_color", "label": "Hover Accent Color", "default": "#F4D7E8" },
+
+    { "type": "checkbox", "id": "show_color_bar", "label": "Show Decorative Color Bar", "default": true },
+    { "type": "color", "id": "bar_color_1", "label": "Bar Color 1", "default": "#F4D7E8" },
+    { "type": "color", "id": "bar_color_2", "label": "Bar Color 2", "default": "#CEE5B9" },
+    { "type": "color", "id": "bar_color_3", "label": "Bar Color 3", "default": "#F2F4C2" },
+    { "type": "color", "id": "bar_color_4", "label": "Bar Color 4", "default": "#FEDEC3" },
+    { "type": "color", "id": "bar_color_5", "label": "Bar Color 5", "default": "#C8E9F2" },
+
+    { "type": "url", "id": "privacy_link", "label": "Privacy Policy Link" },
+    { "type": "url", "id": "terms_link", "label": "Terms of Service Link" },
+    { "type": "url", "id": "shipping_link", "label": "Shipping Policy Link" },
+
+    { "type": "text", "id": "copyright_text", "label": "Copyright Text", "default": "© 2025 Your Store. All rights reserved." },
+
+    { "type": "checkbox", "id": "show_back_to_top", "label": "Show Back To Top Button", "default": true }
+  ],
+
+  "blocks": [
+    {
+      "type": "menu_column",
+      "name": "Menu Column",
+      "settings": [
+        { "type": "text", "id": "heading", "label": "Column Heading", "default": "Shop" },
+        { "type": "link_list", "id": "menu", "label": "Select Menu" }
+      ]
+    }
+  ],
+
+  "max_blocks": 4,
+
+  "presets": [
+    {
+      "name": "KZ Footer"
+    }
+  ]
+}
+{% endschema %}

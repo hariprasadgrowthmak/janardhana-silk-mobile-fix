@@ -1,0 +1,220 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-73991b54-b71b-4542-bbab-4c6d3a90c403",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "589129dd-889c-48e9-8433-acb94802ff8c": {
+      "type": "image-banner",
+      "blocks": {
+        "template--20518683410738__589129dd-889c-48e9-8433-acb94802ff8c-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "CONTACT US",
+            "heading_size": "h2"
+          }
+        },
+        "981d1c30-41c2-4f67-ad6d-828f8f82bde5": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--20518683410738__589129dd-889c-48e9-8433-acb94802ff8c-heading-1",
+        "981d1c30-41c2-4f67-ad6d-828f8f82bde5"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "image": "shopify://shop_images/about-banner.png",
+        "mobile_image_2": "shopify://shop_images/m-v-about-banner.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-6b186333-7935-4d3d-8f66-687905efef2a",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "63e84545-2bed-47a8-b557-6b8674fa1904": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--20518683410738__63e84545-2bed-47a8-b557-6b8674fa1904-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/map.svg",
+            "title": "MAIN OFFICE",
+            "text": "<h3>Janardhanasilk House</h3><p>Unity Buildings, J.C. Road,<br/>Bangalore-560002</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20518683410738__63e84545-2bed-47a8-b557-6b8674fa1904-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/phone.svg",
+            "title": "CALL US TODAY!",
+            "text": "<p> +91 9845-767-575<br/> +91 9986-989-989</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20518683410738__63e84545-2bed-47a8-b557-6b8674fa1904-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/email.svg",
+            "title": "EMAIL",
+            "text": "<p><a href=\"mailto:info@janardhanasilk.com\">info@janardhanasilk.com</a></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20518683410738__63e84545-2bed-47a8-b557-6b8674fa1904-column-1",
+        "template--20518683410738__63e84545-2bed-47a8-b557-6b8674fa1904-column-2",
+        "template--20518683410738__63e84545-2bed-47a8-b557-6b8674fa1904-column-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "image_width": "custom",
+        "custom_width": 30,
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "column_bkg_color": "#efefef",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "solid",
+        "color_scheme": "scheme-e697102b-eb0c-4ad3-bdcf-ec8dfd49453f",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 16
+      }
+    },
+    "177182238111d9f493": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8b31687_tkeJgm": {
+          "type": "ai_gen_block_8b31687",
+          "settings": {
+            "map_address": "Janardhanasilk HouseUnity Buildings, J.C. Road,Bangalore-560002",
+            "map_title": "Our location",
+            "zoom_level": 14,
+            "desktop_width_percent": 100,
+            "map_height": 450,
+            "mobile_map_height": 300,
+            "border_radius": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8b31687_tkeJgm"
+      ],
+      "settings": {}
+    },
+    "1771822052d50c9fa9": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "0e7a50b4-a891-445b-b050-a8fe52aa72f0": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20518683410738__0e7a50b4-a891-445b-b050-a8fe52aa72f0-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "ABOUT ME!",
+            "heading_size": "h2"
+          }
+        },
+        "template--20518683410738__0e7a50b4-a891-445b-b050-a8fe52aa72f0-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Egestas congue quisque egestas diam in arcu. Elementum sagittis vitae et leo duis. Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Pulvinar neque laoreet suspendisse interdum consectetur. Vulputate ut pharetra sit amet aliquam. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus.</p>",
+            "text_style": "body"
+          }
+        },
+        "template--20518683410738__0e7a50b4-a891-445b-b050-a8fe52aa72f0-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "VIEW MORE",
+            "button_link": "#",
+            "button_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "template--20518683410738__0e7a50b4-a891-445b-b050-a8fe52aa72f0-heading-1",
+        "template--20518683410738__0e7a50b4-a891-445b-b050-a8fe52aa72f0-text-1",
+        "template--20518683410738__0e7a50b4-a891-445b-b050-a8fe52aa72f0-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "class_name": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 100,
+        "padding_bottom": 48
+      }
+    },
+    "17718218556f4a4d29": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "We'd love to hear from you!",
+        "heading_size": "h2",
+        "textarea": "<p>Have any questions or comments? Feel free to contact us! Please allow us 1-2 business days to get back to you :) In the meantime, check our</p>",
+        "color_scheme": "background-1",
+        "button_style": "solid",
+        "padding_top": 100,
+        "padding_bottom": 56
+      }
+    }
+  },
+  "order": [
+    "main",
+    "589129dd-889c-48e9-8433-acb94802ff8c",
+    "63e84545-2bed-47a8-b557-6b8674fa1904",
+    "177182238111d9f493",
+    "1771822052d50c9fa9",
+    "0e7a50b4-a891-445b-b050-a8fe52aa72f0",
+    "17718218556f4a4d29",
+    "form"
+  ]
+}

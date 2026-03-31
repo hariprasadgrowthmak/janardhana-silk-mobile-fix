@@ -1,0 +1,390 @@
+/* ============================================
+   MSU SECTIONS — Shared Styles
+   ============================================ */
+
+/* --- Section Header (shared) --- */
+.msu-section-header {
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.msu-section-title {
+  font-family: 'Cormorant Infant', 'Georgia', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.3rem;
+  color: #1a1a1a;
+  font-size: 2.2rem;
+}
+
+.msu-section-subtitle {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.3rem;
+  color: #888;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* --- Grid System --- */
+.msu-grid--2-col,
+.msu-grid--3-col,
+.msu-grid--4-col,
+.msu-grid--5-col,
+.msu-grid--6-col {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.msu-grid--2-col { grid-template-columns: repeat(2, 1fr); }
+.msu-grid--3-col { grid-template-columns: repeat(3, 1fr); }
+.msu-grid--4-col { grid-template-columns: repeat(4, 1fr); }
+.msu-grid--5-col { grid-template-columns: repeat(5, 1fr); }
+.msu-grid--6-col { grid-template-columns: repeat(6, 1fr); }
+
+@media screen and (max-width: 989px) {
+  .msu-grid--3-col,
+  .msu-grid--4-col,
+  .msu-grid--5-col,
+  .msu-grid--6-col {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .msu-grid--2-col,
+  .msu-grid--3-col,
+  .msu-grid--4-col,
+  .msu-grid--5-col,
+  .msu-grid--6-col {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+}
+
+/* ============================================
+   MSU TOP CATEGORIES
+   ============================================ */
+.msu-top-categories {
+  background: #fff;
+}
+
+.msu-category-card__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.msu-category-card__image-wrapper {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+  background: #f5f5f5;
+}
+
+.msu-category-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.msu-category-card__link:hover .msu-category-card__image {
+  transform: scale(1.04);
+}
+
+.msu-category-card__label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 0.7rem 0.6rem;
+  text-align: center;
+}
+
+.msu-category-card__label span {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 749px) {
+  .msu-category-card__label {
+    padding: 0.5rem 0.4rem;
+  }
+  .msu-category-card__label span {
+    font-size: 1rem;
+  }
+}
+
+/* View More Button */
+.msu-view-more-wrapper {
+  text-align: center;
+  margin-top: 1.8rem;
+}
+
+.msu-view-more-btn {
+  display: inline-block;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  border: 1.5px solid #1a1a1a;
+  padding: 0.9rem 2.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.msu-view-more-btn:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+/* ============================================
+   MSU SHOP BY OCCASIONS
+   ============================================ */
+.msu-occasions-section {
+  background: #F9F5EE;
+}
+
+.msu-occasion-card__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.msu-occasion-card__image-wrapper {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+  border-radius: 160px 160px 4px 4px;
+  background: #ede8de;
+}
+
+.msu-occasion-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.msu-occasion-card__link:hover .msu-occasion-card__image {
+  transform: scale(1.04);
+}
+
+.msu-occasion-card__label {
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+.msu-occasion-card__label span {
+  display: inline-block;
+  font-family: 'Cormorant Infant', 'Georgia', serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #5c4033;
+  padding: 0.4rem 1.5rem;
+  border: 1px solid #c9b99a;
+  border-radius: 50px;
+  letter-spacing: 0.04em;
+  transition: all 0.3s ease;
+}
+
+.msu-occasion-card__link:hover .msu-occasion-card__label span {
+  background: #5c4033;
+  color: #fff;
+  border-color: #5c4033;
+}
+
+@media screen and (max-width: 749px) {
+  .msu-occasion-card__image-wrapper {
+    border-radius: 100px 100px 4px 4px;
+  }
+  .msu-occasion-card__label span {
+    font-size: 1.1rem;
+    padding: 0.3rem 1rem;
+  }
+}
+
+/* ============================================
+   MSU BRAND LEGACY BANNER
+   ============================================ */
+.msu-legacy-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.msu-legacy-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(30, 10, 5, 0.85) 0%, rgba(30, 10, 5, 0.5) 55%, transparent 100%);
+  display: flex;
+  align-items: center;
+}
+
+.msu-legacy-content-wrapper {
+  width: 100%;
+}
+
+.msu-legacy-content {
+  max-width: 45rem;
+  color: #fff;
+  padding: 1.5rem 0;
+}
+
+.msu-legacy-content--left {
+  margin-right: auto;
+}
+
+.msu-legacy-content--center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.msu-legacy-content--right {
+  margin-left: auto;
+  text-align: right;
+}
+
+.msu-legacy-label {
+  display: inline-block;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #d4a97a;
+  margin-bottom: 0.8rem;
+  border: 1px solid rgba(212, 169, 122, 0.4);
+  padding: 0.4rem 1.2rem;
+  border-radius: 4px;
+}
+
+.msu-legacy-heading {
+  font-family: 'Cormorant Infant', 'Georgia', serif;
+  color: #fff;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+.msu-legacy-text {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.82);
+  margin-bottom: 1.5rem;
+}
+
+.msu-legacy-text p {
+  margin: 0;
+}
+
+/* Review Widget */
+.msu-legacy-review-widget {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.msu-review-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.msu-review-stars svg {
+  width: 16px;
+  height: 16px;
+}
+
+.msu-review-info {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.msu-review-rating {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #FFB800;
+}
+
+.msu-review-count {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.msu-review-btn {
+  display: inline-block;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s ease;
+}
+
+.msu-review-btn:hover {
+  color: #d4a97a;
+}
+
+/* Legacy CTA Button */
+.msu-legacy-btn {
+  background: #d4a97a !important;
+  color: #1a1a1a !important;
+  border: none !important;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 1rem 2.5rem !important;
+  transition: all 0.3s ease;
+}
+
+.msu-legacy-btn:hover {
+  background: #fff !important;
+  color: #1a1a1a !important;
+}
+
+@media screen and (max-width: 749px) {
+  .msu-legacy-overlay {
+    background: linear-gradient(180deg, rgba(30, 10, 5, 0.3) 0%, rgba(30, 10, 5, 0.85) 60%, rgba(30, 10, 5, 0.95) 100%);
+    align-items: flex-end;
+  }
+  .msu-legacy-content {
+    max-width: 100%;
+    padding: 1.5rem 0;
+  }
+  .msu-legacy-content--left,
+  .msu-legacy-content--right {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .msu-legacy-review-widget {
+    margin: 0 auto 1rem;
+  }
+}

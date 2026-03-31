@@ -1,0 +1,152 @@
+{% schema %}
+{
+  "name": "Rounded Video Feature",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Video Settings"
+    },
+    {
+      "type": "video",
+      "id": "hosted_video",
+      "label": "Shopify Hosted Video (MP4)",
+      "info": "Upload an MP4 file here. Best for autoplay loops."
+    },
+    {
+      "type": "image_picker",
+      "id": "cover_image",
+      "label": "Cover Image / Fallback",
+      "info": "Shows while video loads, or if no video is selected."
+    },
+    {
+      "type": "header",
+      "content": "Layout & Style"
+    },
+    {
+      "type": "range",
+      "id": "section_height_desktop",
+      "min": 300,
+      "max": 800,
+      "step": 10,
+      "unit": "px",
+      "label": "Video Height (Desktop)",
+      "default": 500
+    },
+    {
+      "type": "range",
+      "id": "section_height_mobile",
+      "min": 200,
+      "max": 600,
+      "step": 10,
+      "unit": "px",
+      "label": "Video Height (Mobile)",
+      "default": 300
+    },
+    {
+      "type": "range",
+      "id": "corner_radius",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Corner Radius",
+      "default": 20
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full Width Section",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#fcf5f5"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Rounded Video Feature"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .rv-section-{{ section.id }} {
+    background-color: {{ section.settings.bg_color }};
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rv-container {
+    width: 100%;
+    max-width: {% if section.settings.full_width %}100%{% else %}1200px{% endif %};
+    position: relative;
+    border-radius: {{ section.settings.corner_radius }}px;
+    overflow: hidden; /* Clips the video to the rounded corners */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    background-color: #000; /* Loading placeholder color */
+  }
+
+  /* Aspect Ratio & Height Control */
+  .rv-video-wrapper {
+    position: relative;
+    width: 100%;
+    height: {{ section.settings.section_height_desktop }}px;
+  }
+
+  .rv-video-wrapper video,
+  .rv-video-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video fills the rounded shape without stretching */
+    display: block;
+    border-radius: {{ section.settings.corner_radius }}px;
+  }
+
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    .rv-section-{{ section.id }} {
+      padding: 40px 15px;
+    }
+    
+    .rv-video-wrapper {
+      height: {{ section.settings.section_height_mobile }}px;
+    }
+  }
+</style>
+
+<div class="rv-section-{{ section.id }}">
+  <div class="rv-container">
+    <div class="rv-video-wrapper">
+      {% if section.settings.hosted_video != blank %}
+        {{ section.settings.hosted_video | video_tag: 
+           image_size: '1200x', 
+           autoplay: true, 
+           loop: true, 
+           muted: true, 
+           controls: false, 
+           playsinline: true,
+           class: 'rv-video-element' 
+        }}
+      {% elsif section.settings.cover_image != blank %}
+        <img src="{{ section.settings.cover_image | image_url: width: 1400 }}" 
+             loading="lazy" 
+             alt="{{ section.settings.cover_image.alt | escape }}"
+             width="100%"
+             height="100%">
+      {% else %}
+        <!-- Placeholder if nothing is uploaded -->
+        {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      {% endif %}
+    </div>
+  </div>
+</div>

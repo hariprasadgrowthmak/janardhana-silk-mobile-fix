@@ -1,0 +1,226 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement_bar_fHNTbB": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_UJCcNQ": {
+          "type": "announcement",
+          "settings": {
+            "text": "Pay Online & GET 10% OFF on your Purchase. USE CODE: PREPAID",
+            "link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_UJCcNQ"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "show_line_separator": false,
+        "show_social": true,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": true,
+        "enable_language_selector": true
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "megamenu_jpebTm": {
+          "type": "megamenu",
+          "disabled": true,
+          "settings": {
+            "parent_link": "Sarees",
+            "hide_default_menu": "False",
+            "custom_mega_menu_columns": 6,
+            "menu_layout": "full_bleed",
+            "mega_menu_bkg_color": "#ffffff",
+            "mega_menu_text_color": "#000000",
+            "menu_item_type1": "show_image_with_text",
+            "linklist1": "header",
+            "collection1": "",
+            "product1": "",
+            "title1": "",
+            "content1": "",
+            "btntitle1": "",
+            "btnurl1": "",
+            "menu_item_type2": "linklist",
+            "linklist2": "header",
+            "collection2": "",
+            "product2": "",
+            "title2": "",
+            "content2": "",
+            "btntitle2": "",
+            "btnurl2": "",
+            "menu_item_type3": "show_image_with_text",
+            "linklist3": "",
+            "collection3": "",
+            "product3": "",
+            "title3": "",
+            "content3": "",
+            "btntitle3": "",
+            "btnurl3": "",
+            "menu_item_type4": "linklist",
+            "linklist4": "header",
+            "collection4": "banarasi",
+            "product4": "",
+            "title4": "Hello",
+            "content4": "",
+            "btntitle4": "",
+            "btnurl4": "",
+            "menu_item_type5": "show_image_with_text",
+            "linklist5": "",
+            "collection5": "",
+            "product5": "",
+            "title5": "",
+            "content5": "",
+            "btntitle5": "",
+            "btnurl5": "",
+            "menu_item_type6": "linklist",
+            "linklist6": "header",
+            "collection6": "",
+            "product6": "",
+            "title6": "",
+            "content6": "",
+            "btntitle6": "",
+            "btnurl6": ""
+          }
+        },
+        "msu_megamenu_QkM6JQ": {
+          "type": "msu_megamenu",
+          "settings": {
+            "parent_link": "Sarees",
+            "image": "shopify://shop_images/Every_saree_is_a_timeless_whisper_of_elegance_Unity_Buildings_J.C._Road_Bangalore-560_0.webp",
+            "show_live_button": false,
+            "button_text": "Shop Now",
+            "button_url": ""
+          }
+        },
+        "msu_megamenu_BAAGF3": {
+          "type": "msu_megamenu",
+          "settings": {
+            "parent_link": "Salwar Kameez",
+            "image": "shopify://shop_images/Every_Saree_has_a_story_to_tell_Unity_Buildings_J.C._Road_Bangalore-560_002_Ph-_080-2222_1.webp",
+            "show_live_button": false,
+            "button_text": "LIVE Shopping",
+            "button_url": ""
+          }
+        },
+        "msu_megamenu_YzxMQm": {
+          "type": "msu_megamenu",
+          "settings": {
+            "parent_link": "Accessories",
+            "image": "shopify://shop_images/2_0ef7fcb9-7c12-4939-a084-a9487d5ff36f.png",
+            "show_live_button": false,
+            "button_text": "LIVE Shopping",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "megamenu_jpebTm",
+        "msu_megamenu_QkM6JQ",
+        "msu_megamenu_BAAGF3",
+        "msu_megamenu_YzxMQm"
+      ],
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "header",
+        "menu_type_desktop": "msu_mega",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "scheme-5c2f6738-90ad-435b-abca-0c0c149d151a",
+        "menu_color_scheme": "scheme-75e79e44-fbf1-47ff-a617-3c047dca9f94",
+        "social_icon_bg_color": "rgba(0,0,0,0)",
+        "social_icon_color": "#101010",
+        "social_icon_bg_hover_color": "rgba(0,0,0,0)",
+        "social_icon_hover_color": "#333333",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "show_social": false,
+        "enable_moremenu": false,
+        "more_menu_limit": 3,
+        "enable_customer_avatar": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "announcementbar_VeFcFd": {
+      "type": "announcementbar",
+      "blocks": {
+        "message_chVPHV": {
+          "type": "message",
+          "settings": {
+            "text": "✨ Free Shipping on Orders Above ₹999"
+          }
+        },
+        "message_taUR6t": {
+          "type": "message",
+          "settings": {
+            "text": "🌿 100% Cotton Comfort"
+          }
+        },
+        "message_bhxLiU": {
+          "type": "message",
+          "settings": {
+            "text": "💜 Easy 7-Day Returns"
+          }
+        },
+        "message_eH7CHM": {
+          "type": "message",
+          "settings": {
+            "text": "🧸 Made with Love & Comfort"
+          }
+        },
+        "message_whWAyW": {
+          "type": "message",
+          "settings": {
+            "text": "🌸 New Arrivals Every Week"
+          }
+        }
+      },
+      "block_order": [
+        "message_chVPHV",
+        "message_taUR6t",
+        "message_bhxLiU",
+        "message_eH7CHM",
+        "message_whWAyW"
+      ],
+      "disabled": true,
+      "name": "Koozy Announcement Bar",
+      "settings": {
+        "bg_color": "#6a50a1",
+        "text_color": "#ffffff",
+        "font_family": "'DM Sans', sans-serif",
+        "font_size": 14,
+        "letter_spacing": 0.1,
+        "padding_y": 8,
+        "padding_x": 16,
+        "gap": 32,
+        "speed": 20,
+        "separator": "•",
+        "separator_opacity": 0.5,
+        "pause_hover": true
+      }
+    }
+  },
+  "order": [
+    "announcement_bar_fHNTbB",
+    "header",
+    "announcementbar_VeFcFd"
+  ]
+}

@@ -1,0 +1,209 @@
+.collection-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.collection-list-title {
+  margin: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .collection-list:not(.slider) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* .section-collection-list .page-width {
+    padding-left: 0;
+    padding-right: 0;
+  } */
+
+  /* .section-collection-list .collection-list:not(.slider) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  } */
+}
+
+.collection-list__item:only-child {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 749px) {
+  .slider.collection-list--1-items {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .slider.collection-list--1-items,
+  .slider.collection-list--2-items,
+  .slider.collection-list--3-items,
+  .slider.collection-list--4-items {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .collection-list__item a:hover {
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .collection-list.slider .collection-list__item {
+    max-width: 100%;
+  }
+}
+
+.collection-list-view-all {
+  margin-top: 2rem;
+}
+
+
+/*** Edited css ****/
+.collection-list-wrapper .title-wrapper-with-link {
+    display: block;
+}
+.collection-list-wrapper .collection_description {
+    margin-top: 0.7rem;
+}
+.main-list-collection .title.title--primary {
+    text-align: center;
+    font-size: 2.8rem;
+    line-height: initial;
+}
+.collection-list-wrapper .collection-list.slider--desktop .slider__slide:first-child {
+    margin-left: 0;
+}
+
+/*** collection-list above_image_title ***/
+.collection-list .above_image_title {
+  grid-template-rows: auto;
+}
+.collection-list .above_image_title .card__information {
+  display: flex !important;
+  align-items: center;
+  justify-content: end;
+  padding: 20px;
+  flex-direction: column;
+}
+.collection-list
+.collection-list__item
+.card-wrapper
+.card
+.card__content
+.card__information
+.card__heading {
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+}
+.collection-list .card-wrapper .card__inner .full-unstyled-link:after {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  box-shadow: none;
+}
+.collection-list .card__content .button::after{
+  content: "";
+  box-shadow: none;
+}
+.collection-list .card__content .button {
+  text-align: center;
+  min-width: calc(12rem + var(--buttons-border-width) * 2);
+  border-radius: var(--buttons-radius-outset);
+  position: static;
+}
+.collection-list-wrapper .collection-list .card:hover .card__inner .card__media .media.media--hover-effect>img {
+    transform: scale(1.08);
+}
+.collection-list .card-wrapper .card__information .link.underlined-link {
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+.collection-list .card-wrapper .card__information .link.underlined-link::after {
+  display: none;
+}
+.collection-list .card-wrapper .card__information .button.button--secondary:before {
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .collection-list .card__content.left .card__information {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .collection-list .card__content.right .card__information {
+    align-items: flex-end;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 989px) {
+    .main-list-collection .title.title--primary {
+      font-size: 2.5rem;
+        margin: 2rem 0;
+    }
+    .collection-list .grid--4-col-desktop .grid__item {
+        width: calc(50% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+        max-width: calc(50% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+    }
+}
+@media screen and (max-width: 749px) {
+  .collection-list .card__content.mobile-left .card__information {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .collection-list .card__content.mobile-right .card__information {
+    align-items: flex-end;
+    text-align: right;
+  }
+  .collection-list .card__content .card__information {
+      padding: 10px;
+  }
+  .collection-list .collection-list__item .card-wrapper .card .card__content .card__information .card__heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .collection-list .card-wrapper .card__information .link.underlined-link {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .collection-list .card__content .button {
+      font-size: 1.3rem;
+  }
+  .collection-list.slider .card__content .button {
+      min-width: calc(8rem + var(--buttons-border-width)* 2);
+      padding: 0 1rem;
+  }
+}
+
+/* ── Mobile 2-column fix for Fabrics & Accessories (and any 3-col desktop) ── */
+/* Force 2-col grid at tablet breakpoint for 3-col-desktop layouts */
+@media screen and (max-width: 989px) {
+  .collection-list .grid--3-col-desktop .grid__item {
+    width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+  }
+}
+
+/* Force 2-col grid on mobile for 3-col-desktop and 4-col-desktop layouts */
+@media screen and (max-width: 749px) {
+  .collection-list .grid--3-col-desktop .grid__item,
+  .collection-list .grid--4-col-desktop .grid__item {
+    width: calc(50% - var(--grid-mobile-horizontal-spacing) / 2) !important;
+    max-width: calc(50% - var(--grid-mobile-horizontal-spacing) / 2) !important;
+  }
+
+  /* Make last orphan item (odd count) full-width to remove right whitespace */
+  .collection-list .grid--2-col-tablet-down .grid__item:last-child:nth-child(odd),
+  .collection-list .grid--3-col-desktop .grid__item:last-child:nth-child(odd),
+  .collection-list .grid--4-col-desktop .grid__item:last-child:nth-child(odd) {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}

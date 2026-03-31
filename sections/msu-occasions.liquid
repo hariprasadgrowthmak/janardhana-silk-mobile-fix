@@ -1,0 +1,177 @@
+{{ 'msu-sections.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.50 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.50 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  .msu-occasions-section-{{ section.id }} {
+    background-color: {{ section.settings.bg_color }};
+  }
+{%- endstyle -%}
+
+<div class="msu-occasions-section msu-occasions-section-{{ section.id }} color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    {%- unless section.settings.title == blank -%}
+      <div class="msu-section-header">
+        <h2 class="msu-section-title {{ section.settings.heading_size }}">
+          {{ section.settings.title }}
+        </h2>
+        {%- if section.settings.subtitle != blank -%}
+          <p class="msu-section-subtitle">{{ section.settings.subtitle }}</p>
+        {%- endif -%}
+      </div>
+    {%- endunless -%}
+
+    <div class="msu-occasions-grid msu-grid--{{ section.settings.columns_desktop }}-col">
+      {%- for block in section.blocks -%}
+        <div class="msu-occasion-card{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {{ block.shopify_attributes }}
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: {{ forloop.index }};"
+          {% endif %}
+        >
+          <a href="{{ block.settings.link }}" class="msu-occasion-card__link">
+            <div class="msu-occasion-card__image-wrapper">
+              {%- if block.settings.image != blank -%}
+                {{
+                  block.settings.image
+                  | image_url: width: 800
+                  | image_tag:
+                    loading: 'lazy',
+                    widths: '200, 300, 400, 500, 600, 800',
+                    sizes: '(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw',
+                    class: 'msu-occasion-card__image'
+                }}
+              {%- else -%}
+                {{ 'collection-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+            <div class="msu-occasion-card__label">
+              <span>{{ block.settings.title | default: 'Occasion' }}</span>
+            </div>
+          </a>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "MSU Shop By Occasions",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "SHOP BY OCCASIONS",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Find the Perfect Look for Every Celebration"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "Small" },
+        { "value": "h1", "label": "Medium" },
+        { "value": "h0", "label": "Large" }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 4,
+      "label": "Desktop columns"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#F9F5EE"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "background-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "type": "occasion",
+      "name": "Occasion",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Occasion",
+          "label": "Title"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "MSU Shop By Occasions",
+      "blocks": [
+        { "type": "occasion" },
+        { "type": "occasion" },
+        { "type": "occasion" },
+        { "type": "occasion" }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,153 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "about_msu": {
+      "type": "aboutus",
+      "blocks": {
+        "stat_1": {
+          "type": "stat",
+          "settings": {
+            "stat_number": "Since 1952",
+            "stat_label": "Heritage & Legacy",
+            "stat_sub": "Est. 1952"
+          }
+        },
+        "stat_2": {
+          "type": "stat",
+          "settings": {
+            "stat_number": "8000+ Google",
+            "stat_label": "Reviews with 4+ star rating",
+            "stat_sub": "Trusted by thousands"
+          }
+        },
+        "stat_3": {
+          "type": "stat",
+          "settings": {
+            "stat_number": "Rated Top 10",
+            "stat_label": "Retail Shopping Destinations",
+            "stat_sub": "by Vanity Fair Magazine – Germany"
+          }
+        },
+        "value_1": {
+          "type": "value",
+          "settings": {
+            "value_name": "Quality Assurance",
+            "value_desc": "We ensure every product is thoroughly inspected and delivered to you."
+          }
+        },
+        "value_2": {
+          "type": "value",
+          "settings": {
+            "value_name": "Unique Craftsmanship",
+            "value_desc": "Our unique craftsmanship ensures genuine and finest quality of pure Silk or Cotton."
+          }
+        },
+        "value_3": {
+          "type": "value",
+          "settings": {
+            "value_name": "Exclusive Designs",
+            "value_desc": "We provide fresh original designs sourced at your request. We get fresh unique styles anywhere else."
+          }
+        },
+        "value_4": {
+          "type": "value",
+          "settings": {
+            "value_name": "Easy Returns",
+            "value_desc": "As part of our commitment to guaranteeing your happiness we offer easy return and refund policy."
+          }
+        },
+        "value_5": {
+          "type": "value",
+          "settings": {
+            "value_name": "Worldwide Shipping",
+            "value_desc": "We also process international orders and ship to most countries across the world within 4-5 days."
+          }
+        },
+        "value_6": {
+          "type": "value",
+          "settings": {
+            "value_name": "Best Price Challenge",
+            "value_desc": "We are happy to give you an additional discount of 10% if you find the identical product at a lower price – Buy with confidence!"
+          }
+        },
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "faq_question": "A Heritage Institution",
+            "faq_answer": "<p>Since 1952, Janardhana Silk House has been a trusted name in handwoven silk sarees, connecting weavers to wearers across generations. The family business has grown over the decades, manufacturing and bulk supplying of real zari silk sarees.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "faq_question": "Craftsmanship to fulfillment – People Power",
+            "faq_answer": "<p>Our master weavers bring decades of expertise to every piece, ensuring each saree is a work of art crafted with devotion and precision.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "faq_question": "Technology at your service",
+            "faq_answer": "<p>We combine traditional craftsmanship with modern technology to give you the best possible shopping and delivery experience.</p>"
+          }
+        },
+        "faq_4": {
+          "type": "faq",
+          "settings": {
+            "faq_question": "Best Price Challenge",
+            "faq_answer": "<p>We guarantee the best prices. Find the same product at a lower price anywhere and we will beat it with an additional 10% discount.</p>"
+          }
+        },
+        "faq_5": {
+          "type": "faq",
+          "settings": {
+            "faq_question": "Customer – Speak",
+            "faq_answer": "<p>Thousands of happy customers across the world trust Janardhana Silk House for their special occasions, weddings, and everyday elegance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "stat_1",
+        "stat_2",
+        "stat_3",
+        "value_1",
+        "value_2",
+        "value_3",
+        "value_4",
+        "value_5",
+        "value_6",
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5"
+      ],
+      "settings": {
+        "heritage_title": "A Heritage Institution",
+        "heritage_content": "<p>It is no exaggeration when Vanity Fair, the lifestyle magazine from Germany, rated Mysore Saree Udyog as one of the Top 10 Retail Destinations in the World!</p><p>Since 1952, Janardhana Silk House has been in the Indian silk fabric business for nearly 70 years. The family business is run by the Janardhana family, who year to year during all the manufacture and bulk supply of real zari silk sarees for over 7 decades.</p><p>Over the course of time, this result-oriented constantly changing market trends. The business has continued to excel and to thrive, trying to make people of all social and silk fabric and subsequently silk lettering.</p><p>The company is managed by the second and third generations of the family, who have been nurturing Indian ethnic fabric since the year 1952. The company is managed by Kamlesh Succi, Dinesh Tele, Anil Surossh, Aditya Tekire, Rajiv Temna, Anu Tella and Shiva Tekire.</p>",
+        "values_heading": "We're Driven By Our Values",
+        "faq_heading": "Why Janardhana Silk House"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "about_msu"
+  ]
+}

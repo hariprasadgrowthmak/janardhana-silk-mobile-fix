@@ -1,0 +1,739 @@
+.mega-menu {
+  position: relative;
+  overflow: visible !important;
+}
+
+header-menu {
+  overflow: visible !important;
+}
+
+header-menu details {
+  position: relative;
+}
+
+.mega-menu > summary {
+  position: relative;
+}
+
+/* 🔥 hover bridge */
+.mega-menu > summary::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 100%;
+  height: 20px;
+}
+
+/* Required so the ::after hover-bridge in header.liquid is positioned
+   relative to the summary, not a distant ancestor */
+header-menu details > summary {
+  position: relative;
+}
+
+.mega-menu[open] {
+  position: static;
+}
+
+.mega-menu__content {
+  background-color: #fff;
+  border-left: 0;
+  border-radius: 6px;
+  border-right: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 30px 40px;
+  position: absolute;
+  top: calc(100% - 2px); /* 🔥 ZERO GAP */
+  z-index: 999;
+  width: max-content;
+  max-width: 1200px; /* match your page */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+}
+
+.mega-menu[open] .mega-menu__content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+/* Nav Alignment Fixes */
+@media screen and (min-width: 990px) {
+  .header__inline-menu {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .list-menu--inline {
+    justify-content: center !important;
+  }
+}
+
+/* 🔥 MOBILE RESET + CENTER LOGO */
+@media screen and (max-width: 989px) {
+  .header__inline-menu {
+    display: none !important; /* Dawn default */
+  }
+
+  .header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    position: relative !important;
+  }
+
+  .header__heading {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin: 0 !important;
+    z-index: 10 !important;
+  }
+
+
+
+  /* 🔥 MEGA MENU MOBILE SAFEGUARD - RESET FOR MOBILE */
+  .mega-menu,
+  .mega-menu__content {
+    all: unset !important;
+  }
+
+  .mega-menu__content {
+    position: static !important;
+    transform: none !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    box-shadow: none !important;
+    display: block !important;
+  }
+
+  /* 🔥 MOBILE MENU DRAWER REFINEMENTS */
+  .menu-drawer::before {
+    display: none !important; /* Kill incorrect overlay strip */
+  }
+
+  .menu-drawer {
+    position: absolute !important;
+    top: 0 !important;
+    height: 100vh !important;
+    z-index: 1002 !important;
+    width: 100vw !important;
+    left: 0 !important;
+    transform: none !important;
+    background: #ffffff !important;
+  }
+
+  .menu-drawer__inner-container {
+    padding-top: 70px !important; /* adjust based on header height */
+    border-radius: 12px 12px 0 0 !important;
+    z-index: 1003 !important;
+    position: relative !important;
+    width: 100% !important;
+    margin: 0 !important;
+    background: #ffffff !important;
+  }
+
+  /* 🔥 NUCLEAR MOBILE HEADER ALIGNMENT (ABSOLUTE CENTERING) */
+  .header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 20px 20px !important; /* Increased top/bottom and side padding */
+    position: relative !important;
+    z-index: 2001 !important;
+    width: 100% !important;
+  }
+
+  .header-drawer,
+  .menu-drawer-container {
+    flex: 1 !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+
+  /* LEFT: hamburger */
+  .header__icon--menu {
+    justify-content: flex-start !important;
+    margin: 0 !important;
+    width: auto !important;
+    flex: 1 !important;
+    display: flex !important;
+  }
+
+  /* 🔥 CENTER: LOGO (ABSOLUTE, constrained to avoid icon overlap) */
+  .header__heading {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin: 0 !important;
+    z-index: 3000 !important;
+    max-width: calc(100% - 160px) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100% !important;
+    top: 50% !important;
+    transform-origin: center center !important;
+    margin-top: -20px !important;
+  }
+
+  .header__heading-link {
+    display: flex !important;
+    align-items: center !important;
+    line-height: 0 !important;
+    padding: 0 !important;
+  }
+
+  .header__heading img,
+  .header__heading-logo {
+    max-height: 40px !important;
+    max-width: 100% !important;
+    width: auto !important;
+    display: block !important;
+  }
+
+  /* RIGHT: icons */
+  .header__icons {
+    flex: 0 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 8px !important;
+    margin: 0 !important;
+  }
+
+  /* 🔥 CLOSE BUTTON STACKING + CLICK FIX */
+  .menu-drawer__close-button,
+  .menu-drawer__close,
+  .header__icon--close {
+    position: relative !important;
+    z-index: 2000 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .header__icons,
+  .header__icon--menu,
+  .menu-drawer-container summary {
+    z-index: 3000 !important; /* Ensure it's above the drawer (1002) */
+    position: relative !important;
+  }
+
+  /* Ensure the close icon is active and colored correctly */
+  details[open] .header__icon--menu .icon-close {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    color: #000 !important; /* High contrast on white drawer */
+  }
+
+  details[open] .header__icon--menu .icon-hamburger {
+    display: none !important;
+  }
+
+  /* 🔥 ROOT CAUSE FIX: Remove narrow grey vertical bar */
+  /* This pseudo-element overlay from Dawn base now shrinks to the icon width in our grid layout */
+  .menu-drawer-container summary::before,
+  .menu-drawer-container[open] summary::before {
+    display: none !important;
+  }
+}
+
+.mega-menu__list {
+  display: grid;
+  gap: 1.8rem 3rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  list-style: none;
+}
+
+.mega-menu__link,
+p.mega_iwt_content {
+  color: rgba(var(--color-foreground), 0.75);
+  display: block;
+  line-height: calc(1 + 0.3 / var(--font-body-scale));
+  padding-bottom: 0.6rem;
+  padding-top: 0.6rem;
+  text-decoration: none;
+  transition: text-decoration var(--duration-short) ease;
+  word-wrap: break-word;
+}
+
+.mega-menu__link--level-2 {
+  font-weight: bold;
+}
+
+.header--top-center .mega-menu__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 0;
+}
+
+.header--top-center .mega-menu__list>li {
+  width: 16%;
+  padding-right: 2.4rem;
+}
+
+.mega-menu__link:hover,
+.mega-menu__link--active {
+  color: rgb(var(--color-foreground));
+  text-decoration: underline;
+}
+
+.mega-menu__link--active:hover {
+  text-decoration-thickness: 0.2rem;
+}
+
+.mega-menu .mega-menu__list--condensed {
+  display: block;
+}
+
+.mega-menu__list--condensed .mega-menu__link {
+  font-weight: normal;
+}
+
+
+
+/*** Edit css ***/
+p.mega_iwt_content {
+  margin-top: 0px;
+  font-size: 14px;
+}
+
+.mega-menu__link--level-2,
+h5.mega_iwt_title {
+  font-size: 17px;
+  line-height: 22px;
+  text-transform: capitalize;
+  font-family: var(--font-heading-family);
+  font-weight: 500;
+  color: rgba(var(--color-foreground));
+}
+
+.color-transparent .mega-menu__link--level-2,
+.color-transparent h5.mega_iwt_title,
+.color-transparent p.mega_iwt_content {
+  color: #000;
+}
+
+h5.mega_iwt_title {
+  margin: 20px 0 0;
+}
+
+.mega_product .card__heading,
+.mega_product .price__regular .price-item--regular,
+.mega_product .card-information>.price {
+  color: rgb(var(--color-foreground));
+}
+
+.mega_product .underline-links-hover:hover a {
+  color: rgb(var(--color-foreground));
+}
+
+.mega-menu__list.full-width {
+  padding: 0 3rem;
+}
+
+.mega-menu__content .mega_image_with_text {
+  position: relative;
+}
+
+.mega-menu__content .mega_image_with_text .mega_iwt_btn {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/*** advance mega menu css ****/
+.advance-mega-menu.mega-menu__list {
+  display: block;
+  position: relative;
+  max-width: 324px;
+  background: #f5f5f5;
+  position: relative;
+  padding: 0;
+  min-height: 42rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.advance-mega-menu-collection .product-grid {
+  position: absolute;
+  left: 324px;
+  top: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: calc(100vw - 354px);
+  /* max-width: 1020px; */
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+  transition: all .25s ease-in-out;
+}
+
+.advance-mega-menu-collection .product-grid.active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+.advance-mega-menu-collection .mega_col_title {
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(var(--color-foreground));
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.advance-mega-menu-collection .mega_col_title.active {
+  color: rgb(var(--color-button-text));
+  background-color: rgba(var(--color-button), var(--alpha-button-background));
+}
+
+.advance-mega-menu-collection .product-grid .advance-mega-menu-content {
+  padding: 25px 30px 30px 30px;
+  width: 100%;
+}
+
+.advance-mega-menu-collection .product-grid .mega_col_product_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.advance-mega-menu-collection .product-grid .advance-mega-menu-content .mega_header {
+  padding-bottom: 7px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ededed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advance-mega-menu-collection .product-grid .advance-mega-menu-content .mega_col_title_name {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.advance-mega-menu-collection .product-grid .advance-mega-menu-content .mega_header .view-all-button .btn {
+  color: rgba(var(--color-foreground));
+  font-size: 16px;
+}
+
+.advance-mega-menu-collection .product-grid .advance-mega-menu-content li {
+  max-width: calc(20% - 16px);
+}
+
+.advance-mega-menu-collection .product-grid .mega_col_product_list .card:not(.ratio) {
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  background: #efefef;
+  padding: 0 10px 0 0;
+}
+
+.advance-mega-menu-collection .product-grid .mega_col_product_list .card__inner,
+.advance-mega-menu-collection .product-grid .mega_col_product_list .card .card__media {
+  border-radius: 0;
+}
+
+.advance-mega-menu-collection .product-grid .mega_col_product_list .card__content {
+  text-align: left;
+}
+
+.advance-mega-menu-collection .product-grid .mega_col_product_list .product-card-wrapper .card__heading {
+  font-size: 11px;
+}
+
+.advance-mega-menu.mega-menu__list .advance-mega-menu-btn-view-all {
+  padding: 30px 0;
+  text-align: center;
+  overflow: hidden;
+  margin-top: auto;
+}
+
+.advance-mega-menu.mega-menu__list .advance-mega-menu-btn-view-all a {
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  color: rgb(var(--color-button-text));
+  transition: box-shadow var(--duration-short) ease;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgba(var(--color-button), var(--alpha-button-background));
+}
+
+.advance-mega-menu-collection .product-grid .advance-mega-menu-content .mega_col_product_list_item {
+  margin-bottom: 30px;
+}
+
+.advance-mega-menu-collection .product-grid::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.advance-mega-menu-collection .product-grid::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+
+.advance-mega-menu-collection .product-grid::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #888;
+}
+
+.advance-mega-menu-collection .product-grid::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+.mega-menu .mega-menu__content .advance-mega-menu.mega-menu__list li:nth-child(n+1) {
+  animation: none;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media screen and (max-width: 1400px) {
+  .advance-mega-menu-collection .product-grid .advance-mega-menu-content li {
+    max-width: calc(25% - 16px);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .advance-mega-menu-collection .product-grid .advance-mega-menu-content li {
+    max-width: calc(33.33% - 16px);
+  }
+}
+
+/*** end advance mega menu css ****/
+
+/*** MSU Mega Menu Styles ***/
+.msu-mega-menu {
+  position: relative;
+}
+
+.msu-mega-menu .msu-mega__content {
+  padding: 3.5rem 4rem !important;
+  background-color: #ffffff;
+  border-top: none;
+  min-height: auto;
+  width: max-content;
+  max-width: calc(100vw - 80px);
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s !important;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px) !important;
+  top: 100% !important;
+  margin-top: 0;
+}
+
+/* Hover bridge removed as it is now shared universally in the first bridge rule */
+
+.msu-mega-menu:not([open]) .msu-mega__content {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+.msu-mega-menu[open] .msu-mega__content {
+  opacity: 1 !important;
+  transform: translateX(-50%) translateY(0) !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+.msu-mega__grid {
+  display: flex !important;
+  gap: 4rem;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: auto;
+  justify-content: center;
+}
+
+.msu-mega__columns {
+  flex: 0 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(160px, auto));
+  column-gap: 3rem;
+  row-gap: 0;
+  min-width: min-content;
+}
+
+.msu-mega__column {
+  border-right: none;
+  padding-right: 0;
+  padding-left: 0;
+  min-width: 160px;
+  flex-shrink: 0;
+}
+
+.msu-mega__column:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.msu-mega__column:last-child {
+  border-right: none;
+}
+
+.msu-mega__heading {
+  color: #a85c5c;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 1.8rem;
+  text-transform: capitalize;
+  border-bottom: 2.5px solid #a85c5c;
+  padding-bottom: 0.8rem;
+  font-family: var(--font-heading-family);
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+}
+
+.msu-mega__view-all {
+  display: inline-block;
+  color: #a85c5c;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.msu-mega__view-all:hover {
+  text-decoration: none;
+  font-weight: 500;
+  color: #8a4848;
+}
+
+.msu-mega__link {
+  font-size: 15px !important;
+  color: #555 !important;
+  padding: 0.5rem 0 !important;
+  display: block;
+  text-decoration: none;
+  line-height: 1.7;
+  transition: color 0.2s ease;
+}
+
+.msu-mega__link:hover {
+  color: #000 !important;
+  font-weight: 500;
+  text-decoration: none !important;
+}
+
+.msu-mega__image-wrapper {
+  width: auto;
+  min-width: 280px;
+  max-width: 350px;
+  height: 380px;
+  flex: 0 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.msu-mega__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.msu-mega__image-overlay {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 76px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  z-index: 10;
+}
+
+.msu-mega__image-overlay-text {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ff6633;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.msu-mega__image-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(168, 92, 92, 0.95);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  z-index: 10;
+}
+
+.msu-mega__image-button:hover {
+  background-color: rgba(138, 72, 72, 1);
+}
+
+@media screen and (max-width: 1200px) {
+  .msu-mega__columns {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .msu-mega__image-wrapper {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .msu-mega-menu {
+    display: none !important;
+  }
+}

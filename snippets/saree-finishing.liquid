@@ -1,0 +1,116 @@
+{%- comment -%}
+  Renders the Saree Finishing and Blouse Design options block
+  Accepts:
+  - block: {Object} The block object from section.blocks
+  - product_form_id: {String} The ID of the main product form
+{%- endcomment -%}
+{{ 'saree-finishing.css' | asset_url | stylesheet_tag }}
+
+<div class="saree-finishing-options" {{ block.shopify_attributes }}>
+  <p class="saree-finishing-heading">{{ block.settings.heading | default: 'Select your Choice (Blouse Designs and Measurement Will Sent By Email)' }}</p>
+
+  <div class="saree-finishing-checkboxes">
+    <p class="saree-finishing-subtitle">Saree Finishing</p>
+
+    {%- if block.settings.blouse_stitching_product != blank -%}
+      <div class="saree-finishing-item">
+        <input 
+          type="checkbox" 
+          id="finish-blouse-{{ block.id }}" 
+          class="saree-add-on-checkbox"
+          data-variant-id="{{ block.settings.blouse_stitching_product.selected_or_first_available_variant.id }}"
+          data-add-on-name="Blouse Stitching"
+          name="properties[Saree Finishing - Blouse stitching]" 
+          value="Yes" 
+          form="{{ product_form_id }}"
+        >
+        <label for="finish-blouse-{{ block.id }}">
+          Blouse stitching (+{{ block.settings.blouse_stitching_product.price | money }})
+        </label>
+      </div>
+    {%- endif -%}
+
+    {%- if block.settings.fall_pico_product != blank -%}
+      <div class="saree-finishing-item">
+        <input 
+          type="checkbox" 
+          id="finish-fall-{{ block.id }}" 
+          class="saree-add-on-checkbox"
+          data-variant-id="{{ block.settings.fall_pico_product.selected_or_first_available_variant.id }}"
+          data-add-on-name="Fall Pico"
+          name="properties[Saree Finishing - Fall Pico]" 
+          value="Yes" 
+          form="{{ product_form_id }}"
+        >
+        <label for="finish-fall-{{ block.id }}">
+          Apply Fall Pico (+{{ block.settings.fall_pico_product.price | money }})
+        </label>
+      </div>
+    {%- endif -%}
+
+    {%- if block.settings.petticoat_product != blank -%}
+      <div class="saree-finishing-item">
+        <input 
+          type="checkbox" 
+          id="finish-petticoat-{{ block.id }}" 
+          class="saree-add-on-checkbox"
+          data-variant-id="{{ block.settings.petticoat_product.selected_or_first_available_variant.id }}"
+          data-add-on-name="Petticoat"
+          name="properties[Saree Finishing - Petticoat]" 
+          value="Yes" 
+          form="{{ product_form_id }}"
+        >
+        <label for="finish-petticoat-{{ block.id }}">
+          Petticoat (+{{ block.settings.petticoat_product.price | money }})
+        </label>
+      </div>
+    {%- endif -%}
+
+    {%- if block.settings.tassels_product != blank -%}
+      <div class="saree-finishing-item">
+        <input 
+          type="checkbox" 
+          id="finish-tassels-{{ block.id }}" 
+          class="saree-add-on-checkbox"
+          data-variant-id="{{ block.settings.tassels_product.selected_or_first_available_variant.id }}"
+          data-add-on-name="Designer Tassels"
+          name="properties[Saree Finishing - Designer Tassels]" 
+          value="Yes" 
+          form="{{ product_form_id }}"
+        >
+        <label for="finish-tassels-{{ block.id }}">
+          Designer Tassels (+{{ block.settings.tassels_product.price | money }})
+        </label>
+      </div>
+    {%- endif -%}
+  </div>
+
+  <div class="blouse-design-selector" {% if block.settings.show_blouse_designs == false %}style="display:none;"{% endif %}>
+    <p class="saree-finishing-subtitle">Select Blouse Design (Optional)</p>
+    <div class="blouse-design-grid">
+      {%- for i in (1..5) -%}
+        {%- assign image_key = 'blouse_design_' | append: i -%}
+        {%- assign label_key = 'blouse_label_' | append: i -%}
+        {%- assign design_image = block.settings[image_key] -%}
+        {%- assign design_label = block.settings[label_key] -%}
+
+        {%- if design_image != blank -%}
+          <div class="blouse-design-item">
+            <input 
+              type="radio" 
+              id="blouse-design-{{ i }}-{{ block.id }}" 
+              name="properties[Selected Blouse Design]" 
+              value="{{ design_label | escape }}" 
+              form="{{ product_form_id }}"
+              class="visually-hidden"
+            >
+            <label for="blouse-design-{{ i }}-{{ block.id }}">
+              <img src="{{ design_image | image_url: width: 120 }}" alt="{{ design_label | escape }}" width="80" height="auto" loading="lazy">
+              <span>{{ design_label }}</span>
+            </label>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>

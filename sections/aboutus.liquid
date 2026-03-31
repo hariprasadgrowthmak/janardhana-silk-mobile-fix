@@ -1,0 +1,607 @@
+{%- style -%}
+  .msu-about-section { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .msu-about-section *, .msu-about-section *::before, .msu-about-section *::after { box-sizing: border-box; }
+
+  /* ── STORY ILLUSTRATION ─────────────── */
+  .msu-about-story-img {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  .msu-about-story-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .msu-about-story-img__placeholder {
+    width: 100%;
+    height: 180px;
+    background: #f5f0eb;
+    border: 2px dashed #c9b99a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a08060;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+  .msu-about-story-caption {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #555;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 12px 0 4px;
+  }
+
+  /* ── 1. HERO BANNER ──────────────────── */
+  .msu-about-hero {
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+  }
+  .msu-about-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  .msu-about-hero__placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #2c1a0e 0%, #5c3a1e 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.5);
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+  }
+
+  /* ── 2. HERITAGE SECTION ─────────────── */
+  .msu-about-heritage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 40px;
+    align-items: center;
+  }
+  @media (max-width: 749px) {
+    .msu-about-heritage { grid-template-columns: 1fr; gap: 20px; padding: 20px 16px; }
+  }
+  .msu-about-heritage__img {
+    width: 100%;
+    max-height: 400px;
+    border-radius: 4px;
+    display: block;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    object-fit: cover;
+  }
+  .msu-about-heritage__title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 1.6rem;
+    line-height: 1.25;
+  }
+  .msu-about-heritage__body p {
+    font-size: 1.4rem;
+    color: #555;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+  .msu-about-heritage__body p:last-child { margin-bottom: 0; }
+
+  /* ── 3. STATS STRIP ──────────────────── */
+  .msu-about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  @media (max-width: 749px) {
+    .msu-about-stats { grid-template-columns: 1fr; }
+  }
+  .msu-about-stat {
+    position: relative;
+    overflow: hidden;
+    height: 180px;
+  }
+  .msu-about-stat img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.55);
+  }
+  .msu-about-stat__bg-placeholder {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #2c1a0e 0%, #4a2c12 100%);
+  }
+  .msu-about-stat__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+  }
+  .msu-about-stat__number {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.1;
+    display: block;
+  }
+  .msu-about-stat__label {
+    font-size: 1.2rem;
+    margin-top: 6px;
+    opacity: 0.9;
+  }
+  .msu-about-stat__sub {
+    font-size: 1.1rem;
+    opacity: 0.75;
+    margin-top: 2px;
+    font-style: italic;
+  }
+
+  /* ── 4. VALUES SECTION ───────────────── */
+  .msu-about-values {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px 24px;
+  }
+  @media (max-width: 749px) { .msu-about-values { padding: 20px 16px; } }
+  .msu-about-values__heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 2.4rem;
+  }
+  .msu-about-values__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+  }
+  @media (max-width: 749px) {
+    .msu-about-values__grid { grid-template-columns: 1fr 1fr; gap: 1.6rem; }
+  }
+  @media (max-width: 480px) {
+    .msu-about-values__grid { grid-template-columns: 1fr; }
+  }
+  .msu-about-value {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .msu-about-value__icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    background: #f5f0eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .msu-about-value__icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: #7c5c3e;
+    fill: none;
+    stroke-width: 1.5;
+  }
+  .msu-about-value__name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+  }
+  .msu-about-value__desc {
+    font-size: 1.25rem;
+    color: #666;
+    line-height: 1.6;
+  }
+
+  /* ── 5. FAQ / ACCORDION ──────────────── */
+  .msu-about-faq {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px 28px;
+  }
+  .msu-about-faq__heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 2rem;
+  }
+  .msu-about-faq__item {
+    border-bottom: 1px solid #e5e0d8;
+  }
+  .msu-about-faq__btn {
+    width: 100%;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    cursor: pointer;
+    text-align: left;
+  }
+  .msu-about-faq__btn svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+    stroke: #555;
+  }
+  .msu-about-faq__item.open .msu-about-faq__btn svg {
+    transform: rotate(180deg);
+  }
+  .msu-about-faq__body {
+    display: none;
+    padding: 0 0 18px;
+    font-size: 1.35rem;
+    color: #666;
+    line-height: 1.7;
+  }
+  .msu-about-faq__item.open .msu-about-faq__body { display: block; }
+
+  /* ── 6. SERVICE ICONS STRIP ──────────── */
+  .msu-about-services {
+    background: #f9f6f2;
+    border-top: 1px solid #ede8e0;
+  }
+  .msu-about-services__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .msu-about-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    min-width: 120px;
+  }
+  .msu-about-service svg {
+    width: 36px;
+    height: 36px;
+    stroke: #7c5c3e;
+    fill: none;
+    stroke-width: 1.2;
+  }
+  .msu-about-service__label {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+{%- endstyle -%}
+
+<div class="msu-about-section" style="overflow-x:hidden;width:100%;">
+
+  <!-- 1. HERO BANNER -->
+  <div class="msu-about-hero">
+    {%- if section.settings.hero_image != blank -%}
+      <img src="{{ section.settings.hero_image | image_url: width: 2000 }}"
+           alt="{{ section.settings.hero_image.alt | default: 'About Us' | escape }}">
+    {%- else -%}
+      <div class="msu-about-hero__placeholder">
+        <span>Upload Hero Banner Image in Theme Editor</span>
+      </div>
+    {%- endif -%}
+  </div>
+
+  <!-- 1.5 STORY ILLUSTRATION -->
+  <div class="msu-about-story-img">
+    {%- if section.settings.story_image != blank -%}
+      <img src="{{ section.settings.story_image | image_url: width: 2400 }}"
+           alt="{{ section.settings.story_image.alt | default: 'Our Story' | escape }}"
+           loading="lazy">
+    {%- else -%}
+      <div class="msu-about-story-img__placeholder">
+        <span>Upload Story Illustration Image in Theme Editor</span>
+      </div>
+    {%- endif -%}
+    {%- if section.settings.story_caption != blank -%}
+      <div class="msu-about-story-caption">{{ section.settings.story_caption }}</div>
+    {%- endif -%}
+  </div>
+
+  <!-- 2. HERITAGE / STORY SECTION -->
+  <div class="msu-about-heritage">
+    <div class="msu-about-heritage__left">
+      {%- if section.settings.team_image != blank -%}
+        <img src="{{ section.settings.team_image | image_url: width: 800 }}"
+             alt="{{ section.settings.team_image.alt | default: 'Our Team' | escape }}"
+             class="msu-about-heritage__img">
+      {%- else -%}
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='450'><rect fill='%23f0ece6'/></svg>"
+             alt="" class="msu-about-heritage__img">
+      {%- endif -%}
+    </div>
+    <div class="msu-about-heritage__right">
+      <h2 class="msu-about-heritage__title">{{ section.settings.heritage_title | default: 'A Heritage Institution' }}</h2>
+      <div class="msu-about-heritage__body">
+        {{ section.settings.heritage_content }}
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. STATS STRIP -->
+  <div class="msu-about-stats">
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'stat' -%}
+        <div class="msu-about-stat" {{ block.shopify_attributes }}>
+          {%- if block.settings.bg_image != blank -%}
+            <img src="{{ block.settings.bg_image | image_url: width: 600 }}" alt="">
+          {%- else -%}
+            <div class="msu-about-stat__bg-placeholder"></div>
+          {%- endif -%}
+          <div class="msu-about-stat__overlay">
+            <span class="msu-about-stat__number">{{ block.settings.stat_number }}</span>
+            <span class="msu-about-stat__label">{{ block.settings.stat_label }}</span>
+            {%- if block.settings.stat_sub != blank -%}
+              <span class="msu-about-stat__sub">{{ block.settings.stat_sub }}</span>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+
+  <!-- 4. VALUES SECTION -->
+  <div class="msu-about-values">
+    <h2 class="msu-about-values__heading">{{ section.settings.values_heading | default: "We're Driven By Our Values" }}</h2>
+    <div class="msu-about-values__grid">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'value' -%}
+          <div class="msu-about-value" {{ block.shopify_attributes }}>
+            <div class="msu-about-value__icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <div>
+              <div class="msu-about-value__name">{{ block.settings.value_name }}</div>
+              <div class="msu-about-value__desc">{{ block.settings.value_desc }}</div>
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+
+  <!-- 5. FAQ ACCORDION -->
+  <div class="msu-about-faq">
+    <h2 class="msu-about-faq__heading">{{ section.settings.faq_heading | default: 'Why Us' }}</h2>
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'faq' -%}
+        <div class="msu-about-faq__item" {{ block.shopify_attributes }}>
+          <button class="msu-about-faq__btn" type="button" aria-expanded="false">
+            {{ block.settings.faq_question }}
+            <svg viewBox="0 0 24 24" fill="none"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="msu-about-faq__body">{{ block.settings.faq_answer }}</div>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+
+  <!-- 6. SERVICE ICONS STRIP -->
+  <div class="msu-about-services">
+    <div class="msu-about-services__inner">
+      <div class="msu-about-service">
+        <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><path d="m16 8 5 0 2 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        <span class="msu-about-service__label">Free Shipping</span>
+      </div>
+      <div class="msu-about-service">
+        <svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        <span class="msu-about-service__label">Assured Quality</span>
+      </div>
+      <div class="msu-about-service">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span class="msu-about-service__label">Worldwide Shipping</span>
+      </div>
+      <div class="msu-about-service">
+        <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        <span class="msu-about-service__label">100% Secure Payment</span>
+      </div>
+      <div class="msu-about-service">
+        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <span class="msu-about-service__label">Best Price Promise</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  document.querySelectorAll('.msu-about-faq__btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = this.closest('.msu-about-faq__item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.msu-about-faq__item').forEach(function(i) { i.classList.remove('open'); });
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "MSU About Page",
+  "settings": [
+    {
+      "type": "header",
+      "content": "1. Hero Banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Banner Image"
+    },
+    {
+      "type": "header",
+      "content": "1.5 Story Illustration"
+    },
+    {
+      "type": "image_picker",
+      "id": "story_image",
+      "label": "Story Illustration Image (full-width)"
+    },
+    {
+      "type": "text",
+      "id": "story_caption",
+      "label": "Caption below illustration",
+      "default": "Our Story"
+    },
+    {
+      "type": "header",
+      "content": "2. Heritage Section"
+    },
+    {
+      "type": "image_picker",
+      "id": "team_image",
+      "label": "Team / Family Photo"
+    },
+    {
+      "type": "text",
+      "id": "heritage_title",
+      "label": "Section Title",
+      "default": "A Heritage Institution"
+    },
+    {
+      "type": "richtext",
+      "id": "heritage_content",
+      "label": "Heritage Content",
+      "default": "<p>Since 1952, Janardhana Silk House has been a trusted name in handwoven silk sarees, connecting weavers to wearers across generations.</p><p>The family business has grown over the decades, manufacturing and bulk supplying of real zari silk sarees for over seven decades.</p><p>The company is managed by the second and third generations of the family, who have been nurturing Indian ethnic wear since 1952.</p>"
+    },
+    {
+      "type": "header",
+      "content": "4. Values Section"
+    },
+    {
+      "type": "text",
+      "id": "values_heading",
+      "label": "Values Section Heading",
+      "default": "We're Driven By Our Values"
+    },
+    {
+      "type": "header",
+      "content": "5. FAQ / Why Us Section"
+    },
+    {
+      "type": "text",
+      "id": "faq_heading",
+      "label": "FAQ Section Heading",
+      "default": "Why Janardhana Silk House"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "bg_image",
+          "label": "Background Image"
+        },
+        {
+          "type": "text",
+          "id": "stat_number",
+          "label": "Stat / Title",
+          "default": "Since 1982"
+        },
+        {
+          "type": "text",
+          "id": "stat_label",
+          "label": "Label",
+          "default": "Years of excellence"
+        },
+        {
+          "type": "text",
+          "id": "stat_sub",
+          "label": "Sub-label (optional)",
+          "default": "Since 1952"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "name": "Value Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "value_name",
+          "label": "Value Name",
+          "default": "Quality Assurance"
+        },
+        {
+          "type": "textarea",
+          "id": "value_desc",
+          "label": "Description",
+          "default": "We ensure every product is thoroughly inspected before delivery."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "faq_question",
+          "label": "Question",
+          "default": "A Heritage Institution"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_answer",
+          "label": "Answer",
+          "default": "<p>Since 1952, Janardhana Silk House has stood as a treasured destination for the finest silk sarees.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "MSU About Page",
+      "blocks": [
+        { "type": "stat", "settings": { "stat_number": "Since 1952", "stat_label": "" } },
+        { "type": "stat", "settings": { "stat_number": "8000+ Google", "stat_label": "Reviews with 4+ star rating" } },
+        { "type": "stat", "settings": { "stat_number": "Rated Top 10", "stat_label": "Retail Shopping Destinations", "stat_sub": "by Vanity Fair Magazine – Germany" } },
+        { "type": "value", "settings": { "value_name": "Quality Assurance", "value_desc": "We ensure every product is thoroughly inspected and delivered to you." } },
+        { "type": "value", "settings": { "value_name": "Unique Craftsmanship", "value_desc": "Our unique craftsmanship ensures genuine and finest quality of pure Silk or Cotton." } },
+        { "type": "value", "settings": { "value_name": "Exclusive Designs", "value_desc": "We provide fresh original designs sourced at your request. We get fresh unique styles anywhere else." } },
+        { "type": "value", "settings": { "value_name": "Easy Returns", "value_desc": "As part of our commitment to guaranteeing your happiness we offer easy return and refund policy." } },
+        { "type": "value", "settings": { "value_name": "Worldwide Shipping", "value_desc": "We also process international orders and ship to most countries across the world within 4-5 days." } },
+        { "type": "value", "settings": { "value_name": "Best Price Challenge", "value_desc": "We are happy to give you an additional discount of 10% if you find the identical product at a lower price – Buy with confidence!" } },
+        { "type": "faq", "settings": { "faq_question": "A Heritage Institution", "faq_answer": "<p>Since 1952, Janardhana Silk House has been a trusted name in handwoven silk sarees, connecting weavers to wearers across generations.</p>" } },
+        { "type": "faq", "settings": { "faq_question": "Craftsmanship to fulfillment – People Power", "faq_answer": "<p>Our master weavers bring decades of expertise to every piece, ensuring each saree is a work of art.</p>" } },
+        { "type": "faq", "settings": { "faq_question": "Technology at your service", "faq_answer": "<p>We combine traditional craftsmanship with modern technology to give you the best shopping experience.</p>" } },
+        { "type": "faq", "settings": { "faq_question": "Best Price Challenge", "faq_answer": "<p>We guarantee the best prices. Find it cheaper elsewhere and we will beat it by 10%.</p>" } },
+        { "type": "faq", "settings": { "faq_question": "Customer – Speak", "faq_answer": "<p>Thousands of happy customers across the world trust Janardhana Silk House for their special occasions.</p>" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

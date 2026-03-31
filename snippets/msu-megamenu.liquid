@@ -1,0 +1,89 @@
+{% comment %}
+  Renders a custom MSU-style megamenu for the header.
+{% endcomment %}
+
+<nav class="header__inline-menu msu-mega-wrap">
+  <ul class="list-menu list-menu--inline" role="list">
+    {%- for link in section.settings.menu.links -%}
+      <li>
+        {%- assign has_msu_mega = false -%}
+        {%- for block in section.blocks -%}
+          {%- assign block_parent_handle = block.settings.parent_link | handleize -%}
+          {%- assign link_handle = link.title | handleize -%}
+          {%- if block.type == 'msu_megamenu' and block_parent_handle == link_handle -%}
+            {%- assign has_msu_mega = true -%}
+            {%- assign msu_block = block -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- if has_msu_mega -%}
+          <header-menu>
+            <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu msu-mega-menu">
+              <summary id="HeaderMenu-{{ link.handle }}" class="header__menu-item list-menu__item link focus-inset">
+                <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>
+                  {{- link.title | escape -}}
+                </span>
+                {% render 'icon-caret' %}
+              </summary>
+              <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content msu-mega__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup" tabindex="-1">
+                <div class="msu-mega__grid">
+                  <div class="msu-mega__columns">
+                    {%- for childlink in link.links -%}
+                      <div class="msu-mega__column">
+                        <h3 class="msu-mega__heading">{{ childlink.title | escape }}</h3>
+                        {%- if childlink.url != '' -%}
+                          <a href="{{ childlink.url }}" class="msu-mega__view-all">View All {{ childlink.title | escape }} ›</a>
+                        {%- endif -%}
+                        {%- if childlink.links != blank -%}
+                          <ul class="list-unstyled" role="list">
+                            {%- for grandchildlink in childlink.links -%}
+                              <li>
+                                <a href="{{ grandchildlink.url }}" class="msu-mega__link link{% if grandchildlink.current %} msu-mega__link--active{% endif %}" {% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                  {{ grandchildlink.title | escape }}
+                                </a>
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        {%- endif -%}
+                      </div>
+                    {%- endfor -%}
+                  </div>
+                  {%- if msu_block.settings.image != blank -%}
+                    <div class="msu-mega__image-wrapper">
+                      <img
+                        src="{{ msu_block.settings.image | image_url: width: 500 }}"
+                        alt="{{ msu_block.settings.image.alt | default: link.title }}"
+                        loading="lazy"
+                        width="{{ msu_block.settings.image.width }}"
+                        height="{{ msu_block.settings.image.height }}"
+                        class="msu-mega__image"
+                      >
+                      {%- if msu_block.settings.show_live_button -%}
+                        <div class="msu-mega__image-overlay">
+                          <div class="msu-mega__image-overlay-text">LIVE<br>Shopping</div>
+                        </div>
+                        {%- if msu_block.settings.button_url != blank -%}
+                          <a href="{{ msu_block.settings.button_url }}" class="msu-mega__image-button">
+                            {{ msu_block.settings.button_text | default: 'Shop Now' }}
+                          </a>
+                        {%- endif -%}
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                </div>
+              </div>
+            </details>
+          </header-menu>
+        {%- else -%}
+          {% comment %} Fallback to regular menu or existing mega menu logic if needed, but for now just standard link {% endcomment %}
+          <a id="HeaderMenu-{{ link.handle }}" href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset" {% if link.current %} aria-current="page"{% endif %}>
+            <span {%- if link.current %} class="header__active-menu-item"{% endif %}>
+              {{- link.title | escape -}}
+            </span>
+          </a>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+</nav>

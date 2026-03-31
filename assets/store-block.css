@@ -1,0 +1,36 @@
+.store-block .collage_item { position: relative;}
+.store-block .text-content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, .5);
+  padding: 2rem;
+  opacity: 0;
+  transition: 0.5s all;
+}
+.store-block .collage_item:hover .text-content { opacity: 1; transition: 0.5s all;}
+.store-block .multicolumn-list { display: grid; grid-template-columns: repeat(4, 1fr);}
+.store-block .multicolumn-list .grid__item { width: 100%; max-width: 100%;}
+.store-block .multicolumn-list .grid__item:first-child { grid-column: span 2;}
+.store-block .text-content p { font-size: 2.5rem; line-height: normal; letter-spacing: normal; color: #ffffff; margin: 0;}
+.store-block .collage_item .text-content .button {
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 989px){
+  .store-block .multicolumn-list {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width:749px){
+  .store-block .text-content p {
+      font-size: 2rem;
+  }
+}
+@media screen and (max-width:480px){
+  .store-block .text-content p {
+      font-size: 1.8rem;
+  }
+}
