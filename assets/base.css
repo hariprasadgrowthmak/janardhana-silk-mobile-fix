@@ -5005,4 +5005,6 @@ header .categories-menu p {
     flex: unset !important;
   }
 
+}.title-wrapper-with-link.title-wrapper--self-padded-mobile.title-wrapper--no-top-margin {
+  font-size: 20px !important;
 }
