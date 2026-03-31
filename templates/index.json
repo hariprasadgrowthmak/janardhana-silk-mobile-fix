@@ -526,6 +526,7 @@
         "cat_gadwal",
         "cat_patola"
       ],
+      "disabled": true,
       "settings": {
         "title": "TOP CATEGORIES",
         "subtitle": "",
@@ -870,7 +871,7 @@
         "enable_desktop_slider": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "button_alignment_mobile": "left",
+        "button_alignment_mobile": "center",
         "padding_top": 28,
         "padding_bottom": 28
       }
