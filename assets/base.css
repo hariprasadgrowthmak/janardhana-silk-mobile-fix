@@ -4964,143 +4964,26 @@ header .categories-menu p {
 
 }
 
-<div class="collection-list-wrapper  page-width  isolate  no-mobile-link section-template--20144382378182__07468762-302d-4441-92a3-3b98a30b4cbe-padding"><div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin" style="text-align: center;">
-        <h2 id="SectionHeading-template--20144382378182__07468762-302d-4441-92a3-3b98a30b4cbe" class="collection-list-title inline-richtext h2 scroll-trigger animate--slide-in">
-          Shop By Fabrics
-        </h2>
-        <div class="collection_description rte">
-          <p>Find Your Perfect Drape – Cotton, Silk, Georgette &amp; More</p>
-        </div></div><slider-component class="slider-mobile-gutter scroll-trigger animate--slide-in">
-      <ul class="collection-list contains-card contains-card--collection contains-card--standard grid grid--3-col-desktop grid--1-col-tablet-down collection-list--3-items" id="Slider-template--20144382378182__07468762-302d-4441-92a3-3b98a30b4cbe" role="list"><li id="Slide-template--20144382378182__07468762-302d-4441-92a3-3b98a30b4cbe-1" class="collection-list__item grid__item collection-list__item--no-media scroll-trigger animate--slide-in" data-cascade="" style="--animation-order: 1;">
+/* 🔥 FORCE SLIDER FOR THIS SECTION */
+@media screen and (max-width: 749px) {
 
+  .section-template--20144382378182__07468762-302d-4441-92a3-3b98a30b4cbe-padding .collection-list.grid {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    gap: 12px;
+    padding-left: 12px;
+  }
 
+  .section-template--20144382378182__07468762-302d-4441-92a3-3b98a30b4cbe-padding .collection-list__item {
+    min-width: 80% !important;
+    flex: 0 0 auto !important;
+    scroll-snap-align: start;
+  }
 
-<div class="card-wrapper animate-arrow collection-card-wrapper">
-  <div class="
-      card
-      card--standard
-      card--media
-      
-      
-      
-    " style="--ratio-percent: 130.65902578796562%;">
-    <div class="card__inner color-background-2 gradient ratio" style="--ratio-percent: 130.65902578796562%;">
-      
-        <a href="/collections/woven-silk-fabrics" class="full-unstyled-link">
-          <div class="card__media">
-              <div class="media media--transparent media--hover-effect">
-                <img srcset="//janardhana-silk-house-2.myshopify.com/cdn/shop/files/third-category-2.png?v=1768985028&amp;width=165 165w,//janardhana-silk-house-2.myshopify.com/cdn/shop/files/third-category-2.png?v=1768985028&amp;width=330 330w,//janardhana-silk-house-2.myshopify.com/cdn/shop/files/third-category-2.png?v=1768985028&amp;width=535 535w,//janardhana-silk-house-2.myshopify.com/cdn/shop/files/third-category-2.png?v=1768985028 698w
-                  " src="//janardhana-silk-house-2.myshopify.com/cdn/shop/files/third-category-2.png?v=1768985028&amp;width=1500" sizes="
-                    (min-width: 1540px) 480px,
-                    (min-width: 750px) calc((100vw - 10rem) / 2),
-                    calc(100vw - 3rem)
-                  " alt="Woven Silk Fabrics" height="912" width="698" loading="lazy" class="motion-reduce">
-              </div>
-          </div>
-         </a>
-      
-          <div class="card__content above_image_title center mobile-left">
-          <div class="card__information">
-            <a href="/collections/woven-silk-fabrics" class="full-unstyled-link">
-              <h3 class="card__heading">Woven
-</h3>
-              <div class=" button">Shop Now
-</div>
-            </a>
-           
-          </div>
-        </div>
-        
-</div>
-    
-</div>
-</div>
-          </li><li id="Slide-template--20144382378182__07468762-302d-4441-92a3-3b98a30b4cbe-2" class="collection-list__item grid__item collection-list__item--no-media scroll-trigger animate--slide-in scroll-trigger--offscreen" data-cascade="" style="--animation-order: 2;">
+  .section-template--20144382378182__07468762-302d-4441-92a3-3b98a30b4cbe-padding .collection-list::-webkit-scrollbar {
+    display: none;
+  }
 
-
-
-<div class="card-wrapper animate-arrow collection-card-wrapper">
-  <div class="
-      card
-      card--standard
-      card--media
-      
-      
-      
-    " style="--ratio-percent: 130.65902578796562%;">
-    <div class="card__inner color-background-2 gradient ratio" style="--ratio-percent: 130.65902578796562%;">
-      
-        <a href="/collections/printed-silk-fabrics" class="full-unstyled-link">
-          <div class="card__media">
-              <div class="media media--transparent media--hover-effect">
-                <img srcset="//janardhana-silk-house-2.myshopify.com/cdn/shop/files/third-category-4.png?v=1768985028&amp;width=165 165w,//janardhana-silk-house-2.myshopify.com/cdn/shop/files/third-category-4.png?v=1768985028&amp;width=330 330w,//janardhana-silk-house-2.myshopify.com/cdn/shop/files/third-category-4.png?v=1768985028&amp;width=535 535w,//janardhana-silk-house-2.myshopify.com/cdn/shop/files/third-category-4.png?v=1768985028 698w
-                  " src="//janardhana-silk-house-2.myshopify.com/cdn/shop/files/third-category-4.png?v=1768985028&amp;width=1500" sizes="
-                    (min-width: 1540px) 480px,
-                    (min-width: 750px) calc((100vw - 10rem) / 2),
-                    calc(100vw - 3rem)
-                  " alt="Printed Silk Fabrics" height="912" width="698" loading="lazy" class="motion-reduce">
-              </div>
-          </div>
-         </a>
-      
-          <div class="card__content above_image_title center mobile-left">
-          <div class="card__information">
-            <a href="/collections/printed-silk-fabrics" class="full-unstyled-link">
-              <h3 class="card__heading">Printed
-</h3>
-              <div class=" button">Shop Now
-</div>
-            </a>
-           
-          </div>
-        </div>
-        
-</div>
-    
-</div>
-</div>
-          </li><li id="Slide-template--20144382378182__07468762-302d-4441-92a3-3b98a30b4cbe-3" class="collection-list__item grid__item collection-list__item--no-media scroll-trigger animate--slide-in scroll-trigger--offscreen" data-cascade="" style="--animation-order: 3;">
-
-
-
-<div class="card-wrapper animate-arrow collection-card-wrapper">
-  <div class="
-      card
-      card--standard
-      card--media
-      
-      
-      
-    " style="--ratio-percent: 130.65902578796562%;">
-    <div class="card__inner color-background-2 gradient ratio" style="--ratio-percent: 130.65902578796562%;">
-      
-        <a href="/collections/dyed-silk-fabrics" class="full-unstyled-link">
-          <div class="card__media">
-              <div class="media media--transparent media--hover-effect">
-                <img srcset="//janardhana-silk-house-2.myshopify.com/cdn/shop/files/third-category-1.png?v=1768985027&amp;width=165 165w,//janardhana-silk-house-2.myshopify.com/cdn/shop/files/third-category-1.png?v=1768985027&amp;width=330 330w,//janardhana-silk-house-2.myshopify.com/cdn/shop/files/third-category-1.png?v=1768985027&amp;width=535 535w,//janardhana-silk-house-2.myshopify.com/cdn/shop/files/third-category-1.png?v=1768985027 698w
-                  " src="//janardhana-silk-house-2.myshopify.com/cdn/shop/files/third-category-1.png?v=1768985027&amp;width=1500" sizes="
-                    (min-width: 1540px) 480px,
-                    (min-width: 750px) calc((100vw - 10rem) / 2),
-                    calc(100vw - 3rem)
-                  " alt="Dyed Silk Fabrics" height="912" width="698" loading="lazy" class="motion-reduce">
-              </div>
-          </div>
-         </a>
-      
-          <div class="card__content above_image_title center mobile-left">
-          <div class="card__information">
-            <a href="/collections/dyed-silk-fabrics" class="full-unstyled-link">
-              <h3 class="card__heading">Gowns
-</h3>
-              <div class=" button">Shop Now
-</div>
-            </a>
-           
-          </div>
-        </div>
-        
-</div>
-    
-</div>
-</div>
-          </li></ul></slider-component></div>
+}
