@@ -990,7 +990,7 @@
       ],
       "settings": {
         "title": "Accessories",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "description": "<p>Complete Your Look with Elegant Add-Ons & Finishing Touches</p>",
         "heading_alignment": "center",
         "image_ratio": "portrait",
