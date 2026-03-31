@@ -5034,10 +5034,7 @@ display:none;
 }
 ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:20px;}
 /* 🔥 REDUCE PADDING + INCREASE GAP (VIDEO SLIDER SECTION) */
-.page-width.scroll-trigger.animate--slide-in {
-  padding-left: 8px !important;
-  padding-right: 8px !important;
-}
+
 
 /* Increase space between cards */
 .page-width.scroll-trigger.animate--slide-in .wizup-item {
