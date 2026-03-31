@@ -1245,6 +1245,71 @@
         "padding_top": 30,
         "padding_bottom": 30
       }
+    },
+    "shopable_videos_3PCw7b": {
+      "type": "shopable-videos",
+      "blocks": {
+        "video_mfTn4a": {
+          "type": "video",
+          "settings": {
+            "file_video_url": "",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "shorts_url": "",
+            "shop_product": ""
+          }
+        },
+        "video_UMngLH": {
+          "type": "video",
+          "settings": {
+            "file_video_url": "",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "shorts_url": "",
+            "shop_product": ""
+          }
+        },
+        "video_pfBzRN": {
+          "type": "video",
+          "settings": {
+            "file_video_url": "",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "shorts_url": "",
+            "shop_product": ""
+          }
+        },
+        "video_N7mMw6": {
+          "type": "video",
+          "settings": {
+            "file_video_url": "",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "shorts_url": "",
+            "shop_product": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_mfTn4a",
+        "video_UMngLH",
+        "video_pfBzRN",
+        "video_N7mMw6"
+      ],
+      "name": "t:sections.shopable-videos.name",
+      "settings": {
+        "heading": "Customer",
+        "sub_title": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "image_ratio": "square",
+        "full_width": true,
+        "gap_items": false,
+        "color_scheme": "",
+        "columns_desktop": 8,
+        "enable_story_style": false,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "enable_desktop_slider": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
@@ -1265,6 +1330,7 @@
     "msu_legacy_banner_MSU03",
     "custom_instagram_9k4UFy",
     "sub_banner_YBDbjN",
-    "service_icon_pHgMfL"
+    "service_icon_pHgMfL",
+    "shopable_videos_3PCw7b"
   ]
 }
