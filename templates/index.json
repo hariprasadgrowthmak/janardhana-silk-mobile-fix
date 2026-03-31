@@ -544,7 +544,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Trending Collections",
-        "heading_size": "h2",
+        "heading_size": "h0",
         "heading_alignment": "center",
         "description": "<p>Freshly Launched Styles – Be the First to Drape the Trend</p>",
         "show_description": false,
@@ -779,7 +779,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Pure Silk Saree",
-        "heading_size": "h2",
+        "heading_size": "h0",
         "heading_alignment": "center",
         "description": "<p>Experience the Luxury of Authentic Silk in Every Thread</p>",
         "show_description": false,
@@ -850,7 +850,7 @@
       ],
       "settings": {
         "title": "Shop By Fabrics",
-        "heading_size": "h2",
+        "heading_size": "h0",
         "description": "<p>Find Your Perfect Drape – Cotton, Silk, Georgette & More</p>",
         "heading_alignment": "center",
         "image_ratio": "adapt",
@@ -1079,7 +1079,7 @@
       "settings": {
         "heading": "Trending On Our Social Wall",
         "sub_title": "Follow to Know More",
-        "heading_size": "h2",
+        "heading_size": "h0",
         "heading_alignment": "center",
         "image_ratio": "portrait",
         "full_width": true,
