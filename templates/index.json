@@ -16,6 +16,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/3_a1b69ca2-a971-4b4f-8205-ea551494c063.png",
+            "mobile_image": "shopify://shop_images/Hero_Section_01.png",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
