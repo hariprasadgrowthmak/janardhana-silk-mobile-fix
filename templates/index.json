@@ -612,6 +612,7 @@
         "occasion_festive",
         "occasion_casual"
       ],
+      "custom_css": [],
       "settings": {
         "title": "SHOP BY OCCASIONS",
         "subtitle": "Find the Perfect Look for Every Celebration",
