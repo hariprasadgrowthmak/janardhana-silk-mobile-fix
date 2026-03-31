@@ -5006,3 +5006,19 @@ header .categories-menu p {
   }
 
 }
+/* 🔥 INSTAGRAM 2x2 GRID (MOBILE) */
+@media screen and (max-width: 749px) {
+
+  .section-template--20144382378182__custom_instagram_9k4UFy-padding .product-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px;
+  }
+
+  .section-template--20144382378182__custom_instagram_9k4UFy-padding .grid__item {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: unset !important;
+  }
+
+}
