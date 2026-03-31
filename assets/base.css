@@ -5052,6 +5052,6 @@ div#collection-template--20144382378182__0617c2f2-69ec-4df8-a506-b2616d4e1db4 {
     padding: 40px;
 }
 .page-width.section-template--20144382378182__msu_occasions_MSU02-padding {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
 }
