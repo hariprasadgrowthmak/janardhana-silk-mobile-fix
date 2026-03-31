@@ -614,7 +614,7 @@
       "settings": {
         "title": "SHOP BY OCCASIONS",
         "subtitle": "Find the Perfect Look for Every Celebration",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "columns_desktop": 4,
         "bg_color": "#f9f5ee",
         "color_scheme": "background-1",
@@ -759,7 +759,7 @@
         "image_YGxLMW"
       ],
       "settings": {
-        "layout": "grid",
+        "layout": "full_bleed",
         "heading": "",
         "heading_size": "h2",
         "heading_alignment": "center",
