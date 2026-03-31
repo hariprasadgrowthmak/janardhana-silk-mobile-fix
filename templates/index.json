@@ -1294,6 +1294,7 @@
         "video_YjKfA6",
         "video_LbmDqJ"
       ],
+      "disabled": true,
       "name": "t:sections.shopable-videos.name",
       "settings": {
         "heading": "Cutomer Reviews",
