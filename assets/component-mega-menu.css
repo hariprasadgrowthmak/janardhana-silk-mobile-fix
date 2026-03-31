@@ -155,37 +155,37 @@ header-menu details > summary {
 
   .header-drawer,
   .menu-drawer-container {
-    flex: 1 !important;
+    flex: 0 1 auto !important;
     display: flex !important;
     justify-content: flex-start !important;
     width: auto !important;
     margin: 0 !important;
   }
 
-  /* LEFT: hamburger */
+  /* LEFT: hamburger — 0-width container, icon positioned absolutely inside */
   .header__icon--menu {
     justify-content: flex-start !important;
     margin: 0 !important;
     width: auto !important;
-    flex: 1 !important;
     display: flex !important;
+    overflow: visible !important;
   }
 
-  /* 🔥 CENTER: LOGO (ABSOLUTE, constrained to avoid icon overlap) */
-  .header__heading {
+  /* 🔥 CENTER: LOGO — absolute center, constrained to avoid icon overlap */
+  /* Homepage uses h1.header__heading > a.header__heading-link
+     Collection/product pages use a.header__heading-link directly in .header */
+  .header__heading,
+  .header > .header__heading-link {
     position: absolute !important;
     left: 50% !important;
-    transform: translateX(-50%) !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
     margin: 0 !important;
     z-index: 3000 !important;
-    max-width: calc(100% - 160px) !important;
+    max-width: calc(100% - 120px) !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    height: 100% !important;
-    top: 50% !important;
-    transform-origin: center center !important;
-    margin-top: -20px !important;
   }
 
   .header__heading-link {
@@ -196,16 +196,17 @@ header-menu details > summary {
   }
 
   .header__heading img,
-  .header__heading-logo {
+  .header__heading-logo,
+  .header > .header__heading-link img {
     max-height: 40px !important;
     max-width: 100% !important;
     width: auto !important;
     display: block !important;
   }
 
-  /* RIGHT: icons */
+  /* RIGHT: icons — flex: 1 pushes logo toward center */
   .header__icons {
-    flex: 0 0 auto !important;
+    flex: 1 1 0% !important;
     display: flex !important;
     align-items: center !important;
     justify-content: flex-end !important;

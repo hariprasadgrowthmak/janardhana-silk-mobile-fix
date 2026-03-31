@@ -2491,8 +2491,6 @@ input[type='checkbox'] {
   .header__heading,
   .header__heading-link {
     text-align: center;
-    min-width: 0;
-    overflow: hidden;
   }
 
   .header__heading-logo-wrapper {
@@ -2633,13 +2631,6 @@ menu-drawer+.header__search {
 
 .header--top-center header-drawer {
   grid-area: left-icons;
-}
-
-/* Ensure menu drawer sits in left-icons on mobile for all header layouts */
-@media screen and (max-width: 989px) {
-  header-drawer {
-    grid-area: left-icons;
-  }
 }
 
 .header:not(.header--has-menu) *>.header__search {
