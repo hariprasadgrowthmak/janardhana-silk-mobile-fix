@@ -4963,8 +4963,7 @@ header .categories-menu p {
   }
 
 }
-
-/* 🔥 FORCE SLIDER FOR THIS SECTION */
+/* 🔥 FINAL WORKING MOBILE SLIDER (75%) */
 @media screen and (max-width: 749px) {
 
   .section-template--20144382378182__07468762-302d-4441-92a3-3b98a30b4cbe-padding .collection-list.grid {
@@ -4976,9 +4975,11 @@ header .categories-menu p {
     padding-left: 12px;
   }
 
-  .section-template--20144382378182__07468762-302d-4441-92a3-3b98a30b4cbe-padding .collection-list__item {
-    min-width: 80% !important;
-    flex: 0 0 auto !important;
+  .section-template--20144382378182__07468762-302d-4441-92a3-3b98a30b4cbe-padding .grid__item {
+    width: 75% !important;
+    min-width: 75% !important;
+    max-width: 75% !important;
+    flex: 0 0 75% !important;
     scroll-snap-align: start;
   }
 
