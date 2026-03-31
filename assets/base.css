@@ -5041,18 +5041,3 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
   margin-right: 16px !important;
 }
 
-/* Reduce inner padding of slider */
-.page-width.scroll-trigger.animate--slide-in .vizup-main-container {
-  padding: 0px !important;
-}
-
-.page-width.section-template--20144382378182__msu_occasions_MSU02-padding {
-  padding-left: 60px !important;
-  padding-right: 60px !important;
-}
-
-.page-width.scroll-trigger.animate--slide-in {
-  padding-left: 40px;
-  padding-right: 40px;
-  box-sizing: border-box;
-}
