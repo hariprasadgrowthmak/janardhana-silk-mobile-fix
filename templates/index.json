@@ -160,80 +160,213 @@
         "pause_hover": true
       }
     },
-    "service_icon_pHgMfL": {
-      "type": "service-icon",
+    "categories_slider_UtmejN": {
+      "type": "categories-slider",
       "blocks": {
-        "column_pH9XTG": {
+        "column_9nVebb": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/service-icon-1.png",
-            "icon_type": "check",
-            "title": "FREE SHIPPING",
-            "text": "",
+            "image": "shopify://shop_images/kanjivuram.png",
+            "title": "",
+            "text": "<h6>Kanjivaram</h6>",
             "link_label": "",
-            "link": ""
+            "link": "shopify://collections/kanjivaram"
           }
         },
-        "column_HKgmgj": {
+        "column_dVbhDq": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/service-icon-2.png",
-            "icon_type": "check",
-            "title": "SUPPORT 24/7",
-            "text": "",
+            "image": "shopify://shop_images/silk_saree.png",
+            "title": "",
+            "text": "<h6>Silk Fabrics</h6>",
             "link_label": "",
-            "link": ""
+            "link": "shopify://collections/fabrics"
           }
         },
-        "column_pVMWjg": {
+        "column_fEfc7T": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/service-icon-3.png",
-            "icon_type": "check",
-            "title": "100% MONEY BACK",
-            "text": "",
+            "image": "shopify://shop_images/south_silk.png",
+            "title": "",
+            "text": "<h6>South Silk</h6>",
             "link_label": "",
-            "link": ""
+            "link": "shopify://collections/south-silk"
           }
         },
-        "column_iVqM8B": {
+        "column_GBrL9T": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/service-icon-4.png",
-            "icon_type": "check",
-            "title": "SECURE PAYMENTS",
-            "text": "",
+            "image": "shopify://shop_images/cotton_saree.png",
+            "title": "",
+            "text": "<h6>Cotton</h6>",
             "link_label": "",
-            "link": ""
+            "link": "shopify://collections/cotton"
+          }
+        },
+        "column_VrEF9t": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/banarasi.png",
+            "title": "",
+            "text": "<h6>Banarasi</h6>",
+            "link_label": "",
+            "link": "shopify://collections/banarasi"
+          }
+        },
+        "column_C8EqdN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Crepe.png",
+            "title": "",
+            "text": "<h6>Crepe</h6>",
+            "link_label": "",
+            "link": "shopify://collections/mysore-crepe-silk"
+          }
+        },
+        "column_ghPbQJ": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/3_b5a48288-0ad4-4ca0-99ea-99bfb8cba7a8.png",
+            "title": "",
+            "text": "<h6>Woollen Shawls</h6>",
+            "link_label": "",
+            "link": "shopify://collections/woollen-shawls"
+          }
+        },
+        "column_Vg8dpi": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/4_47e20739-b0be-475d-a977-926682210eb9.png",
+            "title": "",
+            "text": "<h6>Scarves and Stoles</h6>",
+            "link_label": "",
+            "link": "shopify://collections/scarves-and-stoles"
+          }
+        },
+        "column_FJ9WDy": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/beautiful-girl-with-saree.jpg",
+            "title": "",
+            "text": "<h6>Men's Ties</h6>",
+            "link_label": "",
+            "link": "shopify://collections/mens-ties"
+          }
+        },
+        "column_QFVDcc": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_31.png",
+            "title": "",
+            "text": "<h6>Cotton Suit Set</h6>",
+            "link_label": "",
+            "link": "shopify://collections/cotton-suit-set"
+          }
+        },
+        "column_dhYwtN": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_32.png",
+            "title": "",
+            "text": "<h6>Silk Suit Set</h6>",
+            "link_label": "",
+            "link": "shopify://collections/silk-suit-set"
+          }
+        },
+        "column_X7QHLU": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_33.png",
+            "title": "",
+            "text": "<h6>Plain and Dyed</h6>",
+            "link_label": "",
+            "link": "shopify://collections/dyed-sarees"
+          }
+        },
+        "column_764TTk": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/third-category-3.png",
+            "title": "",
+            "text": "<h6>Printed</h6>",
+            "link_label": "",
+            "link": "shopify://collections/printed"
+          }
+        },
+        "column_X9nUKM": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Screenshot2026-02-16at4.21.16PM.png",
+            "title": "",
+            "text": "<h6><strong>Gadwal</strong></h6>",
+            "link_label": "",
+            "link": "shopify://collections/gadwal-sarees"
+          }
+        },
+        "column_F6PpG4": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Screenshot2026-02-16at4.16.28PM.png",
+            "title": "",
+            "text": "<h6>Ikat Patola</h6>",
+            "link_label": "",
+            "link": "shopify://collections/patola-pochampally-saree"
           }
         }
       },
       "block_order": [
-        "column_pH9XTG",
-        "column_HKgmgj",
-        "column_pVMWjg",
-        "column_iVqM8B"
+        "column_9nVebb",
+        "column_dVbhDq",
+        "column_fEfc7T",
+        "column_GBrL9T",
+        "column_VrEF9t",
+        "column_C8EqdN",
+        "column_ghPbQJ",
+        "column_Vg8dpi",
+        "column_FJ9WDy",
+        "column_QFVDcc",
+        "column_dhYwtN",
+        "column_X7QHLU",
+        "column_764TTk",
+        "column_X9nUKM",
+        "column_F6PpG4"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {.service-icon-card .service-icon-card__image-wrapper {display: block; }}"
+        ".rte h6 {font-size: 12px;}",
+        "@media (max-width: 768px) {.rte h6 {font-size: 10px; }}"
       ],
       "settings": {
-        "layout": "grid",
-        "addclass": "",
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
+        "layout": "full_bleed",
+        "section_view": "desktop_mobile",
+        "class": "",
+        "title": "Shop By Category",
+        "heading_size": "h0",
+        "heading_alignment": "center",
+        "image_width": "full",
+        "custom_width": 110,
+        "image_ratio": "circle",
+        "columns_desktop": 10,
+        "enable_slider": true,
+        "enable_autoplay": true,
         "column_alignment": "center",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "shopify://collections/all",
+        "column_bkg_color": "#f9f9f9",
         "color_scheme": "",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "image_bkg_color": "#f9f9f9",
+        "image_border_color": "#891403",
+        "image_border_radius": 100,
+        "columns_mobile": "3",
         "padding_top": 30,
-        "padding_bottom": 30
+        "padding_bottom": 22
       }
     },
     "1774015581dd99870d": {
@@ -505,215 +638,6 @@
         "color_scheme": "background-1",
         "padding_top": 28,
         "padding_bottom": 28
-      }
-    },
-    "categories_slider_UtmejN": {
-      "type": "categories-slider",
-      "blocks": {
-        "column_9nVebb": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/kanjivuram.png",
-            "title": "",
-            "text": "<h6>Kanjivaram</h6>",
-            "link_label": "",
-            "link": "shopify://collections/kanjivaram"
-          }
-        },
-        "column_dVbhDq": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/silk_saree.png",
-            "title": "",
-            "text": "<h6>Silk Fabrics</h6>",
-            "link_label": "",
-            "link": "shopify://collections/fabrics"
-          }
-        },
-        "column_fEfc7T": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/south_silk.png",
-            "title": "",
-            "text": "<h6>South Silk</h6>",
-            "link_label": "",
-            "link": "shopify://collections/south-silk"
-          }
-        },
-        "column_GBrL9T": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/cotton_saree.png",
-            "title": "",
-            "text": "<h6>Cotton</h6>",
-            "link_label": "",
-            "link": "shopify://collections/cotton"
-          }
-        },
-        "column_VrEF9t": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/banarasi.png",
-            "title": "",
-            "text": "<h6>Banarasi</h6>",
-            "link_label": "",
-            "link": "shopify://collections/banarasi"
-          }
-        },
-        "column_C8EqdN": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Crepe.png",
-            "title": "",
-            "text": "<h6>Crepe</h6>",
-            "link_label": "",
-            "link": "shopify://collections/mysore-crepe-silk"
-          }
-        },
-        "column_ghPbQJ": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/3_b5a48288-0ad4-4ca0-99ea-99bfb8cba7a8.png",
-            "title": "",
-            "text": "<h6>Woollen Shawls</h6>",
-            "link_label": "",
-            "link": "shopify://collections/woollen-shawls"
-          }
-        },
-        "column_Vg8dpi": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/4_47e20739-b0be-475d-a977-926682210eb9.png",
-            "title": "",
-            "text": "<h6>Scarves and Stoles</h6>",
-            "link_label": "",
-            "link": "shopify://collections/scarves-and-stoles"
-          }
-        },
-        "column_FJ9WDy": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/beautiful-girl-with-saree.jpg",
-            "title": "",
-            "text": "<h6>Men's Ties</h6>",
-            "link_label": "",
-            "link": "shopify://collections/mens-ties"
-          }
-        },
-        "column_QFVDcc": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Untitled_design_31.png",
-            "title": "",
-            "text": "<h6>Cotton Suit Set</h6>",
-            "link_label": "",
-            "link": "shopify://collections/cotton-suit-set"
-          }
-        },
-        "column_dhYwtN": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Untitled_design_32.png",
-            "title": "",
-            "text": "<h6>Silk Suit Set</h6>",
-            "link_label": "",
-            "link": "shopify://collections/silk-suit-set"
-          }
-        },
-        "column_X7QHLU": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Untitled_design_33.png",
-            "title": "",
-            "text": "<h6>Plain and Dyed</h6>",
-            "link_label": "",
-            "link": "shopify://collections/dyed-sarees"
-          }
-        },
-        "column_764TTk": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/third-category-3.png",
-            "title": "",
-            "text": "<h6>Printed</h6>",
-            "link_label": "",
-            "link": "shopify://collections/printed"
-          }
-        },
-        "column_X9nUKM": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Screenshot2026-02-16at4.21.16PM.png",
-            "title": "",
-            "text": "<h6><strong>Gadwal</strong></h6>",
-            "link_label": "",
-            "link": "shopify://collections/gadwal-sarees"
-          }
-        },
-        "column_F6PpG4": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Screenshot2026-02-16at4.16.28PM.png",
-            "title": "",
-            "text": "<h6>Ikat Patola</h6>",
-            "link_label": "",
-            "link": "shopify://collections/patola-pochampally-saree"
-          }
-        }
-      },
-      "block_order": [
-        "column_9nVebb",
-        "column_dVbhDq",
-        "column_fEfc7T",
-        "column_GBrL9T",
-        "column_VrEF9t",
-        "column_C8EqdN",
-        "column_ghPbQJ",
-        "column_Vg8dpi",
-        "column_FJ9WDy",
-        "column_QFVDcc",
-        "column_dhYwtN",
-        "column_X7QHLU",
-        "column_764TTk",
-        "column_X9nUKM",
-        "column_F6PpG4"
-      ],
-      "custom_css": [
-        ".rte h6 {font-size: 12px;}",
-        "@media (max-width: 768px) {.rte h6 {font-size: 10px; }}"
-      ],
-      "settings": {
-        "layout": "full_bleed",
-        "section_view": "desktop_mobile",
-        "class": "",
-        "title": "",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "image_width": "full",
-        "custom_width": 110,
-        "image_ratio": "circle",
-        "columns_desktop": 10,
-        "enable_slider": true,
-        "enable_autoplay": true,
-        "column_alignment": "center",
-        "background_style": "none",
-        "column_bkg_color": "#f9f9f9",
-        "color_scheme": "",
-        "image_bkg_color": "#f9f9f9",
-        "image_border_color": "#891403",
-        "image_border_radius": 100,
-        "columns_mobile": "3",
-        "padding_top": 22,
-        "padding_bottom": 22
       }
     },
     "collection_list_jhEcVh": {
@@ -1245,18 +1169,93 @@
         "padding_top": 30,
         "padding_bottom": 25
       }
+    },
+    "service_icon_pHgMfL": {
+      "type": "service-icon",
+      "blocks": {
+        "column_pH9XTG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/service-icon-1.png",
+            "icon_type": "check",
+            "title": "FREE SHIPPING",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HKgmgj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/service-icon-2.png",
+            "icon_type": "check",
+            "title": "SUPPORT 24/7",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_pVMWjg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/service-icon-3.png",
+            "icon_type": "check",
+            "title": "100% MONEY BACK",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iVqM8B": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/service-icon-4.png",
+            "icon_type": "check",
+            "title": "SECURE PAYMENTS",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_pH9XTG",
+        "column_HKgmgj",
+        "column_pVMWjg",
+        "column_iVqM8B"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.service-icon-card .service-icon-card__image-wrapper {display: block; }}"
+      ],
+      "settings": {
+        "layout": "grid",
+        "addclass": "",
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "shopify://collections/all",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 30,
+        "padding_bottom": 30
+      }
     }
   },
   "order": [
     "slideshow_bGnUgg",
     "announcementbar_nLp8Nf",
-    "service_icon_pHgMfL",
+    "categories_slider_UtmejN",
     "1774015581dd99870d",
     "msu_top_categories_MSU01",
     "collection_list_a3CxBG",
     "0617c2f2-69ec-4df8-a506-b2616d4e1db4",
     "msu_occasions_MSU02",
-    "categories_slider_UtmejN",
     "collection_list_jhEcVh",
     "sub_banner_gjGJUR",
     "featured_collection_MhCKmi",
@@ -1265,6 +1264,7 @@
     "collection_list_jUe3mw",
     "msu_legacy_banner_MSU03",
     "custom_instagram_9k4UFy",
-    "sub_banner_YBDbjN"
+    "sub_banner_YBDbjN",
+    "service_icon_pHgMfL"
   ]
 }
