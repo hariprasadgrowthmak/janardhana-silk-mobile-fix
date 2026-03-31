@@ -369,24 +369,6 @@
         "padding_bottom": 22
       }
     },
-    "1774015581dd99870d": {
-      "type": "apps",
-      "blocks": {
-        "vizup_videos_videos_block_tCj7ip": {
-          "type": "shopify://apps/vizup-videos/blocks/videos-block/eaecaa7b-ab6b-40ae-8ddf-50daa867f3eb",
-          "settings": {
-            "videoc_widget_id": "Silk House",
-            "custom_css": ""
-          }
-        }
-      },
-      "block_order": [
-        "vizup_videos_videos_block_tCj7ip"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "msu_top_categories_MSU01": {
       "type": "msu-top-categories",
       "blocks": {
@@ -1109,6 +1091,24 @@
         "swipe_on_mobile": false
       }
     },
+    "1774015581dd99870d": {
+      "type": "apps",
+      "blocks": {
+        "vizup_videos_videos_block_tCj7ip": {
+          "type": "shopify://apps/vizup-videos/blocks/videos-block/eaecaa7b-ab6b-40ae-8ddf-50daa867f3eb",
+          "settings": {
+            "videoc_widget_id": "Silk House",
+            "custom_css": ""
+          }
+        }
+      },
+      "block_order": [
+        "vizup_videos_videos_block_tCj7ip"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "sub_banner_YBDbjN": {
       "type": "sub-banner",
       "blocks": {
@@ -1151,6 +1151,7 @@
         "image_NigmYh",
         "image_QQkAkn"
       ],
+      "disabled": true,
       "custom_css": [
         ".sub-title {text-align: center; margin-bottom: 2.5rem;}",
         "img {aspect-ratio: 4/3;}"
@@ -1251,7 +1252,6 @@
     "slideshow_bGnUgg",
     "announcementbar_nLp8Nf",
     "categories_slider_UtmejN",
-    "1774015581dd99870d",
     "msu_top_categories_MSU01",
     "collection_list_a3CxBG",
     "0617c2f2-69ec-4df8-a506-b2616d4e1db4",
@@ -1264,6 +1264,7 @@
     "collection_list_jUe3mw",
     "msu_legacy_banner_MSU03",
     "custom_instagram_9k4UFy",
+    "1774015581dd99870d",
     "sub_banner_YBDbjN",
     "service_icon_pHgMfL"
   ]
