@@ -4953,3 +4953,18 @@ header .categories-menu p {
     max-width: calc(50% - 10px) !important;
   }
 }
+/* 🔥 FIX ONLY THIS COLLECTION LIST SECTION (2x2 MOBILE) */
+@media screen and (max-width: 749px) {
+
+  .section-template--20144382378182__collection_list_a3CxBG-padding .collection-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px;
+  }
+
+  .section-template--20144382378182__collection_list_a3CxBG-padding .collection-list__item {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+}
