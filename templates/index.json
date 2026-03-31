@@ -879,6 +879,7 @@
     },
     "8b5479f1-e257-4e76-8418-dfef5ea6084b": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "image": "shopify://shop_images/8_7deaa503-9570-4ea1-ba86-14639451ca66.png",
@@ -1029,7 +1030,7 @@
         "heading_size": "h0",
         "text": "<p>A legacy of exquisite craftsmanship and heritage weaving that has defined elegance for generations. Every thread tells a story of tradition, quality, and timeless beauty.</p>",
         "content_position": "left",
-        "show_review_widget": true,
+        "show_review_widget": false,
         "star_rating": "4.6",
         "review_count": "5000+",
         "review_button_label": "See All Reviews",
