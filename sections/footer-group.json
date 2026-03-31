@@ -66,7 +66,7 @@
         "00b72254-9101-45a7-80cc-201741f19437"
       ],
       "settings": {
-        "color_scheme": "scheme-da81cc7b-a8e5-4cbd-9d89-2957a6650b54",
+        "color_scheme": "scheme-79f459bb-4904-45f9-af87-259050b6c881",
         "enable_follow_on_shop": true,
         "social_icon_bg_color": "#000000",
         "social_icon_color": "#ffffff",
@@ -80,8 +80,7 @@
         "margin_top": 44,
         "padding_top": 100,
         "padding_bottom": 0,
-        "footer_bg_image": "shopify://shop_images/ChatGPT_Image_Feb_27_2026_03_34_31_AM.png",
-        "footer_bg_overlay_enable": false,
+        "footer_bg_overlay_enable": true,
         "footer_overlay_opacity": 10
       }
     }
