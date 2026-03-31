@@ -369,6 +369,85 @@
         "padding_bottom": 22
       }
     },
+    "collection_list_a3CxBG": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_YYM63n": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/1_737cd392-cb17-4c97-9b4b-bea3fe18a5e3.png",
+            "collection": "accessories",
+            "collection_title": "",
+            "button_title": "",
+            "button_link": "shopify://collections/bridal-sarees"
+          }
+        },
+        "featured_collection_9kzhhP": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/4_d4ac99c4-12fb-4f23-8ad4-e7a6d1097f56.png",
+            "collection": "accessories",
+            "collection_title": "",
+            "button_title": "",
+            "button_link": "shopify://collections/kanjivaram"
+          }
+        },
+        "featured_collection_A94KaD": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/2_0ef7fcb9-7c12-4939-a084-a9487d5ff36f.png",
+            "collection": "suit-sets",
+            "collection_title": "",
+            "button_title": "",
+            "button_link": "shopify://collections/banarasi"
+          }
+        },
+        "featured_collection_ejhhYw": {
+          "type": "featured_collection",
+          "settings": {
+            "custom_img": "shopify://shop_images/3_a4e7983a-ae34-435a-8416-ad3df351c5c9.png",
+            "collection": "suit-sets",
+            "collection_title": "",
+            "button_title": "",
+            "button_link": "shopify://collections/cotton"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_YYM63n",
+        "featured_collection_9kzhhP",
+        "featured_collection_A94KaD",
+        "featured_collection_ejhhYw"
+      ],
+      "settings": {
+        "title": "Wedding Collections",
+        "heading_size": "h2",
+        "description": "<p><em>Stunning Drapes for Your Most Special Occasions</em></p>",
+        "heading_alignment": "center",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "title_position": "above_image",
+        "button_alignment": "center",
+        "title_bg_color": "#fff",
+        "title_text_color": "#000000",
+        "title_bg_hover_color": "#EF6C5A",
+        "title_text_hover_color": "#ffffff",
+        "title_text_border_color": "#ffffff",
+        "title_text_border_hover_color": "#ffffff",
+        "collection_title_text_color": "#ffffff",
+        "button_style": "solid",
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "button_alignment_mobile": "center",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
     "msu_top_categories_MSU01": {
       "type": "msu-top-categories",
       "blocks": {
@@ -458,85 +537,6 @@
         "view_more_link": "shopify://collections",
         "padding_top": 28,
         "padding_bottom": 24
-      }
-    },
-    "collection_list_a3CxBG": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_YYM63n": {
-          "type": "featured_collection",
-          "settings": {
-            "custom_img": "shopify://shop_images/1_737cd392-cb17-4c97-9b4b-bea3fe18a5e3.png",
-            "collection": "accessories",
-            "collection_title": "",
-            "button_title": "",
-            "button_link": "shopify://collections/bridal-sarees"
-          }
-        },
-        "featured_collection_9kzhhP": {
-          "type": "featured_collection",
-          "settings": {
-            "custom_img": "shopify://shop_images/4_d4ac99c4-12fb-4f23-8ad4-e7a6d1097f56.png",
-            "collection": "accessories",
-            "collection_title": "",
-            "button_title": "",
-            "button_link": "shopify://collections/kanjivaram"
-          }
-        },
-        "featured_collection_A94KaD": {
-          "type": "featured_collection",
-          "settings": {
-            "custom_img": "shopify://shop_images/2_0ef7fcb9-7c12-4939-a084-a9487d5ff36f.png",
-            "collection": "suit-sets",
-            "collection_title": "",
-            "button_title": "",
-            "button_link": "shopify://collections/banarasi"
-          }
-        },
-        "featured_collection_ejhhYw": {
-          "type": "featured_collection",
-          "settings": {
-            "custom_img": "shopify://shop_images/3_a4e7983a-ae34-435a-8416-ad3df351c5c9.png",
-            "collection": "suit-sets",
-            "collection_title": "",
-            "button_title": "",
-            "button_link": "shopify://collections/cotton"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_YYM63n",
-        "featured_collection_9kzhhP",
-        "featured_collection_A94KaD",
-        "featured_collection_ejhhYw"
-      ],
-      "settings": {
-        "title": "Wedding Collections",
-        "heading_size": "h2",
-        "description": "<p><em>Stunning Drapes for Your Most Special Occasions</em></p>",
-        "heading_alignment": "center",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "title_position": "above_image",
-        "button_alignment": "center",
-        "title_bg_color": "#fff",
-        "title_text_color": "#000000",
-        "title_bg_hover_color": "#EF6C5A",
-        "title_text_hover_color": "#ffffff",
-        "title_text_border_color": "#ffffff",
-        "title_text_border_hover_color": "#ffffff",
-        "collection_title_text_color": "#ffffff",
-        "button_style": "solid",
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "button_alignment_mobile": "center",
-        "padding_top": 28,
-        "padding_bottom": 28
       }
     },
     "0617c2f2-69ec-4df8-a506-b2616d4e1db4": {
@@ -1252,8 +1252,8 @@
     "slideshow_bGnUgg",
     "announcementbar_nLp8Nf",
     "categories_slider_UtmejN",
-    "msu_top_categories_MSU01",
     "collection_list_a3CxBG",
+    "msu_top_categories_MSU01",
     "0617c2f2-69ec-4df8-a506-b2616d4e1db4",
     "msu_occasions_MSU02",
     "collection_list_jhEcVh",
