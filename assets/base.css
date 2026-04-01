@@ -5056,3 +5056,47 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
   padding-right: 40px;
   box-sizing: border-box;
 }
+/* ===== PRODUCT 40 / 60 LAYOUT ONLY ===== */
+
+.product.grid {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* LEFT: IMAGE 40% */
+.product__media-wrapper {
+  width: 40% !important;
+  max-width: 40% !important;
+}
+
+/* RIGHT: CONTENT 60% */
+.product__info-wrapper {
+  width: 60% !important;
+  max-width: 60% !important;
+}
+
+/* REMOVE DEFAULT LIMIT */
+.product__info-container {
+  max-width: 100% !important;
+}
+
+/* IMAGE FIX */
+.product__media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== MOBILE ===== */
+@media screen and (max-width: 768px) {
+  .product.grid {
+    flex-direction: column !important;
+  }
+
+  .product__media-wrapper,
+  .product__info-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}

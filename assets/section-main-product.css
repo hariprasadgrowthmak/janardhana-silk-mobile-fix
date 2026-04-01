@@ -20,7 +20,8 @@ product-info {
 }
 
 @media screen and (min-width: 750px) {
-  .product__media-wrapper {
+  .product__column-sticky {
+    display: block;
     position: sticky;
     top: 3rem;
     z-index: 2;
