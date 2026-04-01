@@ -5060,7 +5060,7 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
 @media screen and (min-width: 990px) {
   .product {
     display: grid !important;
-    grid-template-columns: 40% 30% 30% !important;
+    grid-template-columns: 50% 40%  !important;
     gap: 20px;
     align-items: start;
   }
