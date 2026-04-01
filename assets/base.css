@@ -5234,7 +5234,7 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
 
 @media screen and (min-width: 768px) {
   .custom-blouse-form {
-    display: grid;
+    display: block;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
   }
