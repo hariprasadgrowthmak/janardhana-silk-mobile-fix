@@ -5100,7 +5100,7 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
     width: 100% !important;
     max-width: 100% !important;
   }
-}/* ===== STICKY LEFT PRODUCT IMAGE ===== */
+}/* ===== STICKY RIGHT PRODUCT INFO ===== */
 
 @media screen and (min-width: 990px) {
 
@@ -5108,9 +5108,9 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
     align-items: flex-start;
   }
 
-  .product__media-wrapper {
+  .product__info-wrapper {
     position: sticky;
-    top: 20px; /* distance from top */
+    top: 20px; /* adjust based on header */
     height: fit-content;
   }
 
