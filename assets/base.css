@@ -5056,3 +5056,80 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
   padding-right: 40px;
   box-sizing: border-box;
 }
+/* ===== CUSTOM PRODUCT 40 / 60 LAYOUT ===== */
+
+.product.grid {
+  display: flex !important;
+  gap: 10px;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+/* LEFT: IMAGE 40% */
+.product__media-wrapper {
+  width: 40% !important;
+  max-width: 40% !important;
+}
+
+/* IMAGE FIX */
+.product__media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* RIGHT: INFO 60% */
+.product__info-wrapper {
+  width: 60% !important;
+  max-width: 60% !important;
+  position: relative !important; /* IMPORTANT */
+}
+
+/* REMOVE DEFAULT GRID LIMIT */
+.product__info-container {
+  max-width: 100% !important;
+}
+
+/* ===== STICKY LEFT (DESKTOP ONLY) ===== */
+@media screen and (min-width: 990px) {
+
+  .product__media-wrapper {
+    position: sticky;
+    top: 100px; /* adjust based on your header height */
+    height: fit-content;
+  }
+
+}
+
+/* ===== MOBILE FIX ===== */
+@media screen and (max-width: 768px) {
+  .product {
+    flex-direction: column !important;
+  }
+
+  .product__media-wrapper,
+  .product__info-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    position: relative !important; /* disable sticky */
+  }
+}
+
+/* ===== CRITICAL FIX: DO NOT BLOCK STICKY ===== */
+.product__media,
+.product__media-wrapper {
+  overflow: visible !important;
+}
+
+/* ===== SAFETY FIX (avoid Shopify conflicts) ===== */
+.product,
+.product.grid,
+.page-width,
+.section {
+  overflow: visible !important;
+}
+
+/* REMOVE UNUSED AFTER LINE */
+.section-template--20144382312646__main-padding:after {
+  display: none !important;
+}
