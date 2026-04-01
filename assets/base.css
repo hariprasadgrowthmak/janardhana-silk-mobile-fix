@@ -5056,83 +5056,37 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
   padding-right: 40px;
   box-sizing: border-box;
 }
-/* ===== BLOUSE FORM PREMIUM DESIGN ===== */
-
+/* FIX FORM SPACING */
 .custom-blouse-form {
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
+  margin: 15px 0 10px; /* reduce bottom gap */
+  padding: 16px;
   border: 1px solid #eee;
-  margin: 25px 0;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  border-radius: 10px;
+  background: #fff;
 }
 
-/* Title */
-.custom-blouse-form h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #111;
+/* REMOVE EXTRA GAP BEFORE BUTTON */
+.product-form__buttons {
+  margin-top: 10px !important;
 }
 
-/* Section titles */
-.custom-blouse-form h4 {
-  font-size: 14px;
-  font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: #444;
+/* ALIGN QUANTITY + BUTTON */
+.product-form__buttons + * {
+  margin-top: 10px;
 }
 
-/* Labels */
-.custom-blouse-form label {
-  font-size: 13px;
-  color: #666;
-  margin-bottom: 5px;
-  display: block;
-}
-
-/* Inputs */
+/* FIX INPUT SPACING */
 .custom-blouse-form input,
 .custom-blouse-form select {
-  width: 100%;
-  padding: 10px 12px;
-  margin-bottom: 12px;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
-  font-size: 13px;
-  background: #fafafa;
-  transition: all 0.2s ease;
+  margin-bottom: 8px;
 }
 
-/* Focus effect */
-.custom-blouse-form input:focus,
-.custom-blouse-form select:focus {
-  border-color: #000;
-  background: #fff;
-  outline: none;
+/* MAKE FORM FLOW NATURAL */
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-
-/* Checkbox */
-.custom-blouse-form input[type="checkbox"] {
-  width: auto;
-  margin-right: 8px;
-}
-
-/* Divider */
-.custom-blouse-form hr {
-  border: none;
-  border-top: 1px solid #eee;
-  margin: 15px 0;
-}
-
-/* Group spacing */
-.custom-blouse-form input::placeholder {
-  color: #aaa;
-}
-
-/* Slight hover polish */
-.custom-blouse-form input:hover,
-.custom-blouse-form select:hover {
-  border-color: #ccc;
+.product-form__buttons {
+  margin-top: 5px !important;
 }
