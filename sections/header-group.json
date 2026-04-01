@@ -38,6 +38,15 @@
     "header": {
       "type": "header",
       "blocks": {
+        "msu_megamenu_BBfgxA": {
+          "type": "msu_megamenu",
+          "settings": {
+            "parent_link": "Suit Sets",
+            "show_live_button": false,
+            "button_text": "Shop Now",
+            "button_url": ""
+          }
+        },
         "megamenu_jpebTm": {
           "type": "megamenu",
           "disabled": true,
@@ -130,6 +139,7 @@
         }
       },
       "block_order": [
+        "msu_megamenu_BBfgxA",
         "megamenu_jpebTm",
         "msu_megamenu_QkM6JQ",
         "msu_megamenu_BAAGF3",
