@@ -5056,11 +5056,3 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
   padding-right: 40px;
   box-sizing: border-box;
 }
-@media screen and (min-width: 990px) {
-  .product {
-    display: grid;
-    grid-template-columns: 40% 30% 30%;
-    gap: 30px;
-    align-items: start;
-  }
-}
