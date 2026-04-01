@@ -5120,3 +5120,94 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
 .section-template--20144382312646__main-padding:after {
   display: none !important;
 }
+/* ===== CUSTOM PRODUCT 40 / 60 LAYOUT ===== */
+
+.product {
+  display: flex !important;
+  gap: 10px;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+/* LEFT: IMAGE 40% */
+.product__media-wrapper {
+  width: 40% !important;
+  max-width: 40% !important;
+}
+
+/* IMAGE FIX */
+.product__media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* RIGHT: INFO 60% */
+.product__info-wrapper {
+  width: 60% !important;
+  max-width: 60% !important;
+}
+
+/* REMOVE DEFAULT GRID BEHAVIOR */
+.product__info-container {
+  max-width: 100% !important;
+}
+
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .product {
+    flex-direction: column !important;
+  }
+
+  .product__media-wrapper,
+  .product__info-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* ===== DESKTOP: STICKY LEFT + SCROLLABLE RIGHT ===== */
+@media screen and (min-width: 990px) {
+  .product {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 40px !important;
+    height: 100vh;
+  }
+
+  /* LEFT SIDE: STICKY IMAGES */
+  .product__media-wrapper {
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    flex-shrink: 0;
+    width: 40% !important;
+  }
+
+  /* RIGHT SIDE: SCROLLABLE INFO */
+  .product__info-wrapper {
+    width: 60% !important;
+    overflow-y: auto;
+    max-height: calc(100vh - 100px);
+    padding-right: 15px;
+  }
+
+  /* Optional: Style the scrollbar */
+  .product__info-wrapper::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .product__info-wrapper::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+  }
+
+  .product__info-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  .product__info-wrapper::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
