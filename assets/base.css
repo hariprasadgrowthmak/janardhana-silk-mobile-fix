@@ -5078,7 +5078,6 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
   display: block;
 }
 
-
 /* RIGHT: INFO 60% */
 .product__info-wrapper {
   width: 60% !important;
@@ -5120,39 +5119,4 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
 }
 .section-template--20144382312646__main-padding:after {
   display: none !important;
-}
-/* ===== FIX ORDER: FORM → QUANTITY → BUTTON ===== */
-
-.product-form {
-  display: flex;
-  flex-direction: column;
-}
-
-/* BLOUSE FORM FIRST */
-.custom-blouse-form {
-  order: 1;
-}
-
-/* QUANTITY SECOND */
-.quantity,
-.quantity-selector,
-.product-form__quantity {
-  order: 2;
-  margin-top: 10px;
-}
-
-/* ADD TO CART LAST */
-.product-form__buttons {
-  order: 3;
-  margin-top: 10px !important;
-}
-
-/* FIX ALIGNMENT */
-.product-form__buttons button {
-  width: 100%;
-}
-
-/* REMOVE EXTRA GAPS */
-.product-form > * {
-  margin-bottom: 8px;
 }
