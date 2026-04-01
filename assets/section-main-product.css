@@ -1079,9 +1079,6 @@ a.product__text {
   }
 }
 
-.js .product__media {
-  overflow: hidden !important;
-}
 
 .thumbnail[aria-current]:focus-visible {
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0rem 0.5rem rgba(var(--color-foreground), 0.5);
@@ -2596,4 +2593,4 @@ quick-add-modal .product .product__media-wrapper .wishlist-compare {
   font-weight: 700;
   margin-left: 5px;
 }
-
+

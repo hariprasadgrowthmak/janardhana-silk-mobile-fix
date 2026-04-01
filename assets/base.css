@@ -5078,7 +5078,11 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
   display: block;
 }
 
-
+/* RIGHT: INFO 60% */
+.product__info-wrapper {
+  width: 60% !important;
+  max-width: 60% !important;
+}
 
 /* REMOVE DEFAULT GRID BEHAVIOR */
 .product__info-container {
