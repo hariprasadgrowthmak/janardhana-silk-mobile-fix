@@ -5060,21 +5060,23 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
 .product {
   display: flex;
   gap: 40px;
+  justify-content: flex-start; /* FIX */
 }
 
 /* Image column */
 .product__media-wrapper {
-  width: 40% !important;
-  max-width: 40% !important;
+  flex: 0 0 40%;
+  max-width: 40%;
 }
 
 /* Text column */
 .product__info-wrapper {
-  width: 30% !important;
-  max-width: 30% !important;
+  flex: 0 0 30%;
+  max-width: 30%;
 }
 
-/* Remaining empty space */
-.product {
-  justify-content: space-between;
+/* Optional: empty space control */
+.product::after {
+  content: "";
+  flex: 1; /* takes remaining space cleanly */
 }
