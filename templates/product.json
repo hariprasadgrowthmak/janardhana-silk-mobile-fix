@@ -147,6 +147,15 @@
             "content": "<p><br/>Shipping:⦁ Processing time usually takes 1 -2 business days.⦁ Delivery times may vary depending on the shipping distance.Returns:⦁ All products purchased online through store can be exchanged within 10 days with below mention conditions<br/><br/></p>",
             "page": ""
           }
+        },
+        "collapsible_tab_TPXaYn": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Customer Care",
+            "icon": "check_mark",
+            "content": "<p><strong>Mon–Sat:</strong> 9:00 AM – 12:00 AM<br/><strong>Phone:</strong> +91 97220 90217 / +91 97221 80217<br/><strong>WhatsApp:</strong> +91 95358 14717<br/><strong>Email:</strong> customercare@mysoresareeudyog.com</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -166,7 +175,8 @@
         "f1d7e9a6-b6c1-48c1-ab28-eabef196c446",
         "description",
         "collapsible_tab_FATCbR",
-        "collapsible_tab_pn9YHD"
+        "collapsible_tab_pn9YHD",
+        "collapsible_tab_TPXaYn"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -246,7 +256,7 @@
             "heading": "Customer Care",
             "heading_liquid": "",
             "icon": "none",
-            "content": "<p><strong>Mon–Sat:</strong> 9:00 AM – 12:00 AM<br><strong>Phone:</strong> +91 97220 90217 / +91 97221 80217<br><strong>WhatsApp:</strong> +91 95358 14717<br><strong>Email:</strong> customercare@mysoresareeudyog.com</p>",
+            "content": "<p><strong>Mon–Sat:</strong> 9:00 AM – 12:00 AM<br/><strong>Phone:</strong> +91 97220 90217 / +91 97221 80217<br/><strong>WhatsApp:</strong> +91 95358 14717<br/><strong>Email:</strong> customercare@mysoresareeudyog.com</p>",
             "liquid_content": "",
             "page": ""
           }
@@ -259,6 +269,7 @@
         "e976ee83-b842-472e-9af8-76220b5e4b2b",
         "customer_care_tab"
       ],
+      "disabled": true,
       "settings": {
         "class": "",
         "custom_page_width": "1500",
