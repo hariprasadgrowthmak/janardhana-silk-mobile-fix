@@ -137,7 +137,7 @@
       ],
       "settings": {
         "logo_position": "middle-left",
-        "menu": "header",
+        "menu": "header-copy",
         "menu_type_desktop": "msu_mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
