@@ -17,9 +17,9 @@
         "image_8BUAbi": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/logo-v-removebg-preview.png",
-            "image_width": 170,
-            "alignment": "center"
+            "image": "shopify://shop_images/footer_logo_1.png",
+            "image_width": 180,
+            "alignment": ""
           }
         },
         "bc57a59c-2edb-4c96-b087-ecba4f2df5b7": {
