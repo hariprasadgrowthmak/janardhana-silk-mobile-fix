@@ -5100,18 +5100,23 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
     width: 100% !important;
     max-width: 100% !important;
   }
-}/* ===== STICKY RIGHT PRODUCT INFO ===== */
-
-@media screen and (min-width: 990px) {
-
+}@media screen and (min-width: 990px) {
   .product {
-    align-items: flex-start;
+    display: flex !important;
   }
+}
+@media screen and (min-width: 990px) {
 
   .product__info-wrapper {
     position: sticky;
-    top: 20px; /* adjust based on header */
+    top: 20px;
     height: fit-content;
   }
 
+}
+.section-template--20144382312646__main-padding:after {
+  display: none !important;
+}
+.section-template--20144382312646__main-padding:after {
+  display: none !important;
 }
