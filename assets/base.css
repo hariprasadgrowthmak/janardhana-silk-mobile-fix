@@ -5056,74 +5056,12 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
   padding-right: 40px;
   box-sizing: border-box;
 }
-
-/* ===== PRODUCT PAGE LAYOUT FIX ===== */
-
-/* Center main container */
-.page-width {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/* Product layout */
 .product {
   display: grid;
-  grid-template-columns: 42% 38%;
-  justify-content: center;   /* centers layout */
+  grid-template-columns: 48% 42%; /* 🔥 FIX: give more space to text */
+  justify-content: center;
   align-items: start;
   gap: 60px;
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-/* Image column */
-.product__media-wrapper {
-  width: 100%;
-}
-
-/* Text column */
-.product__info-wrapper {
-  width: 100%;
-  padding-right: 10px;
-}
-
-/* Remove extra stretching issues */
-.product > * {
-  max-width: 100%;
-}
-
-/* Fix inner spacing (optional but improves premium look) */
-.product__info-wrapper > * {
-  margin-bottom: 12px;
-}
-
-/* Buttons spacing */
-.product-form__buttons {
-  margin-top: 15px;
-}
-
-/* Fix thumbnails spacing */
-.product__media-list {
-  margin-top: 10px;
-}
-
-/* Prevent content from sticking too left */
-@media screen and (min-width: 990px) {
-  .product {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-/* ===== MOBILE FIX ===== */
-@media screen and (max-width: 749px) {
-  .product {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .product__info-wrapper {
-    padding-right: 0;
-  }
 }
