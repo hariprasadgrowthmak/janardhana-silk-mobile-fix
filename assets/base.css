@@ -5120,3 +5120,15 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
 .section-template--20144382312646__main-padding:after {
   display: none !important;
 }
+.product {
+  display: flex;
+  align-items: flex-start;
+}
+
+.product__media-wrapper {
+  width: 50%;
+}
+
+.product__info-wrapper {
+  width: 50%;
+}
