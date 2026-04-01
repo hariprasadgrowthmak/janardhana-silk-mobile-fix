@@ -586,43 +586,6 @@
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
           {%- when 'buy_buttons' -%}
 
-  <!-- 🧵 BLOUSE FORM (CORRECT PLACE) -->
-  <div class="custom-blouse-form">
-
-    <h3>🧵 Blouse Stitching Requirements</h3>
-
-    <label>Blouse Type</label>
-    <select name="properties[Blouse Type]">
-      <option>Plain Blouse Stitching – ₹1400</option>
-    </select>
-
-    <label>
-      <input type="checkbox" name="properties[Fall Pico]" value="Yes">
-      Add Fall Pico
-    </label>
-
-    <hr>
-
-    <h4>Measurements</h4>
-
-    <input type="text" name="properties[Bust]" placeholder="Bust">
-    <input type="text" name="properties[Above Waist]" placeholder="Above Waist">
-    <input type="text" name="properties[Shoulder]" placeholder="Shoulder">
-
-    <input type="text" name="properties[Blouse Length]" placeholder="Blouse Length">
-    <input type="text" name="properties[Sleeve Length]" placeholder="Sleeve Length">
-
-    <input type="text" name="properties[Arm Hole]" placeholder="Arm Hole">
-    <input type="text" name="properties[Around Arm]" placeholder="Around Arm">
-
-    <hr>
-
-    <h4>Neck Design</h4>
-
-    <input type="text" name="properties[Front Neck Depth]" placeholder="Front Neck">
-    <input type="text" name="properties[Back Neck Depth]" placeholder="Back Neck">
-
-  </div>
 
   <!-- ORIGINAL BUTTONS -->
   {%- render 'buy-buttons',
