@@ -5084,6 +5084,6 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
   }
 }
 .product__media-wrapper {
-  position: sticky;
+  position: sticky !important;
   top: 0;
 }
