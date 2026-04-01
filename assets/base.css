@@ -5056,46 +5056,16 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
   padding-right: 40px;
   box-sizing: border-box;
 }
-/* ============================= */
-/* PROFESSIONAL PRODUCT LAYOUT   */
-/* ============================= */
+.product__media-wrapper {
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
+}
 
-@media screen and (min-width: 990px) {
+.product {
+  overflow: visible;
+}
 
-  /* MAIN GRID */
-  .product {
-    display: grid;
-    grid-template-columns: 42% 32% 26%;
-    gap: 40px;
-    max-width: 1400px;
-    margin: 0 auto;
-    align-items: start;
-  }
-
-  /* IMAGE SIDE */
-  .product__media-wrapper {
-    position: sticky;
-    top: 100px;
-    align-self: start;
-  }
-
-  /* CONTENT SIDE */
-  .product__info-wrapper {
-    max-width: 500px;
-  }
-
-  /* CLEAN EMPTY SPACE (RIGHT SIDE) */
-  .product::after {
-    content: "";
-    display: block;
-  }
-
-  /* FIX STICKY BREAK ISSUE */
-  .product,
-  .product__media-wrapper,
-  .product__info-wrapper,
-  .section,
-  .page-width {
-    overflow: visible !important;
-  }
+.product__media-wrapper * {
+  overflow: visible;
 }
