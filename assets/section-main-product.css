@@ -1079,7 +1079,12 @@ a.product__text {
   }
 }
 
-
+.js .product__media {
+  overflow: hidden !important;
+}
+.product__media{
+  position:sticky;
+}
 .thumbnail[aria-current]:focus-visible {
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0rem 0.5rem rgba(var(--color-foreground), 0.5);
 }
