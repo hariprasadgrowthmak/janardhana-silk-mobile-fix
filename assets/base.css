@@ -5056,3 +5056,25 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
   padding-right: 40px;
   box-sizing: border-box;
 }
+
+.product {
+  display: flex;
+  gap: 40px;
+}
+
+/* Image column */
+.product__media-wrapper {
+  width: 40% !important;
+  max-width: 40% !important;
+}
+
+/* Text column */
+.product__info-wrapper {
+  width: 30% !important;
+  max-width: 30% !important;
+}
+
+/* Remaining empty space */
+.product {
+  justify-content: space-between;
+}
