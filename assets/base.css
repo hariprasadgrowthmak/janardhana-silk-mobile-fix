@@ -5105,13 +5105,7 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
     display: flex !important;
   }
 }
-@media screen and (min-width: 990px) {
-  .product__media-wrapper {
-    position: sticky;
-    top: 100px; /* adjust based on header */
-    height: fit-content;
-  }
-}
+
 
 }
 .section-template--20144382312646__main-padding:after {
