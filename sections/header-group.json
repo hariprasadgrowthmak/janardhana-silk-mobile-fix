@@ -38,10 +38,11 @@
     "header": {
       "type": "header",
       "blocks": {
-        "msu_megamenu_4nej3e": {
+        "msu_megamenu_QkM6JQ": {
           "type": "msu_megamenu",
           "settings": {
-            "parent_link": "Silk Fabrics",
+            "parent_link": "Sarees",
+            "image": "shopify://shop_images/Every_saree_is_a_timeless_whisper_of_elegance_Unity_Buildings_J.C._Road_Bangalore-560_0.webp",
             "show_live_button": false,
             "button_text": "Shop Now",
             "button_url": ""
@@ -51,16 +52,17 @@
           "type": "msu_megamenu",
           "settings": {
             "parent_link": "Suit Sets",
+            "image": "shopify://shop_images/bf7e909f-b30b-4f6f-98d8-cc4e6884b650_large_657d1b5d-06e6-4918-9729-d374e857f588.png",
             "show_live_button": false,
             "button_text": "Shop Now",
             "button_url": ""
           }
         },
-        "msu_megamenu_QkM6JQ": {
+        "msu_megamenu_4nej3e": {
           "type": "msu_megamenu",
           "settings": {
-            "parent_link": "Sarees",
-            "image": "shopify://shop_images/Every_saree_is_a_timeless_whisper_of_elegance_Unity_Buildings_J.C._Road_Bangalore-560_0.webp",
+            "parent_link": "Silk Fabrics",
+            "image": "shopify://shop_images/fabrics.png",
             "show_live_button": false,
             "button_text": "Shop Now",
             "button_url": ""
@@ -88,9 +90,9 @@
         }
       },
       "block_order": [
-        "msu_megamenu_4nej3e",
-        "msu_megamenu_BBfgxA",
         "msu_megamenu_QkM6JQ",
+        "msu_megamenu_BBfgxA",
+        "msu_megamenu_4nej3e",
         "msu_megamenu_BAAGF3",
         "msu_megamenu_YzxMQm"
       ],
