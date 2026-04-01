@@ -38,6 +38,15 @@
     "header": {
       "type": "header",
       "blocks": {
+        "msu_megamenu_4nej3e": {
+          "type": "msu_megamenu",
+          "settings": {
+            "parent_link": "Silk Fabrics",
+            "show_live_button": false,
+            "button_text": "Shop Now",
+            "button_url": ""
+          }
+        },
         "msu_megamenu_BBfgxA": {
           "type": "msu_megamenu",
           "settings": {
@@ -45,66 +54,6 @@
             "show_live_button": false,
             "button_text": "Shop Now",
             "button_url": ""
-          }
-        },
-        "megamenu_jpebTm": {
-          "type": "megamenu",
-          "disabled": true,
-          "settings": {
-            "parent_link": "Sarees",
-            "hide_default_menu": "False",
-            "custom_mega_menu_columns": 6,
-            "menu_layout": "full_bleed",
-            "mega_menu_bkg_color": "#ffffff",
-            "mega_menu_text_color": "#000000",
-            "menu_item_type1": "show_image_with_text",
-            "linklist1": "header",
-            "collection1": "",
-            "product1": "",
-            "title1": "",
-            "content1": "",
-            "btntitle1": "",
-            "btnurl1": "",
-            "menu_item_type2": "linklist",
-            "linklist2": "header",
-            "collection2": "",
-            "product2": "",
-            "title2": "",
-            "content2": "",
-            "btntitle2": "",
-            "btnurl2": "",
-            "menu_item_type3": "show_image_with_text",
-            "linklist3": "",
-            "collection3": "",
-            "product3": "",
-            "title3": "",
-            "content3": "",
-            "btntitle3": "",
-            "btnurl3": "",
-            "menu_item_type4": "linklist",
-            "linklist4": "header",
-            "collection4": "banarasi",
-            "product4": "",
-            "title4": "Hello",
-            "content4": "",
-            "btntitle4": "",
-            "btnurl4": "",
-            "menu_item_type5": "show_image_with_text",
-            "linklist5": "",
-            "collection5": "",
-            "product5": "",
-            "title5": "",
-            "content5": "",
-            "btntitle5": "",
-            "btnurl5": "",
-            "menu_item_type6": "linklist",
-            "linklist6": "header",
-            "collection6": "",
-            "product6": "",
-            "title6": "",
-            "content6": "",
-            "btntitle6": "",
-            "btnurl6": ""
           }
         },
         "msu_megamenu_QkM6JQ": {
@@ -139,8 +88,8 @@
         }
       },
       "block_order": [
+        "msu_megamenu_4nej3e",
         "msu_megamenu_BBfgxA",
-        "megamenu_jpebTm",
         "msu_megamenu_QkM6JQ",
         "msu_megamenu_BAAGF3",
         "msu_megamenu_YzxMQm"
