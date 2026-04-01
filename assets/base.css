@@ -5077,6 +5077,14 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
   height: auto;
   display: block;
 }
+@media screen and (min-width: 990px) {
+  .product__media-wrapper {
+    position: sticky;
+    top: 20px; /* Adjust this value as needed */
+    height: fit-content; /* Ensures the sticky element only takes up necessary height */
+  }
+}
+
 
 /* RIGHT: INFO 60% */
 .product__info-wrapper {
