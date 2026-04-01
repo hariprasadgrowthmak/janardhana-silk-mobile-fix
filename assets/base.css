@@ -5058,7 +5058,12 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
 }
 /* CUSTOM PRODUCT PAGE LAYOUT */
 @media screen and (min-width: 990px) {
-  
+  .product {
+    display: grid !important;
+    grid-template-columns: 50% 40% 30% !important;
+    gap: 20px;
+    align-items: start;
+  }
 
   /* Image section */
   .product__media-wrapper {
