@@ -5065,17 +5065,12 @@ ul#Slider-template--20144382378182__custom_instagram_9k4UFy{padding:40px;}
   align-items: flex-start;
 }
 
-/* LEFT: IMAGE 40% */
-.product__media-wrapper {
-  width: 40% !important;
-  max-width: 40% !important;
-}
+
 
 /* IMAGE FIX */
 .product__media img {
   width: 100%;
-  height: auto;
-  display: block;
+  
 }
 
 /* RIGHT: INFO 60% */
