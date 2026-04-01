@@ -1,5 +1,5 @@
 {% comment %}
-  Renders product buy-buttons.
+  Renders product buy-buttons (FIXED VERSION)
 {% endcomment %}
 
 <style>
@@ -10,18 +10,15 @@
 .custom-blouse-form input,
 .custom-blouse-form select {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   margin-bottom: 10px;
 }
 </style>
 
-<div class="product-form-block" {{ block.shopify_attributes }}>
+<div {{ block.shopify_attributes }}>
   {%- if product != blank -%}
 
-    <product-form
-      class="product-form"
-      data-section-id="{{ section.id }}"
-    >
+    <product-form class="product-form" data-section-id="{{ section.id }}">
 
       {%- form 'product',
         product,
@@ -31,7 +28,7 @@
         data-type: 'add-to-cart-form'
       -%}
 
-        <!-- VARIANT ID -->
+        <!-- VARIANT -->
         <input
           type="hidden"
           name="id"
@@ -40,6 +37,7 @@
         >
 
         <!-- 🧵 BLOUSE FORM -->
+        {% if product.tags contains 'blouse' %}
         <div class="custom-blouse-form">
 
           <h3>🧵 Blouse Stitching Requirements</h3>
@@ -76,17 +74,44 @@
           <input type="text" name="properties[Back Neck Depth]" placeholder="Back Neck">
 
         </div>
+        {% endif %}
 
-        <!-- ADD TO CART -->
+        <!-- ERROR MESSAGE (IMPORTANT) -->
+        <div class="product-form__error-message-wrapper" role="alert" hidden>
+          <span class="product-form__error-message"></span>
+        </div>
+
+        <!-- BUTTON -->
         <div class="product-form__buttons">
+
           <button
             type="submit"
             name="add"
             class="product-form__submit button button--full-width button--primary"
           >
             <span>Add to cart</span>
+
+            <!-- LOADING SPINNER (IMPORTANT) -->
+            <div class="loading-overlay__spinner hidden">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                class="spinner"
+                viewBox="0 0 66 66"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+              </svg>
+            </div>
+
           </button>
+
         </div>
+
+        <!-- DYNAMIC CHECKOUT (IMPORTANT) -->
+        {%- if block.settings.show_dynamic_checkout -%}
+          {{ form | payment_button }}
+        {%- endif -%}
 
       {%- endform -%}
 
@@ -94,17 +119,7 @@
 
   {%- else -%}
 
-    <div class="product-form">
-      <div class="product-form__buttons form">
-        <button
-          type="submit"
-          class="product-form__submit button button--full-width button--primary"
-          disabled
-        >
-          Sold out
-        </button>
-      </div>
-    </div>
+    <button disabled class="button button--full-width">Sold out</button>
 
   {%- endif -%}
 </div>
